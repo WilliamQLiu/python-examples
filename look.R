@@ -1,5 +1,6 @@
 # Open up library for ODBC connections
 library(RODBC)
+library(plyr) #Needed to use function ddply
 
 # Connect to ODBC using: odbcConnect(DSN, uid="", pwd="")
 dbhandle <- odbcDriverConnect("driver={SQL Server};server=WILL-PC\\SQLEXPRESS;database=BookDatabase;Trusted_Connection='yes'")
@@ -42,7 +43,6 @@ common_reviews('059035342X','043935806X')
 book_lookup <- mydata[,c("ISBN", "BookTitle")]
 #book_lookup <- book_lookup[duplicated(book_lookup)==FALSE,] # Removes users with duplicate reviews
 head(book_lookup)
-
 
 # Pulls back the ISBN based on the Book-Title
 # x$y looks at dataframe x at column y
@@ -90,30 +90,81 @@ get_review_metrics <- function(book, userset){
 
 calc_similarity <- function(b1,b2){
   common_users <- common_reviews(b1,b2)
-  #print(common_users)
+  print(common_users)
   if (is.na(common_users)){
     return(NA)
   }
   book1.reviews <- get_review_metrics(b1, common_users)
   book2.reviews <- get_review_metrics(b2, common_users)
-  weights <- c(1)
-
-  # cor(x, y=NULL, use="everything", method=c("pearson","kendall","spearman"))
-  # x = a numeric vector, matrix or data frame
-  # 
-  #corrs <- sapply(names(book1.reviews), function(metric){
-  #  cor(book1.reviews[metric], book2.reviews[metric]) # cor computes the correlation of x and y vectors
-  #})
+  print(book1.reviews) #8 10 10 10  8 10 10 10  9 10 10  8 10 10  9 10 10  8  9  6 10  7 10 10 10 10  8 10  9 10 10 10 10 10 10  8
+  print(book2.reviews) #10  7 10 10 10 10 10  9  7 10 10  8 10  8  9 10 10  9  8 10 10  8 10 10  7 10  8 10 10 10 10  7 10  9 10  6
   
-  #sum(corrs * weights, na.rm=TRUE)
-  #sum(corrs, na.rm=TRUE) # na.rm means excluding missing values from analysis
-  #sum(corrs)
+  #Notes: apply(X, MARGIN, FUN), really to just make a loop
+  #Apply returns a vector or array or list of values obtained by applying a function to margins of an array or matrix
+  #X is the array, MARGIN is a vector giving the subscripts which the function will be applied over (e.g. Matrix 1 indicates rows, 2 indicadtes columns, c(1,2) indicates rows and columns
+  #FUN is the function to be applied
+
+  #cor function gets the correlation coefficient of two variables in a data sample (normalized measurement of how the two are linearly related)
+  #cor methods can be pearson (default), spearman, or kendall
+  cor(book1.reviews, book2.reviews) 
+  #print(cor, na.rm=TRUE)
+  
 }
 
-b1 <- '059035342X'
-b2 <- '043935806X'
+b1 <- '059035342X' # Harry Potter and the Sorcerers Stone
+b2 <- '043935806X' # Harry Potter and the Order of the Phoenix
 
 calc_similarity(b1,b2)
 #[1]  8 10 10 10  8 10 10 10  9 10 10  8 10 10  9 10 10  8  9  6 10  7 10 10 10 10  8 10  9 10 10 10 10 10 10  8
 #[1] 10  7 10 10 10 10 10  9  7 10 10  8 10  8  9 10 10  9  8 10 10  8 10 10  7 10  8 10 10 10 10  7 10  9 10  6
+# Correlation = 0.2451016
 
+## Now we compare the 20 most commonly reviewed books
+## Define the books we want, then we use 'expand.grid' to create all the combinations of books
+## Finally we remove any self-to-self comparisons (e.g. Harry Potter and the Sorcerers Stone to Harry Potter and the Sorcerers Stone
+## Then we use 'ddply' to do a map/reduce style calculation on the data
+## ddply(.data, .variables, .fun) Splits data frame, apply function, and then return results in a data frame
+## expand.grid creates a data frame from all combinations of the supplied vectors or factors
+
+
+book.counts <- ddply(mydata, .(BookTitle), nrow)
+o <- order(-book.counts$V1)
+#o <- order(book.counts)
+#print(o)
+# Get the 20 most commonly reviewed books
+all.books <- head( book.counts[o,], 20)$BookTitle
+print(all.books)
+book.pairs <- expand.grid(book1=all.books, book2=all.books)
+book.pairs <- subset(book.pairs, book1!=book2) #do not include rating a book with itself
+print(book.pairs) # Shows all the book pairings with book1 to book2
+
+## Create function to pass in bookname and get ISBN back
+book_name_to_ISBN <- function(mybookname){
+  myisbn <- subset(mydata, BookTitle==mybookname, select=c('ISBN')) #select=c('ISBN','BookTitle') for checking ISBN with BookTitle
+  uniqueisbn <- unique(myisbn) # e.g. can return multiple rows with multiple ISBNs for same title
+  uniqueisbn <- head(uniqueisbn,1) # Return just the first ISBN
+  print(head(uniqueisbn,1))
+}
+
+
+## Test case for Books with no intersecting users
+#mybook1 <- book_name_to_ISBN("Hornet Flight: A Novel")
+#mybook2 <- book_name_to_ISBN("New York Public Library Literature Companion")
+## Test case for Books with overlapping users
+mybook1 <- book_name_to_ISBN("Harry Potter and the Prisoner of Azkaban (Book 3)")
+mybook2 <- book_name_to_ISBN("Harry Potter and the Chamber of Secrets (Book 2)")
+calc_similarity(mybook1$ISBN,mybook2$ISBN)
+book_name_to_ISBN("Harry Potter and the Chamber of Secrets (Book 2)")
+
+
+# Pass in book name as mybook1, then converts book name to ISBN using function 'book_name_to_ISBN', returns ISBN
+# Then calculates similarity (which calls common reviews function, which returns common reviewers
+results <- ddply(book.pairs, .(book1, book2), function(x){
+  b1 <- book_name_to_ISBN(x$book1)
+  #print(b1)
+  b2 <- book_name_to_ISBN(x$book2)
+  #print(b2)
+  c("sim"=calc_similarity(b1$ISBN,b2$ISBN))
+},.progress="text") # To see progress bar in text of how much is left to be completed
+
+print(results) #Shows column 1 (book1's Title), column 2 (book2's Title), column 3 (similarity)
