@@ -1,4 +1,4 @@
-pythondataio
+Simple Python Projects
 ============
 
-Python for Data Input and Output
+Included are simply python projects
