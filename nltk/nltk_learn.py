@@ -20,8 +20,11 @@ def make_tokens(rawdata):
     mytext = nltk.Text(tokens)
     return mytext
 
-def graph_dispersion(mytext):
-    mytext.dispersion_plot(["Stark", "Lannister", "Greyjoy", "Targaryen", "Baratheon"])
+def graph_dispersion(mytext, *args):
+    mylist=[]
+    for index, items in enumerate(args):
+        mylist.append(items)
+    mytext.dispersion_plot(mylist)
 
 def lexical_diversity(mytext):
     return len(mytext) / len(set(mytext))
@@ -53,7 +56,7 @@ if __name__ == "__main__":
     #print lexical_diversity(book4text)
     #print lexical_diversity(book5text)
 
-    #graph_dispersion(book1text)
+    graph_dispersion(book1text, "Stark", "Lannister", "Greyjoy", "Baratheon", "Targaryen")
 
     #book1text.concordance("Jon") # shows the word in context, e.g. Robb and Jon sat tall and still on their horses, Bran's bastard brother Jon
     
@@ -63,6 +66,11 @@ if __name__ == "__main__":
 
     #book1text.generate() # Generate some random text
 
-    
+    #myfreqdist = nltk.FreqDist(book1text)
+    #myvocab = myfreqdist.keys()
+    #print myvocab[:50] # Top 50 words
+    #print myfreqdist['Stark'] # how many times does this word occur
+    #myfreqdist.plot(50, cumulative=True) # Plots the frequency dist of first 50 words, Note: must be words
 
-
+    #myfreqdist = [w for w in set(book1text) if len(w)>5]
+    #print sorted(myfreqdist)
