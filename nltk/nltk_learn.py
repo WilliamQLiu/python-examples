@@ -17,15 +17,14 @@ def load_file(mypath):
 
 def make_tokens(rawdata):
     tokens = nltk.word_tokenize(rawdata)
-    return tokens
-
-def graph_dispersion(tokens):
     mytext = nltk.Text(tokens)
+    return mytext
+
+def graph_dispersion(mytext):
     mytext.dispersion_plot(["Stark", "Lannister", "Greyjoy", "Targaryen", "Baratheon"])
 
-def nsyl(word):
-    return [len(list(y for y in x if isdigit(y[-1]))) for x in d[word.lower()]] #return number of syllables    
-
+def lexical_diversity(mytext):
+    return len(mytext) / len(set(mytext))
 
 if __name__ == "__main__":
     book1 = load_file('~/GitHub/Python/nltk/gameofthrones/A Game of Thrones - Book 1 - Book 1.txt')
@@ -34,7 +33,36 @@ if __name__ == "__main__":
     book4 = load_file('~/GitHub/Python/nltk/gameofthrones/A Feast for Crows - Book 4 - Book 4.txt')
     book5 = load_file('~/GitHub/Python/nltk/gameofthrones/A Dance With Dragons - Book 5 - Book 5.txt')
 
-    book1tokens = make_tokens(book1)
-    graph_dispersion(book1tokens)
-    #graph_dispersion(book3)
+    book1text = make_tokens(book1)
+    book2text = make_tokens(book2)
+    book3text = make_tokens(book3)
+    book4text = make_tokens(book4)
+    book5text = make_tokens(book5)
+
+    # How many words are in each book?
+    #print len(book1text) #334146
+    #print len(book2text) #363393
+    #print len(book3text) #484521
+    #print len(book4text) #354309
+    #print len(book5text) #468984
+
+    # What's the diversity of word use for each book?
+    #print lexical_diversity(book1text)
+    #print lexical_diversity(book2text)
+    #print lexical_diversity(book3text)
+    #print lexical_diversity(book4text)
+    #print lexical_diversity(book5text)
+
+    #graph_dispersion(book1text)
+
+    #book1text.concordance("Jon") # shows the word in context, e.g. Robb and Jon sat tall and still on their horses, Bran's bastard brother Jon
     
+    #book1text.similar("Lannister") # book1 returns "the he and her his said you man them a him in it king mountain stark had horse night not"
+
+    #book1text.common_contexts("north", "cold")
+
+    #book1text.generate() # Generate some random text
+
+    
+
+
