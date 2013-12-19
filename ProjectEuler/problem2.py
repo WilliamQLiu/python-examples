@@ -16,20 +16,20 @@
 
 def fibonacci(number):
     
-    
     index=0
     total=0
-    mylist=[1,2]
-    while(total<number):
-        total = total + mylist[index]
-        index = index + 1
-        mynewvalue = mylist[index] + mylist[index-1]
-        mylist.append(mynewvalue)
-        print mylist
+    mylist=[1,2] #start off the list
+    while(mylist[index]<number):
+        if(mylist[index]%2==0): #check if even, if so, then add to the sum
+            total = total + mylist[index]
+        if(mylist[index]<number):
+            index = index + 1
+            mynewvalue = mylist[index] + mylist[index-1]
+            mylist.append(mynewvalue)
 
     return total
 
 
 if __name__ == "__main__":
-	print fibonacci(4000000)
-    #print fibonacci(4000000)
+    #print fibonacci(20)
+    print fibonacci(4000000)
