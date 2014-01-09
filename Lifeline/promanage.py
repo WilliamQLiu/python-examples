@@ -1,26 +1,31 @@
 # Program to calculate projected completion date for projects (with source being an Excel file)
 import os # For filepaths
-import pandas
-import numpy # Needed for pandas
-import time # Needed for date calculations
+import pandas # For dataframes
 import datetime # Needed for date calculations
 from pandas.tseries.offsets import * # For Bday (Business Days) utility
 
 #Specify directories
 originaldirectory = str('C:\Users\wliu\Desktop\Spiceworks\Original')
 os.chdir(originaldirectory) #Change Local directory (where files go to)
+FILENAME = 'Export2014-1-9.csv'
 
 """
-# Use only if data is messy
-cleandirectory = str('C:\Users\wliu\Desktop\Spiceworks\Modified') # Not needed unless you need to clean unknown characters out
+# Use only if data is messy, not needed unless you need to clean unknown chars
+cleandirectory = str('C:\Users\wliu\Desktop\Spiceworks\Modified') 
 def write_files(myfilename):
-    ### This function is not needed/used unless data is corrupt with unknown inputs, then call this to replace unknown characters###
-    myinputfilelocation = os.path.join(originaldirectory, myfilename) #print myinputfilelocation #C:\Users\wliu\Desktop\Spiceworks\Original\Export2013-11-18.csv
-    myoutputfilelocation = os.path.join(cleandirectory, myfilename)  #print myinputfilelocation #C:\Users\wliu\Desktop\Spiceworks\Modified\Export2013-11-18.csv
+    ''' This function is not needed/used unless data is corrupt with unknown 
+    inputs, then call this to replace unknown characters'''
+    myinputfilelocation = os.path.join(originaldirectory, myfilename)
+    #print myinputfilelocation #C:\Users\wliu\Desktop\Spiceworks\Original\Export2013-11-18.csv
+    
+    myoutputfilelocation = os.path.join(cleandirectory, myfilename)
+    #print myinputfilelocation #C:\Users\wliu\Desktop\Spiceworks\Modified\Export2013-11-18.csv
+    
     myinputfile = open(myinputfilelocation, 'rb')
     myoutputfile = open(myoutputfilelocation, 'wb')
 
-    # Take inputfile, read through all, clean out quotes (since some of the raw data has quotes inside), then write to output file
+    # Take inputfile, read through all lines, clean out quotes
+    # (since some of the raw data has quotes inside), then write to output file
     for line in myinputfile:
         try:
             newline = unicode(line, errors='replace')
@@ -33,7 +38,7 @@ def write_files(myfilename):
 """
 
 def modify_files(mydataframe):
-    # Exclude specific columns
+    # Exclude specific columns from the data source
     mydataframe = mydataframe[mydataframe['Status']=='open']
     mydataframe = mydataframe[mydataframe['Category']!='Facilities']
     mydataframe = mydataframe[mydataframe['Division']!='Help Desk']
@@ -65,7 +70,7 @@ def calc_hours(mydataframe):
     myagghours=[]
     mytotalhours = 0
 
-    for a in mydataframe['Hours Remaining']:     # Go through all 'Hours Remaining' list one at a time
+    for a in mydataframe['Hours Remaining']: # Go through all 'Hours Remaining' list one at a time
         mycurrenthours.append(a) # mycurrenthours gets the current 'Hours Remaining' (e.g. 4, 2, 28, 2, 8, etc.)
         mytotalhours = sum(mycurrenthours) # add the current hours to an temporary total hours (i.e. doing a rolling sum)
         myagghours.append(mytotalhours) # add the rolling sum to a new list
@@ -104,10 +109,10 @@ def create_projected_dates(mydataframe):
 if __name__ == "__main__":
 
     # Specify file locations
-    filename= 'Export2013-11-19.csv'
-
-    mynewoutputfile = os.path.join(originaldirectory, filename)
-    dataframe = pandas.io.parsers.read_table(mynewoutputfile, sep=',', quotechar='"', header=0, index_col=0, error_bad_lines=True, warn_bad_lines=True, encoding='latin-1')
+    mynewoutputfile = os.path.join(originaldirectory, FILENAME)
+    dataframe = pandas.io.parsers.read_table(mynewoutputfile, sep=',',
+        quotechar='"', header=0, index_col=0, error_bad_lines=True,
+        warn_bad_lines=True, encoding='latin-1')
     #print mydataframe
     
     cleandataframe = modify_files(dataframe) # Clean file (e.g. No HelpDesk tickets, No Facilities tickets, Open Tickets Only)
