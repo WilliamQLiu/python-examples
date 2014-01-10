@@ -112,7 +112,7 @@ if __name__ == "__main__":
     mynewoutputfile = os.path.join(originaldirectory, FILENAME)
     dataframe = pandas.io.parsers.read_table(mynewoutputfile, sep=',',
         quotechar='"', header=0, index_col=0, error_bad_lines=True,
-        warn_bad_lines=True, encoding='latin-1')
+        warn_bad_lines=True, encoding='utf-8')
     #print mydataframe
     
     cleandataframe = modify_files(dataframe) # Clean file (e.g. No HelpDesk tickets, No Facilities tickets, Open Tickets Only)
