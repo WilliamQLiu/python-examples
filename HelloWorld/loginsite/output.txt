@@ -1,0 +1,1984 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+<meta http-equiv="Expires" content="now" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" type="text/css" href="ucss/uformat.css" />
+<link rel="stylesheet" type="text/css" href="ucss/uwest.css" />
+<SCRIPT Language="JavaScript">
+<!--
+var baseurl =  "report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&dtc=0&bd=20131201&ed=20131231&dt=3";
+var skin =     "default";
+var lang =     "en";
+
+var appname =  "session.cgi";
+var session =  "";
+var charset =  "utf-8";
+var os =       "";
+var oncolor =  "#66CCFF";
+var offcolor = "#B9E7FF";
+var font1 =    "<FONT FACE=',Verdana,Arial,Helvetica' size='-2' color=000000>";
+var svgemsg =  "The Adobe SVG Viewer is required and is NOT installed. \nDownload now?";
+//-->
+</SCRIPT>
+
+<script language="JavaScript" src="ujs/urchin.js"></script>
+<script language="JavaScript" src="ujs/calendar.js"></script>
+<script language="JavaScript" src="ujs/general.js"></script>
+<script language="JavaScript" src="ujs/ugraph.js"></script>
+<script language="JavaScript" src="ujs/svgcheck.js"></script>
+<noscript>Urchin Requires a javascript capable browser.</noscript>
+<script language="VBScript" src="ujs/svgcheck.vbs"></script>
+<SCRIPT Language="JavaScript">
+<!--
+var oncolor =  "#66CCFF";
+var offcolor = "#B9E7FF";
+var charfont = "west";
+var font1 =    "<FONT FACE='Verdana,Arial,Helvetica' size='-2' color=000000>";
+var font4 =    "<FONT FACE=',Verdana,Arial,Helvetica' size='-1' color=000000>";
+
+smonths[0] = "Jan";
+smonths[1] = "Feb";
+smonths[2] = "Mar";
+smonths[3] = "Apr";
+smonths[4] = "May";
+smonths[5] = "Jun";
+smonths[6] = "Jul";
+smonths[7] = "Aug";
+smonths[8] = "Sep";
+smonths[9] = "Oct";
+smonths[10] = "Nov";
+smonths[11] = "Dec";
+
+sdow[0] = "Sun";
+sdow[1] = "Mon";
+sdow[2] = "Tue";
+sdow[3] = "Wed";
+sdow[4] = "Thu";
+sdow[5] = "Fri";
+sdow[6] = "Sat";
+
+dterms[0] = "From";
+dterms[1] = "To";
+dterms[2] = "Apply Date Range";
+
+//-->
+</SCRIPT>
+
+
+<title>Urchin 5: Sessions Graph - NY MH New York City</title>
+</head>
+
+<body bgcolor="#FFFFFF" link="#000000" alink="#000000" vlink="#000000" marginheight="0" marginwidth="0" leftmargin="0" topmargin="0"
+ onload="checkSVGGraph('1102','0');">
+
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td colspan="6" bgcolor="#999999"><img src="uicons/default/tspace.gif" width="1" height="1"></td></tr>
+<tr><td colspan="6" bgcolor="#000000"><img src="uicons/default/tspace.gif" width="1" height="8"></td></tr>
+<tr><td colspan="6" bgcolor="#999999"><img src="uicons/default/tspace.gif" width="1" height="1"></td></tr>
+<tr>
+   <td colspan="5" bgcolor="#F3F3F3" background="uicons/default/bg_report.gif">
+      <img src="uicons/default/tspace.gif" width="1" height="22"></td>
+   <td bgcolor="#F3F3F3" rowspan="5" background="uicons/default/bg_report.gif">
+      <img src="uicons/default/tspace.gif" width="15" height="1"></td>
+</tr>
+<tr>
+   <td bgcolor="#EEEEEE" background="uicons/default/bg_report.gif">
+      <img src="uicons/default/tspace.gif" width="225" height="16"></td>
+   <td bgcolor="#EEEEEE" background="uicons/default/bg_report.gif">
+      <img SRC="uicons/default/nav_corner_tl.gif" width="25" height="16"></td>
+   <td bgcolor="#EEEEEE" background="uicons/default/nav_back_t.gif">
+      <img SRC="uicons/default/tspace.gif" width="25" height="16"></td>
+   <td bgcolor="#EEEEEE" background="uicons/default/nav_back_t.gif">
+      <img SRC="uicons/default/tspace.gif" width="500" height="16" width="95%"></td>
+   <td colspan="1" background="uicons/default/bg_report.gif" valign="top" align="right" width="13">
+      <img SRC="uicons/default/nav_corner_tr.gif" width="13" height="16"></td>
+</tr>
+
+<tr>
+   <td valign="top" background="uicons/default/bg_report.gif">
+   <center>
+   <a href="http://www.urchin.com" target="urchinhome"><img src="uicons/default/urchinlogo.gif" width="140" height="29" border="0"></a>
+   </center>
+
+   <!-- Start Navigation -->
+   <table width="100%" cellspacing="0" border="0" cellpadding="0" background="uicons/default/tspace.gif">
+   <tr>
+      <td rowspan="100" background="uicons/default/bg_report.gif"><img src="uicons/default/tspace.gif" width="10" height="5"></td>
+      <td colspan="1"><img src="uicons/default/tspace.gif" width="25" height="10" border="0"></td>
+      <td colspan="1"><img src="uicons/default/tspace.gif" width="150" height="10" border="0"></td>
+      <td colspan="1"><img src="uicons/default/tspace.gif" width="13" height="10" border="0"></td>
+      <td rowspan="100" background="uicons/default/bg_report.gif"><img src="uicons/default/tspace.gif" width="10" height="5"></td>
+   </tr>
+   <tr><td colspan="3" height="15">&nbsp;&nbsp;<b>Reports</b></td></tr>
+   <tr>
+      <td valign="top" width="25"><img src="uicons/default/nav_corner_tl.gif" width="25" height="16"></td>
+      <td valign="top" width="90%" background="uicons/default/nav_back_t.gif" valign="top" align="right">
+         <img src="uicons/default/tspace.gif" width="25" height="16"></td>
+      <td background="uicons/default/bg_report.gif" valign="top" align="right">
+      <img src="uicons/default/nav_corner_tr.gif" width="13" height="16"></td>
+   </tr>
+
+   <!--- Strat Nav Here -->
+   
+      
+         
+
+         
+ 
+         <tr bgcolor="#FFFFFF">
+            <td width="25" background="uicons/default/nav_back_l.gif">
+            <a href="javascript:nToggle('1100',0,0)">
+            <img src="uicons/default/arrow_open.gif" name="arrow_1100" width="25" height="18" border="0"></td>
+            <td>
+            <a href="javascript:nToggle('1100',0,0)" class="navm1">Traffic</a></td>
+            <td width="5"><img src="uicons/default/tspace.gif" width="5" height="1"></td>
+         </tr>
+         <tr bgcolor="#FFFFFF">
+            <td width="25" background="uicons/default/nav_back_l.gif">
+            <img src="uicons/default/tspace.gif" width="25" height="1"></td>
+            <td nowrap><div style="display:show" name="s1100" id="s1100">
+      
+
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#66CCFF">
+         <span style="background-color:#66CCFF">
+         
+         Sessions Graph</span></a><br>
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1103&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#66CCFF">
+         
+         <span>
+         Pageviews Graph</span></a><br>
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1104&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#66CCFF">
+         
+         <span>
+         Hits Graph</span></a><br>
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1105&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#66CCFF">
+         
+         <span>
+         Bytes Graph</span></a><br>
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1110&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#66CCFF">
+         
+         <span>
+         Summary</span></a><br>
+      
+
+      
+
+      
+   
+      
+
+      
+
+      
+         
+         <a href="javascript:nToggle('11007',1,0)">
+         <img src="uicons/default/bullet_plus.gif" name="bullet_11007" width="9" height="9" border="0" style="background-color:#B9E7FF">
+         Load Balancing</a><br>
+         <div style="display:none" name="s11007" id="s11007">
+      
+
+      
+   
+      
+
+      
+
+      
+
+      
+         &nbsp;&nbsp;<a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1111&dtc=0&bd=20131201&ed=20131231&dt=3');"> 
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#66CCFF">
+         
+         <span>
+         Log Source by Hits</span>
+         </a><br>
+      
+   
+      
+
+      
+
+      
+
+      
+         &nbsp;&nbsp;<a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1112&dtc=0&bd=20131201&ed=20131231&dt=3');"> 
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#66CCFF">
+         
+         <span>
+         Log Source by Bytes</span>
+         </a><br>
+      
+   
+      
+         
+            </div></td><td width="5"><img src="uicons/default/tspace.gif" width="5" height="1"></td></tr>
+         
+
+         </div>
+ 
+         <tr bgcolor="#FFFFFF">
+            <td width="25" background="uicons/default/nav_back_l.gif">
+            <a href="javascript:nToggle('1200',0,0)">
+            <img src="uicons/default/arrow_close.gif" name="arrow_1200" width="25" height="18" border="0"></td>
+            <td>
+            <a href="javascript:nToggle('1200',0,0)" class="navm0">Pages & Files</a></td>
+            <td width="5"><img src="uicons/default/tspace.gif" width="5" height="1"></td>
+         </tr>
+         <tr bgcolor="#FFFFFF">
+            <td width="25" background="uicons/default/nav_back_l.gif">
+            <img src="uicons/default/tspace.gif" width="25" height="1"></td>
+            <td nowrap><div style="display:none" name="s1200" id="s1200">
+      
+
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1201&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#FFCC66">
+         
+         <span>
+         Requested Pages</span></a><br>
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1211&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#FFCC66">
+         
+         <span>
+         Downloads</span></a><br>
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1210&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#FFCC66">
+         
+         <span>
+         Page Query Terms</span></a><br>
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1205&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#FFCC66">
+         
+         <span>
+         Posted Forms</span></a><br>
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1204&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#FFCC66">
+         
+         <span>
+         Status and Errors</span></a><br>
+      
+
+      
+
+      
+   
+      
+
+      
+
+      
+         
+         <a href="javascript:nToggle('120016',1,0)">
+         <img src="uicons/default/bullet_plus.gif" name="bullet_120016" width="9" height="9" border="0" style="background-color:#FFE699">
+         All Files</a><br>
+         <div style="display:none" name="s120016" id="s120016">
+      
+
+      
+   
+      
+
+      
+
+      
+
+      
+         &nbsp;&nbsp;<a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1206&dtc=0&bd=20131201&ed=20131231&dt=3');"> 
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#FFCC66">
+         
+         <span>
+         All Files by Hits</span>
+         </a><br>
+      
+   
+      
+
+      
+
+      
+
+      
+         &nbsp;&nbsp;<a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1212&dtc=0&bd=20131201&ed=20131231&dt=3');"> 
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#FFCC66">
+         
+         <span>
+         All Files by Bytes</span>
+         </a><br>
+      
+   
+      
+
+      
+
+      
+         </div>
+         <a href="javascript:nToggle('120019',1,0)">
+         <img src="uicons/default/bullet_plus.gif" name="bullet_120019" width="9" height="9" border="0" style="background-color:#FFE699">
+         Directory Drilldown</a><br>
+         <div style="display:none" name="s120019" id="s120019">
+      
+
+      
+   
+      
+
+      
+
+      
+
+      
+         &nbsp;&nbsp;<a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1202&dtc=0&bd=20131201&ed=20131231&dt=3');"> 
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#FFCC66">
+         
+         <span>
+         Directory by Pages Drilldown</span>
+         </a><br>
+      
+   
+      
+
+      
+
+      
+
+      
+         &nbsp;&nbsp;<a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1207&dtc=0&bd=20131201&ed=20131231&dt=3');"> 
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#FFCC66">
+         
+         <span>
+         Directory by Files Drilldown</span>
+         </a><br>
+      
+   
+      
+
+      
+
+      
+
+      
+         &nbsp;&nbsp;<a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1208&dtc=0&bd=20131201&ed=20131231&dt=3');"> 
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#FFCC66">
+         
+         <span>
+         Directory by Bytes Drilldown</span>
+         </a><br>
+      
+   
+      
+
+      
+
+      
+         </div>
+         <a href="javascript:nToggle('120023',1,0)">
+         <img src="uicons/default/bullet_plus.gif" name="bullet_120023" width="9" height="9" border="0" style="background-color:#FFE699">
+         File Types</a><br>
+         <div style="display:none" name="s120023" id="s120023">
+      
+
+      
+   
+      
+
+      
+
+      
+
+      
+         &nbsp;&nbsp;<a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1203&dtc=0&bd=20131201&ed=20131231&dt=3');"> 
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#FFCC66">
+         
+         <span>
+         File Types by Hits</span>
+         </a><br>
+      
+   
+      
+
+      
+
+      
+
+      
+         &nbsp;&nbsp;<a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1209&dtc=0&bd=20131201&ed=20131231&dt=3');"> 
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#FFCC66">
+         
+         <span>
+         File Types by Bytes</span>
+         </a><br>
+      
+   
+      
+         
+            </div></td><td width="5"><img src="uicons/default/tspace.gif" width="5" height="1"></td></tr>
+         
+
+         </div>
+ 
+         <tr bgcolor="#FFFFFF">
+            <td width="25" background="uicons/default/nav_back_l.gif">
+            <a href="javascript:nToggle('1600',0,0)">
+            <img src="uicons/default/arrow_close.gif" name="arrow_1600" width="25" height="18" border="0"></td>
+            <td>
+            <a href="javascript:nToggle('1600',0,0)" class="navm0">Navigation</a></td>
+            <td width="5"><img src="uicons/default/tspace.gif" width="5" height="1"></td>
+         </tr>
+         <tr bgcolor="#FFFFFF">
+            <td width="25" background="uicons/default/nav_back_l.gif">
+            <img src="uicons/default/tspace.gif" width="25" height="1"></td>
+            <td nowrap><div style="display:none" name="s1600" id="s1600">
+      
+
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1601&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#CCCCFF">
+         
+         <span>
+         Entrance Pages</span></a><br>
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1602&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#CCCCFF">
+         
+         <span>
+         Exit Pages</span></a><br>
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1611&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#CCCCFF">
+         
+         <span>
+         Bounce Rate</span></a><br>
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1609&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#CCCCFF">
+         
+         <span>
+         Click Paths</span></a><br>
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1603&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#CCCCFF">
+         
+         <span>
+         Click To and From</span></a><br>
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1610&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#CCCCFF">
+         
+         <span>
+         Length of Pageview</span></a><br>
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1604&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#CCCCFF">
+         
+         <span>
+         Depth of Session</span></a><br>
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1608&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#CCCCFF">
+         
+         <span>
+         Length of Session</span></a><br>
+      
+
+      
+
+      
+   
+      
+         
+            </div></td><td width="5"><img src="uicons/default/tspace.gif" width="5" height="1"></td></tr>
+         
+
+         
+ 
+         <tr bgcolor="#FFFFFF">
+            <td width="25" background="uicons/default/nav_back_l.gif">
+            <a href="javascript:nToggle('1300',0,0)">
+            <img src="uicons/default/arrow_close.gif" name="arrow_1300" width="25" height="18" border="0"></td>
+            <td>
+            <a href="javascript:nToggle('1300',0,0)" class="navm0">Referrals</a></td>
+            <td width="5"><img src="uicons/default/tspace.gif" width="5" height="1"></td>
+         </tr>
+         <tr bgcolor="#FFFFFF">
+            <td width="25" background="uicons/default/nav_back_l.gif">
+            <img src="uicons/default/tspace.gif" width="25" height="1"></td>
+            <td nowrap><div style="display:none" name="s1300" id="s1300">
+      
+
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1301&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#8FDD8F">
+         
+         <span>
+         Referrals</span></a><br>
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1303&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#8FDD8F">
+         
+         <span>
+         Referral Drilldown </span></a><br>
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1302&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#8FDD8F">
+         
+         <span>
+         Search Terms</span></a><br>
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1304&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#8FDD8F">
+         
+         <span>
+         Search Engines</span></a><br>
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1305&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#8FDD8F">
+         
+         <span>
+         Referral Errors</span></a><br>
+      
+
+      
+
+      
+   
+      
+         
+            </div></td><td width="5"><img src="uicons/default/tspace.gif" width="5" height="1"></td></tr>
+         
+
+         
+ 
+         <tr bgcolor="#FFFFFF">
+            <td width="25" background="uicons/default/nav_back_l.gif">
+            <a href="javascript:nToggle('1400',0,0)">
+            <img src="uicons/default/arrow_close.gif" name="arrow_1400" width="25" height="18" border="0"></td>
+            <td>
+            <a href="javascript:nToggle('1400',0,0)" class="navm0">Domains & Users</a></td>
+            <td width="5"><img src="uicons/default/tspace.gif" width="5" height="1"></td>
+         </tr>
+         <tr bgcolor="#FFFFFF">
+            <td width="25" background="uicons/default/nav_back_l.gif">
+            <img src="uicons/default/tspace.gif" width="25" height="1"></td>
+            <td nowrap><div style="display:none" name="s1400" id="s1400">
+      
+
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1401&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#66CCCC">
+         
+         <span>
+         Domains</span></a><br>
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1402&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#66CCCC">
+         
+         <span>
+         Domain Drilldown </span></a><br>
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1403&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#66CCCC">
+         
+         <span>
+         Countries</span></a><br>
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1404&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#66CCCC">
+         
+         <span>
+         IP Addresses</span></a><br>
+      
+
+      
+
+      
+   
+      
+
+      
+         
+         <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1405&dtc=0&bd=20131201&ed=20131231&dt=3');">
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#66CCCC">
+         
+         <span>
+         IP Drilldown </span></a><br>
+      
+
+      
+
+      
+   
+      
+
+      
+
+      
+         
+         <a href="javascript:nToggle('140047',1,0)">
+         <img src="uicons/default/bullet_plus.gif" name="bullet_140047" width="9" height="9" border="0" style="background-color:#AFEBEB">
+         Usernames</a><br>
+         <div style="display:none" name="s140047" id="s140047">
+      
+
+      
+   
+      
+
+      
+
+      
+
+      
+         &nbsp;&nbsp;<a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1406&dtc=0&bd=20131201&ed=20131231&dt=3');"> 
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#66CCCC">
+         
+         <span>
+         Usernames by Hits</span>
+         </a><br>
+      
+   
+      
+
+      
+
+      
+
+      
+         &nbsp;&nbsp;<a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1407&dtc=0&bd=20131201&ed=20131231&dt=3');"> 
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#66CCCC">
+         
+         <span>
+         Usernames by Bytes</span>
+         </a><br>
+      
+   
+      
+
+      
+
+      
+
+      
+         &nbsp;&nbsp;<a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1409&dtc=0&bd=20131201&ed=20131231&dt=3');"> 
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#66CCCC">
+         
+         <span>
+         Usernames by Sessions</span>
+         </a><br>
+      
+   
+      
+         
+            </div></td><td width="5"><img src="uicons/default/tspace.gif" width="5" height="1"></td></tr>
+         
+
+         </div>
+ 
+         <tr bgcolor="#FFFFFF">
+            <td width="25" background="uicons/default/nav_back_l.gif">
+            <a href="javascript:nToggle('1500',0,0)">
+            <img src="uicons/default/arrow_close.gif" name="arrow_1500" width="25" height="18" border="0"></td>
+            <td>
+            <a href="javascript:nToggle('1500',0,0)" class="navm0">Browsers & Robots</a></td>
+            <td width="5"><img src="uicons/default/tspace.gif" width="5" height="1"></td>
+         </tr>
+         <tr bgcolor="#FFFFFF">
+            <td width="25" background="uicons/default/nav_back_l.gif">
+            <img src="uicons/default/tspace.gif" width="25" height="1"></td>
+            <td nowrap><div style="display:none" name="s1500" id="s1500">
+      
+
+      
+
+      
+
+      
+   
+      
+
+      
+
+      
+         
+         <a href="javascript:nToggle('150052',1,0)">
+         <img src="uicons/default/bullet_plus.gif" name="bullet_150052" width="9" height="9" border="0" style="background-color:#E3E3AA">
+         Browsers</a><br>
+         <div style="display:none" name="s150052" id="s150052">
+      
+
+      
+   
+      
+
+      
+
+      
+
+      
+         &nbsp;&nbsp;<a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1501&dtc=0&bd=20131201&ed=20131231&dt=3');"> 
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#CCCC66">
+         
+         <span>
+         Browsers by Sessions Drilldown</span>
+         </a><br>
+      
+   
+      
+
+      
+
+      
+
+      
+         &nbsp;&nbsp;<a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1504&dtc=0&bd=20131201&ed=20131231&dt=3');"> 
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#CCCC66">
+         
+         <span>
+         Browsers by Hits Drilldown</span>
+         </a><br>
+      
+   
+      
+
+      
+
+      
+
+      
+         &nbsp;&nbsp;<a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1505&dtc=0&bd=20131201&ed=20131231&dt=3');"> 
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#CCCC66">
+         
+         <span>
+         Browsers by Bytes Drilldown</span>
+         </a><br>
+      
+   
+      
+
+      
+
+      
+         </div>
+         <a href="javascript:nToggle('150056',1,0)">
+         <img src="uicons/default/bullet_plus.gif" name="bullet_150056" width="9" height="9" border="0" style="background-color:#E3E3AA">
+         Platforms</a><br>
+         <div style="display:none" name="s150056" id="s150056">
+      
+
+      
+   
+      
+
+      
+
+      
+
+      
+         &nbsp;&nbsp;<a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1502&dtc=0&bd=20131201&ed=20131231&dt=3');"> 
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#CCCC66">
+         
+         <span>
+         Platforms by Sessions Drilldown</span>
+         </a><br>
+      
+   
+      
+
+      
+
+      
+
+      
+         &nbsp;&nbsp;<a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1506&dtc=0&bd=20131201&ed=20131231&dt=3');"> 
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#CCCC66">
+         
+         <span>
+         Platforms by Hits Drilldown</span>
+         </a><br>
+      
+   
+      
+
+      
+
+      
+
+      
+         &nbsp;&nbsp;<a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1507&dtc=0&bd=20131201&ed=20131231&dt=3');"> 
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#CCCC66">
+         
+         <span>
+         Platforms by Bytes Drilldown</span>
+         </a><br>
+      
+   
+      
+
+      
+
+      
+         </div>
+         <a href="javascript:nToggle('150060',1,0)">
+         <img src="uicons/default/bullet_plus.gif" name="bullet_150060" width="9" height="9" border="0" style="background-color:#E3E3AA">
+         Combos</a><br>
+         <div style="display:none" name="s150060" id="s150060">
+      
+
+      
+   
+      
+
+      
+
+      
+
+      
+         &nbsp;&nbsp;<a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1503&dtc=0&bd=20131201&ed=20131231&dt=3');"> 
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#CCCC66">
+         
+         <span>
+         Combos by Sessions</span>
+         </a><br>
+      
+   
+      
+
+      
+
+      
+
+      
+         &nbsp;&nbsp;<a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1512&dtc=0&bd=20131201&ed=20131231&dt=3');"> 
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#CCCC66">
+         
+         <span>
+         Combos by Hits</span>
+         </a><br>
+      
+   
+      
+
+      
+
+      
+
+      
+         &nbsp;&nbsp;<a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1513&dtc=0&bd=20131201&ed=20131231&dt=3');"> 
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#CCCC66">
+         
+         <span>
+         Combos by Bytes</span>
+         </a><br>
+      
+   
+      
+
+      
+
+      
+         </div>
+         <a href="javascript:nToggle('150064',1,0)">
+         <img src="uicons/default/bullet_plus.gif" name="bullet_150064" width="9" height="9" border="0" style="background-color:#E3E3AA">
+         Robots</a><br>
+         <div style="display:none" name="s150064" id="s150064">
+      
+
+      
+   
+      
+
+      
+
+      
+
+      
+         &nbsp;&nbsp;<a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1510&dtc=0&bd=20131201&ed=20131231&dt=3');"> 
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#CCCC66">
+         
+         <span>
+         Robots by Hits Drilldown</span>
+         </a><br>
+      
+   
+      
+
+      
+
+      
+
+      
+         &nbsp;&nbsp;<a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1511&dtc=0&bd=20131201&ed=20131231&dt=3');"> 
+         <img src="uicons/default/bullet_dot.gif" width="9" height="9" border="0" style="background-color:#CCCC66">
+         
+         <span>
+         Robots by Bytes Drilldown</span>
+         </a><br>
+      
+   
+
+         </div>
+         </td>
+         <td width="5"><img src="uicons/default/tspace.gif" width="5" height="1"></td>
+   </tr>
+
+   <!--- End Nav -->
+
+   <tr>
+      <td width="25"><img src="uicons/default/nav_corner_bl.gif" width="25" height="11"></td>
+      <td valign="top" width="25" background="uicons/default/nav_back_b.gif" valign="top" align="right">
+         <img src="uicons/default/tspace.gif" width="25" height="11"></td>
+      <td background="uicons/default/bg_report.gif" align="right">
+         <img src="uicons/default/nav_corner_br.gif" width="13" height="11"></td>
+   </tr>
+
+   <tr><td colspan="3" height="15"><img src="uicons/default/tspace.gif" width="5" height="5"></td></tr>
+   <tr><td colspan="3" height="15">&nbsp;&nbsp;<b>Date Range</b></a></td></tr>
+   <tr>
+      <td valign="top" width="25"><img src="uicons/default/nav_corner_tl.gif" width="25" height="16"></td>
+      <td valign="top" width="25" background="uicons/default/nav_back_t.gif" valign="top" align="right">
+         <img src="uicons/default/tspace.gif" width="25" height="16"></td>
+      <td background="uicons/default/bg_report.gif" valign="top" align="right">
+         <img src="uicons/default/nav_corner_tr.gif" width="13" height="16"></td>
+   </tr>
+
+   <tr  bgcolor="#FFFFFF">
+      <td colspan="3" height="18" align="center" background="uicons/default/nav_back_l2.gif">
+
+      <!-- Start Calendar -->
+      <table cellpadding="0" cellspacing="0" border="0" background="uicons/default/tspace.gif">
+      <tr>
+         <td align="right">
+         <!-- Start Year -->
+         <table cellpadding="1" cellspacing="0" border="0" align="center">
+         <tr>
+            
+            <td><a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20121201&ed=20121231&dt=3');">
+            <img src="uicons/default/left_arrow.gif" width="6" height="11" border="0" hspace="5"></a></td>
+            
+            
+            
+             
+            <td align="center" class="font10"><b><a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20130101&ed=20131231&dt=1');">2013</a></b></td> 
+            
+            
+            <td><a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20141201&ed=20141231&dt=3');">
+            <img src="uicons/default/right_arrow.gif" width="6" height="11" border="0" hspace="5"></a></td>
+            
+            
+         </tr>
+         </table>
+         <!-- End Year -->
+
+         <!-- Start Month -->
+         <table cellpadding="1" cellspacing="2" border="0" width="100%">
+         <tr>
+            <td rowspan="3"><img src="uicons/default/tspace.gif" width="1" height="1" border="0"></td>
+         </tr>
+         <tr>
+            
+            
+            
+            
+            <td bgcolor="#B9E7FF" align="center" class="font11"><a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20130101&ed=20130131&dt=2');">Jan</a></td>
+            
+            
+            
+            
+            
+            
+            <td bgcolor="#B9E7FF" align="center" class="font11"><a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20130201&ed=20130228&dt=2');">Feb</a></td>
+            
+            
+            
+            
+            
+            
+            <td bgcolor="#B9E7FF" align="center" class="font11"><a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20130301&ed=20130331&dt=2');">Mar</a></td>
+            
+            
+            
+            
+            
+            
+            <td bgcolor="#B9E7FF" align="center" class="font11"><a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20130401&ed=20130430&dt=2');">Apr</a></td>
+            
+            
+            
+            
+            
+            
+            <td bgcolor="#B9E7FF" align="center" class="font11"><a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20130501&ed=20130531&dt=2');">May</a></td>
+            
+            
+            
+            
+            
+            
+            <td bgcolor="#B9E7FF" align="center" class="font11"><a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20130601&ed=20130630&dt=2');">Jun</a></td>
+            
+            
+            
+            </tr><tr>
+            
+            
+            <td bgcolor="#B9E7FF" align="center" class="font11"><a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20130701&ed=20130731&dt=2');">Jul</a></td>
+            
+            
+            
+            
+            
+            
+            <td bgcolor="#B9E7FF" align="center" class="font11"><a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20130801&ed=20130831&dt=2');">Aug</a></td>
+            
+            
+            
+            
+            
+            
+            <td bgcolor="#B9E7FF" align="center" class="font11"><a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20130901&ed=20130930&dt=2');">Sep</a></td>
+            
+            
+            
+            
+            
+            
+            <td bgcolor="#B9E7FF" align="center" class="font11"><a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131001&ed=20131031&dt=2');">Oct</a></td>
+            
+            
+            
+            
+            
+            
+            <td bgcolor="#B9E7FF" align="center" class="font11"><a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131101&ed=20131130&dt=2');">Nov</a></td>
+            
+            
+            
+            
+            
+            <td bgcolor="#66CCFF" align="center" class="font11"><a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131201&ed=20131231&dt=2');">Dec</a></td>
+            
+            
+            
+            
+         </tr></table>
+         <!-- End Month -->
+
+         <!-- Start Day -->
+         <table cellpadding="1" cellspacing="1" border="0" width="100%">
+         <tr>
+            <td rowspan="8" bgcolor="#FFFFFF"><img src="uicons/default/tspace.gif" width="1" height="1" border="0"></td>
+         </tr>
+         <tr>
+            <td width="10" class="font11">&nbsp;</td>
+            
+            <td valign="bottom" align="center" width="20" class="font11"><a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131201&ed=20131231&dt=5&dow=1');">Sun</a></td>
+            
+            <td valign="bottom" align="center" width="20" class="font11"><a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131201&ed=20131231&dt=5&dow=2');">Mon</a></td>
+            
+            <td valign="bottom" align="center" width="20" class="font11"><a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131201&ed=20131231&dt=5&dow=3');">Tue</a></td>
+            
+            <td valign="bottom" align="center" width="20" class="font11"><a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131201&ed=20131231&dt=5&dow=4');">Wed</a></td>
+            
+            <td valign="bottom" align="center" width="20" class="font11"><a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131201&ed=20131231&dt=5&dow=5');">Thu</a></td>
+            
+            <td valign="bottom" align="center" width="20" class="font11"><a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131201&ed=20131231&dt=5&dow=6');">Fri</a></td>
+            
+            <td valign="bottom" align="center" width="20" class="font11"><a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131201&ed=20131231&dt=5&dow=7');">Sat</a></td>
+            
+
+            
+            </tr><tr bgcolor="#B9E7FF">
+            <td  
+               background="uicons/default/calendar_back2.gif" align="left" valign="top"> 
+                <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131201&ed=20131207&dt=3');">  
+               <img SRC="uicons/default/week_arrow.gif" width="14" height="12" border="0"></a></td>
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131201&ed=20131201&dt=4');">01</a></td>
+            
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131202&ed=20131202&dt=4');">02</a></td>
+            
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131203&ed=20131203&dt=4');">03</a></td>
+            
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131204&ed=20131204&dt=4');">04</a></td>
+            
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131205&ed=20131205&dt=4');">05</a></td>
+            
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131206&ed=20131206&dt=4');">06</a></td>
+            
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131207&ed=20131207&dt=4');">07</a></td>
+            
+            </tr><tr bgcolor="#B9E7FF">
+            <td  
+               background="uicons/default/calendar_back2.gif" align="left" valign="top"> 
+                <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131208&ed=20131214&dt=3');">  
+               <img SRC="uicons/default/week_arrow.gif" width="14" height="12" border="0"></a></td>
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131208&ed=20131208&dt=4');">08</a></td>
+            
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131209&ed=20131209&dt=4');">09</a></td>
+            
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131210&ed=20131210&dt=4');">10</a></td>
+            
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131211&ed=20131211&dt=4');">11</a></td>
+            
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131212&ed=20131212&dt=4');">12</a></td>
+            
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131213&ed=20131213&dt=4');">13</a></td>
+            
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131214&ed=20131214&dt=4');">14</a></td>
+            
+            </tr><tr bgcolor="#B9E7FF">
+            <td  
+               background="uicons/default/calendar_back2.gif" align="left" valign="top"> 
+                <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131215&ed=20131221&dt=3');">  
+               <img SRC="uicons/default/week_arrow.gif" width="14" height="12" border="0"></a></td>
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131215&ed=20131215&dt=4');">15</a></td>
+            
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131216&ed=20131216&dt=4');">16</a></td>
+            
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131217&ed=20131217&dt=4');">17</a></td>
+            
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131218&ed=20131218&dt=4');">18</a></td>
+            
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131219&ed=20131219&dt=4');">19</a></td>
+            
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131220&ed=20131220&dt=4');">20</a></td>
+            
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131221&ed=20131221&dt=4');">21</a></td>
+            
+            </tr><tr bgcolor="#B9E7FF">
+            <td  
+               background="uicons/default/calendar_back2.gif" align="left" valign="top"> 
+                <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131222&ed=20131228&dt=3');">  
+               <img SRC="uicons/default/week_arrow.gif" width="14" height="12" border="0"></a></td>
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131222&ed=20131222&dt=4');">22</a></td>
+            
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131223&ed=20131223&dt=4');">23</a></td>
+            
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131224&ed=20131224&dt=4');">24</a></td>
+            
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131225&ed=20131225&dt=4');">25</a></td>
+            
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131226&ed=20131226&dt=4');">26</a></td>
+            
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131227&ed=20131227&dt=4');">27</a></td>
+            
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131228&ed=20131228&dt=4');">28</a></td>
+            
+            </tr><tr bgcolor="#B9E7FF">
+            <td  
+               background="uicons/default/calendar_back2.gif" align="left" valign="top"> 
+                <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131229&ed=20140104&dt=3');">  
+               <img SRC="uicons/default/week_arrow.gif" width="14" height="12" border="0"></a></td>
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131229&ed=20131229&dt=4');">29</a></td>
+            
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131230&ed=20131230&dt=4');">30</a></td>
+            
+            
+               
+            
+            <td bgcolor="#66CCFF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20131231&ed=20131231&dt=4');">31</a></td>
+            
+            
+               
+            <td bgcolor="#B9E7FF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20140101&ed=20140101&dt=4');">01</a></td>
+            
+            
+            
+               
+            <td bgcolor="#B9E7FF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20140102&ed=20140102&dt=4');">02</a></td>
+            
+            
+            
+               
+            <td bgcolor="#B9E7FF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20140103&ed=20140103&dt=4');">03</a></td>
+            
+            
+            
+               
+            <td bgcolor="#B9E7FF" align="center" class="font11">
+               <a href="javascript:navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&bd=20140104&ed=20140104&dt=4');">04</a></td>
+            
+            
+         </tr>
+         <tr>
+
+         </tr>
+         </table>
+         <!-- End Day -->
+        
+         
+         <table cellspacing="0" cellpadding="0" border="0" width="99%">
+         <tr bgcolor="#B9E7FF">
+            <td bgcolor="#FFFFFF"><img src="uicons/default/tspace.gif" width="5" height="1" border="0"></td>
+            <form name="dtc">
+            <td nowrap="nowrap"><b>&nbsp;&nbsp;&nbsp;Date View: &nbsp;&nbsp;</b></td>
+            <td align="left" width="50%">
+            <select name="dcontrol" onchange="navToggle('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&dtc=0&bd=20131201&ed=20131231&dt=3'); return false;" class="dcontrol">
+               <option value="0" selected="selected" />Default 
+               <option value="1"  />Hourly
+               <option value="2"  />Daily 
+               <option value="3"  />Monthly
+            </select>
+            </td>
+            </form>
+         </tr>
+         </table>
+         
+
+         <center>
+         <table cellspacing="0" cellpadding="0" border="0" height="30">
+         <tr>
+            <td align="right"><a href="javascript:openDateRange('20131201','20131231','20140110');">
+               <img src="uicons/default/dot2.gif" width="25" HEIGHT="18"  border="0"></a></td>
+            <td align="left"><a href="javascript:openDateRange('20131201','20131231','20140110');"><b>Enter Range</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+         </tr>
+         </table>
+         </center>
+         </td>
+      </tr>
+      </table>
+      <!-- End Calendar -->
+      </td>
+   </tr>
+
+   <tr>
+      <td valign="top" width="25">
+         <img src="uicons/default/nav_corner_bl.gif" width="25" height="11"></td>
+      <td valign="top" width="25" background="uicons/default/nav_back_b.gif" valign="top" align="right">
+         <img src="uicons/default/tspace.gif" width="25" height="11"></td>
+      <td background="uicons/default/bg_report.gif" valign="top" align="right">
+         <img src="uicons/default/nav_corner_br.gif" width="13" height="11"></td>
+   </tr>
+   <tr><td colspan="3" height="15"><img src="uicons/default/tspace.gif" width="5" height="25"></td></tr>
+   </table>
+
+   <center><img src="uicons/default/dots.gif" width="98" height="11"><br /><br /></center>
+   </td>
+   <!-- End Navigation -->
+
+   <td background="uicons/default/nav_back_l.gif"><img src="uicons/default/tspace.gif" width="25" height="1"></td>
+   <td width="15"><img src="uicons/default/tspace.gif" width="15" height="5" hspace="0" vspace="0"></td>
+   <td valign="top" width="95%"><img src="uicons/default/tspace.gif" width="10" height="40"><br />
+
+   
+   <!-- Start Main -->
+   <table cellspacing="0" cellpadding="0" border="0">
+   <tr bgcolor="#999999">
+      <td colspan="2" valign="top" align="left">
+         <img src="uicons/default/rcorner_tleft2.gif" width="10" height="7" border="0"></td>
+      <td rowspan="2" bgcolor="#999999" valign="top" align="right"><img src="uicons/default/rbigtab.gif" width="35" height="45"></td>
+      <td colspan="2" align="right" valign="top" bgcolor="#FFFFFF"><img src="uicons/default/tspace.gif" width="1" height="7"></td>
+   </tr>
+
+   <tr bgcolor="#999999">
+      <td rowspan="4" align="left" width="1" bgcolor="#999999"><img src="uicons/default/tspace.gif" width="1" height="5"></td>
+      <td height="18" valign="top" align="left" class="font2">
+        <nobr>&nbsp; <b>Report</b>: Sessions Graph - NY MH New York City</b>
+        <br>
+        &nbsp;&nbsp;<b>Date Range:</b> 12/01/2013 - 12/31/2013
+        <img src="uicons/default/tspace.gif" width="1" height="12" align="bottom" border="0">
+      </td>
+      <td class="font2" bgcolor="#FFFFFF" valign="bottom" colspan="2">
+      <table cellpadding="0" cellspacing="0" border="0" height="33" width="100%">
+      <tr bgcolor="#666666">
+         <td width="95%" nowrap class="font2">
+         <center>
+         <b>Export:</b>&nbsp;&nbsp;
+         <a href="javascript: uVoid();" onclick="exportAll('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&dtc=0&bd=20131201&ed=20131231&dt=3','1102',1,''); return false;">
+         <img src="uicons/default/xtab.gif" width="16" height="16" border="0" align="top" title="Tab Separated (Text)">&nbsp;</a>
+
+         <a href="javascript: uVoid();" onclick="exportAll('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&dtc=0&bd=20131201&ed=20131231&dt=3','1102',4,''); return false;">
+         <img src="uicons/default/xword.gif" width="16" height="16" border="0" align="top" title="Word (DOC)">&nbsp;</a>
+
+         <a href="javascript: uVoid();" onclick="exportAll('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&dtc=0&bd=20131201&ed=20131231&dt=3','1102',5,''); return false;">
+         <img src="uicons/default/xexcel.gif" width="16" height="16" border="0" align="top" title="Excel (XLS)">&nbsp;</a>
+
+         <img src="uicons/default/xsep.gif" width="16" height="16" border="0" align="top">
+
+         <a href="javascript: uVoid();" onclick="openPrintView('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&dtc=0&bd=20131201&ed=20131231&dt=3',''); return false;">
+         <img src="uicons/default/printer.gif" width="20" height="16" border="0" align="top" title="Print Friendly View">&nbsp;</a>
+         </center>
+         </td>
+         <td><img src="uicons/default/tspace.gif" height="24" width="1"></td>
+         <td align="right" valign="top"><img src="uicons/default/dcorner_tright.gif" height="7" width="7"></td>
+      </tr>
+      <tr bgcolor="#999999">
+         <td colspan="2"><img src="uicons/default/tspace.gif" width="1" height="9"></td>
+         <td><img src="uicons/default/tspace.gif" width="1" height="9"></td>
+      </tr>
+      </table>
+      </td>
+   </tr>
+
+   <tr bgcolor="#999999">
+      <td colspan="1"><img src="uicons/default/tspace.gif" width="300" height="1"></td>
+      <td colspan="1"><img src="uicons/default/tspace.gif" width="75" height="1"></td>
+      <td colspan="1"><img src="uicons/default/tspace.gif" width="278" height="1"></td>
+      <td rowspan="3" bgcolor="#999999" width="1"><img src="uicons/default/tspace.gif" width="1" height="5"></td>
+   </tr>
+   <tr>
+      <td colspan="3" valign="top">
+
+
+
+
+
+      <table border="0" cellspacing="0" cellpadding="3" width="100%">
+      <tr bgcolor="#66CCFF">
+         <td align="left">
+         <table cellpadding="0" cellspacing="0" border="0">
+         <tr>
+            <td><img src="uicons/default/tspace.gif" height="1" width="40" border="0"></td>
+            
+            
+            <td nowrap="nowrap"="nowrap="nowrap""><b>Range Total:</b> 33,008</td>
+            <td><img src="uicons/default/tspace.gif" height="5" width="15" border="0"></td>
+            <td nowrap="nowrap"="nowrap="nowrap""><b>Daily Average:</b> 1,064.77</td>
+            
+            
+            
+            
+            
+            
+
+            
+            
+
+            <td width="50"><img src="uicons/default/tspace.gif" height="1" width="15" border="0"></td>
+         </tr>
+         </table>
+         </td>
+
+      </tr>
+      <tr bgcolor="#FFFFFF">
+         <form name="graph"><input type="hidden" name="gtype" value="0" /></form>
+         <td align="center">
+         <div style="display: show;" align="right"><br />
+         <table border="0" cellpadding="0" cellspacing="0" height="25">
+         <tr>
+            <td bgcolor="#EEEEEE" style="border: solid 1px #CCCCCC">
+               <div style="display: show; z-index: 10; position: static;" align="right" id="toolbar">
+               <table border="0" cellpadding="0" cellspacing="0">
+               <tr>
+                  <td><img src="uicons/default/tspace.gif" border="0" width="10" height="1"></td>
+                  <td>
+                  <a href="javascript:window:svgToggle('normal','svg_1102','1102','report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&dtc=0&bd=20131201&ed=20131231&dt=3');"
+                      onmouseover="rToggle(document.normal,1);" onmouseout="rToggle(document.normal,0);">
+                     <img src="uicons/default/graph_sbar1.gif" border="0" width="35" height="17" name="normal" title="Standard Bar"></a></td>
+
+                  <td><img src="uicons/default/tspace.gif" border="0" width="10" height="1"></td>
+                  
+                  <td><a href="javascript:window:svgToggle('bar','svg_1102','1102','report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&dtc=0&bd=20131201&ed=20131231&dt=3');"
+                      onmouseover="rToggle(document.bar,3);" onmouseout="rToggle(document.bar,2);">
+                      <img src="uicons/default/graph_bar1.gif" border="0" width="35" height="17" name="bar" title="SVG Bar"></a></td>
+                  
+                  
+                  <td><a href="javascript:window:svgToggle('line','svg_1102','1102','report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&dtc=0&bd=20131201&ed=20131231&dt=3');"
+                      onmouseover="rToggle(document.line,5);" onmouseout="rToggle(document.line,4);">
+                     <img src="uicons/default/graph_line1.gif" border="0" width="35" height="17" name="line" title="SVG Line"></a></td>
+                  
+                  
+                  
+                  <td><img src="uicons/default/tspace.gif" border="0" width="10" height="1"></td>
+                  <td align="left" nowrap>
+                     <div style="display: none;" name="svgc_1102" id="svgc_1102">
+                     <a href="javascript:svgShowValues('svg_1102','31','11','show','');">
+                     <img src="uicons/default/bullet_green.gif" height="6" width="6" border="0">
+                     Show All</a>
+                     &nbsp;
+                     <a href="javascript:svgShowValues('svg_1102','31','11','hidden','');">
+                     <img src="uicons/default/bullet_red.gif" height="6" width="6" border="0">
+                     Hide All</a>&nbsp;&nbsp;
+                     </div>
+                  </td>
+               </tr>
+               </table>
+               </div>
+            </td>
+            <td><img src="uicons/default/tspace.gif" border="0" width="25" height="1"></td>
+         </tr>
+         </table>
+         </div>
+
+         <br />
+
+         <script language="JavaScript"><!--
+          checkSVGViewer();
+          // -->
+          </script>
+
+          
+          <script language="JavaScript"><!--
+          emitSVG('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&dtc=0&bd=20131201&ed=20131231&dt=3&cmd=svg&gfid=(admin)-1102-5804-1389736325&ie5=.svg', 'name="svg_1102" id="svg_1102" height="250" type="image/svg+xml" border="0" bgcolor="#FFFFFF" ');
+          // -->
+         </script>
+         
+
+         <noscript>
+         <embed src="report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&dtc=0&bd=20131201&ed=20131231&dt=3&cmd=svg&gfid=(admin)-1102-5804-1389736325&ie5=.svg" height="250" type="image/svg+xml" 
+         pluginspace="http://www.adobe.com/svg/viewer/install/" 
+         border="0" bgcolor="#FFFFFF" name="svg_1102" id="svg_1102" width="656">
+         </noscript>
+
+         <div style="display: none" name="notsvg_1102" id="notsvg_1102">
+                  <!-- Start Data -->
+         <table border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td colspan="1"><img src="uicons/default/tspace.gif" width="10" height="1"></td>
+            <td colspan="1"><img src="uicons/default/tspace.gif" width="10" height="1"></td>
+            <td ">
+               <img src="uicons/default/tspace.gif" width="300" height="1"></td>
+            <td><img src="uicons/default/tspace.gif" width="37" height="1"></td>
+         </tr>
+         <tr>
+            <td align="left" colspan="3" nowrap="nowrap" class="font4">Sessions</td>
+            <td>&nbsp;</td>
+         </tr>
+         <tr>
+            <td valign="top" align="right">
+            <table cellpadding="0" cellspacing="0" border="0" height="150" width="100%">
+            <tr><td align="right" valign="top" class="font4">2,000</td></tr>
+            <tr><td align="right" valign="bottom" class="font4">0</td></tr>
+            </table>
+            </td>
+
+            <td align="right" valign="bottom"><img src="uicons/default/lscale.gif" width="10" height="150"></td>
+
+            
+            
+            <td height="150" valign="bottom" background="uicons/default/grid2.gif">
+            <img src="uicons/default/vbar2.gif" title="970" width="14" height="72"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="1,652" width="14" height="123"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="1,681" width="14" height="126"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="1,710" width="14" height="128"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="1,686" width="14" height="126"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="1,588" width="14" height="119"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="750" width="14" height="56"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="862" width="14" height="64"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="1,689" width="14" height="126"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="1,534" width="14" height="115"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="1,526" width="14" height="114"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="1,412" width="14" height="105"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="1,146" width="14" height="85"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="686" width="14" height="51"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="787" width="14" height="59"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="1,435" width="14" height="107"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="1,475" width="14" height="110"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="1,442" width="14" height="108"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="1,310" width="14" height="98"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="1,055" width="14" height="79"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="406" width="14" height="30"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="342" width="14" height="25"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="928" width="14" height="69"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="554" width="14" height="41"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="283" width="14" height="21"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="959" width="14" height="71"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="897" width="14" height="67"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="242" width="14" height="18"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="339" width="14" height="25"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="1,072" width="14" height="80"><img src="uicons/default/tspace.gif" width="1" height="1"><img src="uicons/default/vbar2.gif" title="590" width="14" height="44"><img src="uicons/default/tspace.gif" width="1" height="1"></td>
+            
+
+            
+            
+
+            
+
+            
+
+            <td width="37" height="150" align="left" valign="bottom"><img src="uicons/default/rscale.gif" width="10" height="150"></td>
+         </tr>
+         <tr>
+            <td width="37" colspan="2">&nbsp;</td>
+
+            
+            <td>
+            <table border="0" cellpadding="0" cellspacing="0">
+            <tr>
+               <td align="left" width="58" class="font4">Sun 12/01</td>
+               
+               <td align="center" width="116" class="font4">
+                  <img src="uicons/default/tspace.gif" width="" height="1">
+                  Sun 12/08
+                  <img src="uicons/default/tspace.gif" width="7" height="1">
+               </td>
+               
+               <td align="center" width="116" class="font4">
+                  <img src="uicons/default/tspace.gif" width="" height="1">
+                  Mon 12/16
+                  <img src="uicons/default/tspace.gif" width="" height="1">
+               </td>
+               
+               <td align="center" width="116" class="font4">
+                  <img src="uicons/default/tspace.gif" width="7" height="1">
+                  Tue 12/24
+                  <img src="uicons/default/tspace.gif" width="" height="1">
+               </td>
+               
+               <td align="right" width="58" class="font4">Tue 12/31</td>
+               </tr></table></td>
+            
+
+            
+
+            
+            <td width="37">&nbsp;</td>
+         </tr>
+         
+         
+         
+         
+         
+         </table>
+
+         <br><br>
+         </div>
+         </td>
+      </tr>
+      </table>
+
+
+      </td>
+   </tr>
+   <tr bgcolor="#999999">
+      <td colspan="5"><img src="uicons/default/tspace.gif" width="550" height="1"></td>
+   </tr>
+   <tr bgcolor="#999999">
+      <td colspan="2" align="left" valign="bottom">
+         <img src="uicons/default/rcorner_bleft.gif" width="10" height="7"></td>
+      <td colspan="3" align="right" valign="bottom">
+         <img src="uicons/default/rcorner_bright.gif" width="10" height="7"></td>
+   </tr>
+   </table>
+
+
+
+
+
+
+   <!-- Start Help -->
+   <table border="0" cellspacing="0" cellpadding="0" width="625">
+   <tr>
+      <td>
+
+      <p /><br /><br />
+      <img src="uicons/default/whelp1.gif" width="20" height="20" align="middle">&nbsp;
+      <b>Help Information:</b>
+      <p /><B>Sessions Graph</B><BR>This report shows the trend of recent activity on your website in terms of Visitor Sessions over time.  The default timeframe is one week, but this can easily be changed in the Date Range control area.<P><B>Calculation Methodology</B><BR>A 'Session' is defined as a series of clicks on your site by an individual visitor during a specific period of time.  A Session is initiated when the visitor arrives at your site, and it ends when the browser is closed or there is a period of inactivity.  Sessions quantities  will vary to some degree based on what type of visitor tracking method is employed.  For the most accurate numbers, the Urchin Traffic Monitor (UTM) should be used.
+
+      <!-- include generic control help -->
+      
+      
+
+      <p />
+      
+      <a href="http://help.urchin.com/" target="urchinhelp">
+      <b><img src="uicons/default/help.gif" width="17" height="16" border="0" align="center">&nbsp;Urchin Documentation Center (help.urchin.com)</b></a>
+      &nbsp;
+      <a href="javascript:openHelp('http://help.urchin.com/glossary.cgi?l=en','urchinhelp');">
+      <b><img src="uicons/default/glossary.gif" width="13" height="16" border="0" align="center">&nbsp;Glossary of Terms</b></a>
+      
+
+      
+      &nbsp;</td>
+   </tr>
+   </table><br />
+   </td>
+   <td><img src="uicons/default/tspace.gif" width="13" height="5"></td>
+</tr>
+
+<tr>
+   <td bgcolor="#EEEEEE" background="uicons/default/bg_report.gif">
+      <img src="uicons/default/tspace.gif" width="165" height="16"></td>
+   <td bgcolor="#EEEEEE" colspan="1" align="left" background="uicons/default/bg_report.gif">
+      <img src="uicons/default/nav_corner_bl.gif" width="25" height="16"></td>
+   <td bgcolor="#EEEEEE" colspan="1" background="uicons/default/nav_back_b.gif">
+      <img SRC="uicons/default/tspace.gif" width="25" height="16"></td>
+   <td bgcolor="#EEEEEE" colspan="1" background="uicons/default/nav_back_b.gif" width="95%">
+      <img SRC="uicons/default/tspace.gif" width="500" height="13"></td>
+   <td colspan="1" background="uicons/default/bg_report.gif" valign="top" align="right" width="13">
+      <img src="uicons/default/nav_corner_br.gif" width="13" height="16"></td>
+</tr>
+<tr>
+   <td colspan="6" align="right" background="uicons/default/bg_report.gif">
+   <table cellpadding="0" cellspacing="0" border="0">
+   <tr>
+      <td class="font13"><a href="javascript:openAbout('report.cgi?profile=NY MH New York City&rid=1260&prefs=(admin)&n=10&vid=1102&dtc=0&bd=20131201&ed=20131231&dt=3');"><b>Urchin v5.7.03</b> </a></td>
+      <td><img src="uicons/default/tspace.gif" width="5" height="25"></td>
+      <td align="center">|</td>
+      <td><img src="uicons/default/tspace.gif" width="5" height="25"></td>
+      <td align="center" class="font3">
+      <a href="http://www.urchin.com/index.cgi?u5link=reportcopyright" target="urchinhome">
+      &copy;2005 Urchin Software Corporation</a></td>
+      <td><img src="uicons/default/tspace.gif" width="20" height="25"></td>
+   </tr>
+   </table>
+   </td>
+</tr>
+
+<tr><td colspan="6" bgcolor="#666666"><img src="uicons/default/tspace.gif" width="1" height="1"></td></tr>
+<tr><td colspan="6" bgcolor="#000000"><img src="uicons/default/tspace.gif" width="1" height="1"></td></tr>
+<tr><td colspan="6" bgcolor="#666666"><img src="uicons/default/tspace.gif" width="1" height="1"></td></tr>
+<tr><td colspan="6" bgcolor="#000000"><img src="uicons/default/tspace.gif" width="1" height="6"></td></tr>
+<tr><td colspan="6" background="uicons/default/bottom_shadow.gif"><img src="uicons/default/tspace.gif" width="5" height="10"></td></tr>
+</table>
+
+</body>
+</html>
