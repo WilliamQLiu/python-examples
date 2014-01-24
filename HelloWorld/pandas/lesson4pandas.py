@@ -27,3 +27,40 @@ df['NewCol'] = df['NewCol'] + 1
 del df['NewCol']
 #print df # 10 rows, 1 column
 
+# Create two new columns, 'test' and 'col' for 10 rows, 3 columns
+df['test'] = 3
+df['col'] = df['Rev']
+#print df
+
+# Modifying Index names
+myindex = ['a','b','c','d','e','f','g','h','i','j']
+df.index = myindex # index size must match or error
+#print df # Now dataframe is a-j for rows, with cols 'Rev', 'test', 'col'
+
+
+### Selecting data (loc)
+# Using loc, strictly label based
+#print df.loc['a'] # prints just row 'a' values
+
+# Using loc[inclusive:inclusive]
+#print df.loc['a':'d'] # prints row 'a', 'b', 'c', 'd' values
+
+
+### Selecting data (iloc)
+# Using iloc, strictly integer position based
+# df.iloc[inclusive:exclusive]
+#print df.iloc[0:3] # prints row 'a', 'b', 'c'; rows 0, 1, 2
+
+
+### Selecting data (column names)
+#print df['Rev'] # Get column of 'Rev' only along with the index
+#print df[['Rev', 'test']] # Get columns 'Rev', 'test' along with the index
+
+#df['ColumnName'][inclusive:exclusive]
+#print df['Rev'][0:3] # Get column 'Rev' with rows 0, 1, 2
+#print df['col'][5:] # Get column 'col' with rows 5+
+#print df[['col','test']][:3] # Get columns 'col', 'test' with rows 0, 1, 2
+
+### Selecting data (Head and Tail)
+#print df.head() # Select top N records (default = 5)
+#print df.tail() # Select top N records (default = 5)
