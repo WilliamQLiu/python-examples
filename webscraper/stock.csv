@@ -1,0 +1,397 @@
+<!DOCTYPE html><html><head><script>(function(){(function(){function e(a){this.t={};this.tick=function(a,c,b){var d=void 0!=b?b:(new Date).getTime();this.t[a]=[d,c];if(void 0==b)try{window.console.timeStamp("CSI/"+a)}catch(e){}};this.tick("start",null,a)}var a;window.performance&&(a=window.performance.timing);var f=a?new e(a.responseStart):new e;window.jstiming={Timer:e,load:f};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick("_wtsrt",void 0,c),b.tick("wtsrt_",
+"_wtsrt",d),b.tick("tbsd_","wtsrt_"))}try{a=null,window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick("_tbnd",void 0,window.chrome.csi().startE),b.tick("tbnd_","_tbnd",c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick("_tbnd",void 0,window.external.startE),b.tick("tbnd_","_tbnd",c))),a&&(window.jstiming.pt=a)}catch(g){}})();})();
+</script><title>Apple Inc.: NASDAQ:AAPL historical prices - Google Finance</title><meta name="Description" content="Review and download historical prices and charts for Apple Inc.(NASDAQ:AAPL)."><meta http-equiv="X-UA-Compatible" content="IE=10"><link rel="stylesheet" type="text/css" href="/finance/f/finance_us-3578168175.css"><link rel="stylesheet" type="text/css" href="/finance/_/ss/a/ver=-10ir77y4xl5zc/am=!m1G0WzNYh22-SnPU/bf=/r=O"><link rel="icon" type="image/vnd.microsoft.icon" href="/finance/favicon.ico"><style>#gbar,#guser{font-size:13px;padding-right:8px;padding-top:4px !important;}#gbar{padding-left:8px;height:22px}#guser{padding-bottom:7px !important;text-align:right}.gbh,.gbd{border-top:1px solid #c9d7f1;font-size:1px}.gbh{height:0;position:absolute;top:24px;width:100%}@media all{.gb1{height:22px;margin-right:.5em;vertical-align:top}#gbar{float:left}}a.gb1,a.gb4{text-decoration:underline !important}a.gb1,a.gb4{color:#00c !important}.gbi .gb4{color:#dd8e27 !important}.gbf .gb4{color:#900 !important}</style><script></script><script>
+      function _rpt() {}
+      function _tck() {}
+    </script><script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-40765809-1', {
+      'allowLinker': true
+    });
+    ga('send', 'pageview');
+    </script></head><body><div class=fjfe-bodywrapper><div id=fjfe-real-body class=g-doc><input type="text" name="hist_state" id="hist_state" style="display:none;"><iframe id="hist_frame" name="hist_frame" class=invfr tabindex="-1"></iframe><iframe src="/finance/_/js/a/b/rt=h/ver=XHF7AWf57OA.en_US./sv=1/am=!m1G0WzNYh22-SnPU/d=0" class=invfr tabindex="-1"></iframe><div id=gbar><nobr><a class=gb1 href="https://www.google.com/webhp?tab=ew">Search</a> <a class=gb1 href="http://www.google.com/imghp?hl=en&tab=ei">Images</a> <a class=gb1 href="https://maps.google.com/maps?hl=en&tab=el">Maps</a> <a class=gb1 href="https://play.google.com/?hl=en&tab=e8">Play</a> <a class=gb1 href="https://www.youtube.com/?tab=e1">YouTube</a> <a class=gb1 href="https://news.google.com/nwshp?hl=en&tab=en">News</a> <a class=gb1 href="https://mail.google.com/mail/?tab=em">Gmail</a> <a class=gb1 href="https://drive.google.com/?tab=eo">Drive</a> <a class=gb1 style="text-decoration:none" href="http://www.google.com/intl/en/options/"><u>More</u> &raquo;</a></nobr></div><div id=guser width=100%><nobr><span id=gbn class=gbi></span><span id=gbf class=gbf></span><span id=gbe></span><a  href="http://www.google.com/support/finance?hl=en" class=gb4>Help</a> | <a target=_top id=gb_70 href="https://accounts.google.com/ServiceLogin?service=finance&passive=1209600&continue=https://www.google.com/finance/historical?cid%3D22144%26startdate%3DJan%2B1,%2B2013%26enddate%3DJan%2B16,%2B2014%26num%3D30%26ei%3DTGLYUtjxFqGK6gHj5QE&followup=https://www.google.com/finance/historical?cid%3D22144%26startdate%3DJan%2B1,%2B2013%26enddate%3DJan%2B16,%2B2014%26num%3D30%26ei%3DTGLYUtjxFqGK6gHj5QE" class=gb4>Sign in</a></nobr></div><div class=gbh style=left:0></div><div class=gbh style=right:0></div><div id=fjfe-click-wrapper><script>
+(function() {
+  var l = window.location;
+  var q = l.search ? l.search.substr(1) : '';
+  var h = l.hash ? l.hash.substr(1) : '';
+  var p = '/finance';
+  var ss = 'stockscreener';
+  var conn = window.history && window.history.pushState ? '/' : '#';
+  if (l.pathname == p + '/' + ss) {
+    if (h) l.href = p + conn + ss + '?' + q + '&' + h;
+  } else if (l.pathname != p && h) {
+    l.href = p + l.hash;
+  }
+  if (h) {
+document.getElementById('fjfe-click-wrapper').style.display = 'none';
+  }
+})();
+</script><div id=gf-head class="g-section g-tpl-75-25 g-split"><div class="g-unit g-first"><div class=fjfe-logo><a href="/finance/?ei=G2bYUviWFaef6AHwMQ"><img src="/finance/f/logo_us-115376669.gif" alt="Google Finance"></a></div><div id=gf-search class=fjfe-search><form method="get" action="/finance" autocomplete="off"><input class=fjfe-searchbox-input name=q type=text tabindex=1 value="NASDAQ:AAPL"></input><span class=fjfe-searchbox-button-wrapper><span class=fjfe-searchbox-button-wrapper2><input class=fjfe-searchbox-button type=submit tabindex=2 value="Get quotes"></input></span></span><input type=hidden name="ei" value="G2bYUviWFaef6AHwMQ"></input></form></div></div><div class="g-unit fjfe-promo"><div id="ad2-target" class="id-ad2-target"></div></div></div><div class=elastic><div id=app class="g-section g-tpl-left-11p4em"><div class="g-unit g-first"><div id=gf-nav><div class=fjfe-nav-nav><ul class=fjfe-nav id=navmenu><li class="fjfe-nav-expanded fjfe-nav-selected">Company<li class=fjfe-nav-sub><a href="/finance?q=NASDAQ:AAPL&amp;ei=G2bYUviWFaef6AHwMQ">Summary</a><li class=fjfe-nav-sub><a href="/finance/company_news?q=NASDAQ:AAPL&amp;ei=G2bYUviWFaef6AHwMQ">News</a><li class=fjfe-nav-sub><a href="/finance/option_chain?q=NASDAQ:AAPL&amp;ei=G2bYUviWFaef6AHwMQ">Option chain</a><li class=fjfe-nav-sub><a href="/finance/related?q=NASDAQ:AAPL&amp;ei=G2bYUviWFaef6AHwMQ">Related companies</a><li class=fjfe-nav-sub><div>Historical prices</div><li class=fjfe-nav-sub><a href="/finance?q=NASDAQ:AAPL&amp;fstype=ii&amp;ei=G2bYUviWFaef6AHwMQ">Financials</a><li class=fjfe-nav-item><a href="/finance?ei=G2bYUviWFaef6AHwMQ"><div>Markets</div></a><li class=fjfe-nav-item><a href="/finance/market_news?ei=G2bYUviWFaef6AHwMQ"><div>News</div></a><li class=fjfe-nav-item><a href="/finance/portfolio?action=view&amp;ei=G2bYUviWFaef6AHwMQ"><div>Portfolios</div></a><li class=fjfe-nav-item><a href="/finance/stockscreener?ei=G2bYUviWFaef6AHwMQ"><div>Stock screener</div></a><li class=fjfe-nav-item><a href="/finance/domestic_trends?ei=G2bYUviWFaef6AHwMQ"><div>Google Domestic Trends</div></a></ul></div><div class="fjfe-recentquotes fjfe-recentquotes-noquote"><h4>Recent Quotes <span class="fjfe-recentquotes-duration">(<a href="//www.google.com/history/optout?hl=en">30 days</a>)</span></h4><div class=fjfe-recentquotes-noquote-notification>You have no recent quotes</div><div class=fjfe-recentquotes-quotes><div class="fjfe-toggle fjfe-toggle-button"><span class=fjfe-chg-toggle>chg</span> | <span class=fjfe-perc-toggle>%</span></div><div class=fjfe-table-div><table class=fjfe-recentquotes-table id=rq width=100%></table></div></div></div></div></div><div class=g-unit id=gf-viewc><div class=fjfe-content>
+<div class=g-wrap>
+<div class="g-section sfe-break-bottom-16">
+<div class="g-section hdg top appbar-hide">
+<h3>Apple Inc. historical prices
+</h3>&nbsp;&nbsp;
+<a href="/finance/portfolio?action=add&amp;addticker=NASDAQ%3AAAPL&ei=G2bYUviWFaef6AHwMQ" class=norm>Watch this stock</a>
+</div>
+</div>
+<div class="g-section g-tpl-right-1">
+<div class="g-unit g-first">
+<div class=g-c>
+<div class=sfe-break-bottom-16>
+<div class="g-section hdg">
+<h3>Historical chart</h3>
+</div>
+<div class=sfe-break-bottom-8></div>
+<div class=historical_chart_wrap>
+<table class=historical_chart cellpadding=0 style="background-image:url(http://www.google.com/chart?cht=lfe&chc=&chs=270x160&chm=B,EDF7FF,0,0,0&chd=s:2zuuuturtsssmgnmllllnqURRRUXXWVVVSXXadddeaaaYYYYYUTUUUSUSROOOKOMOOOQNNOSSSWWVVYYYZYVSSSSNNONLLLMMPPNNNKMEBAAADFFGJJJNSRTUUUYXZXVVVWSNPPPPSRRSTTTTRSVUUUUUTQRRRQQOPNNNOOLJIIIEEDBCCCGJKKJJJILKMMMMNNOOMMMMKRQRRRTVVWYYYbZZYWWWailkmmmommmmmmmhiihhhhhlklllnjacZZZUWZcaaaihfhfffdhigfffhfhijjjklmnooossuwuuuvrutsssuuspssssssvuuussqsssstx1144438786668766444542022298876664663zzz0z0ywwwx154&chco=3f8ce5&chof=gif)">
+<tr>
+<td width=33%>&nbsp;</td>
+<td width=34% class=left>&nbsp;</td>
+<td class="top left" align=right valign=top>570&nbsp;</td>
+</tr>
+<tr>
+<td class=top>&nbsp;</td>
+<td class="top left">&nbsp;</td>
+<td class="top left" align=right valign=top>510&nbsp;</td>
+</tr>
+<tr>
+<td class=top>&nbsp;</td>
+<td class="top left">&nbsp;</td>
+<td class="top left" align=right valign=top>450&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class=historical_chart_bottom>
+<table width=100% height=100%>
+<tr>
+<td align=left width=33%>&nbsp;Jan 2, 2013</td>
+<td align=center width=34%></td>
+<td align=right>Jan 16, 2014&nbsp;</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="g-section hdg">
+<h3>Export</h3>
+</div>
+<div class=sfe-section>
+<div class=sfe-break-bottom-8>
+<img style="margin:0 0 -3px" alt="" class=SP_download src="/finance/s/m4C5KaofCbA/images/cleardot.gif">
+<a class=nowrap href="http://www.google.com/finance/historical?cid=22144&amp;startdate=Jan+1%2C+2013&amp;enddate=Jan+16%2C+2014&amp;num=30&amp;ei=TGLYUtjxFqGK6gHj5QE&output=csv">Download to spreadsheet
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class=g-unit>
+<div class="g-c sfe-break-right">
+<form id=histform class=id-histform method=GET
+      action="/finance/historical?ei=G2bYUviWFaef6AHwMQ">
+<div class="gf-table-control gf-control g-tpl-33-67 g-split" align=right>
+<div class="g-unit g-first">
+<span class=bld>Daily prices</span>
+</div>
+<div class=g-unit>
+<div class=nwp style=display:inline>
+<input type=hidden name=cid value="22144">
+<input autocomplete=off class=id-fromdate type=text size=10 name=startdate value="Jan 1, 2013"> -
+<input autocomplete=off class=id-todate type=text size=10 name=enddate value="Jan 16, 2014">
+<input id=hfs type=submit value=Update style="height:1.9em; margin:0 0 0 0.3em;">
+</div>
+</div>
+</div>
+<div id=prices class="gf-table-wrapper sfe-break-bottom-16">
+<table class="gf-table historical_price">
+<tr class=bb>
+<th class="bb lm lft">Date
+<th class="rgt bb">Open
+<th class="rgt bb">High
+<th class="rgt bb">Low
+<th class="rgt bb">Close
+<th class="rgt bb rm">Volume
+<tr>
+<td class="lm">Jan 16, 2014
+<td class="rgt">554.90
+<td class="rgt">556.85
+<td class="rgt">551.68
+<td class="rgt">554.25
+<td class="rgt rm">8,167,260
+<tr>
+<td class="lm">Jan 15, 2014
+<td class="rgt">553.52
+<td class="rgt">560.20
+<td class="rgt">551.66
+<td class="rgt">557.36
+<td class="rgt rm">14,067,517
+<tr>
+<td class="lm">Jan 14, 2014
+<td class="rgt">538.22
+<td class="rgt">546.73
+<td class="rgt">537.66
+<td class="rgt">546.39
+<td class="rgt rm">11,962,053
+<tr>
+<td class="lm">Jan 13, 2014
+<td class="rgt">529.91
+<td class="rgt">542.50
+<td class="rgt">529.88
+<td class="rgt">535.73
+<td class="rgt rm">13,551,549
+<tr>
+<td class="lm">Jan 10, 2014
+<td class="rgt">539.83
+<td class="rgt">540.80
+<td class="rgt">531.11
+<td class="rgt">532.94
+<td class="rgt rm">10,902,952
+<tr>
+<td class="lm">Jan 9, 2014
+<td class="rgt">546.80
+<td class="rgt">546.86
+<td class="rgt">535.35
+<td class="rgt">536.52
+<td class="rgt rm">9,986,457
+<tr>
+<td class="lm">Jan 8, 2014
+<td class="rgt">538.81
+<td class="rgt">545.56
+<td class="rgt">538.69
+<td class="rgt">543.46
+<td class="rgt rm">9,240,955
+<tr>
+<td class="lm">Jan 7, 2014
+<td class="rgt">544.32
+<td class="rgt">545.96
+<td class="rgt">537.92
+<td class="rgt">540.04
+<td class="rgt rm">11,347,538
+<tr>
+<td class="lm">Jan 6, 2014
+<td class="rgt">537.45
+<td class="rgt">546.80
+<td class="rgt">533.60
+<td class="rgt">543.93
+<td class="rgt rm">14,765,593
+<tr>
+<td class="lm">Jan 3, 2014
+<td class="rgt">552.86
+<td class="rgt">553.70
+<td class="rgt">540.43
+<td class="rgt">540.98
+<td class="rgt rm">14,043,410
+<tr>
+<td class="lm">Jan 2, 2014
+<td class="rgt">555.68
+<td class="rgt">557.03
+<td class="rgt">552.02
+<td class="rgt">553.13
+<td class="rgt rm">8,398,851
+<tr>
+<td class="lm">Dec 31, 2013
+<td class="rgt">554.17
+<td class="rgt">561.28
+<td class="rgt">554.00
+<td class="rgt">561.02
+<td class="rgt rm">7,974,196
+<tr>
+<td class="lm">Dec 30, 2013
+<td class="rgt">557.46
+<td class="rgt">560.09
+<td class="rgt">552.32
+<td class="rgt">554.52
+<td class="rgt rm">9,058,246
+<tr>
+<td class="lm">Dec 27, 2013
+<td class="rgt">563.82
+<td class="rgt">564.41
+<td class="rgt">559.50
+<td class="rgt">560.09
+<td class="rgt rm">8,067,331
+<tr>
+<td class="lm">Dec 26, 2013
+<td class="rgt">568.10
+<td class="rgt">569.50
+<td class="rgt">563.38
+<td class="rgt">563.90
+<td class="rgt rm">7,286,005
+<tr>
+<td class="lm">Dec 24, 2013
+<td class="rgt">569.89
+<td class="rgt">571.88
+<td class="rgt">566.03
+<td class="rgt">567.67
+<td class="rgt rm">5,984,105
+<tr>
+<td class="lm">Dec 23, 2013
+<td class="rgt">568.00
+<td class="rgt">570.72
+<td class="rgt">562.76
+<td class="rgt">570.09
+<td class="rgt rm">17,903,833
+<tr>
+<td class="lm">Dec 20, 2013
+<td class="rgt">545.34
+<td class="rgt">551.61
+<td class="rgt">544.82
+<td class="rgt">549.02
+<td class="rgt rm">15,586,205
+<tr>
+<td class="lm">Dec 19, 2013
+<td class="rgt">548.65
+<td class="rgt">550.00
+<td class="rgt">543.73
+<td class="rgt">544.46
+<td class="rgt rm">11,462,767
+<tr>
+<td class="lm">Dec 18, 2013
+<td class="rgt">547.46
+<td class="rgt">551.45
+<td class="rgt">538.80
+<td class="rgt">550.77
+<td class="rgt rm">20,209,401
+<tr>
+<td class="lm">Dec 17, 2013
+<td class="rgt">555.70
+<td class="rgt">559.44
+<td class="rgt">553.38
+<td class="rgt">554.99
+<td class="rgt rm">8,210,807
+<tr>
+<td class="lm">Dec 16, 2013
+<td class="rgt">555.61
+<td class="rgt">562.64
+<td class="rgt">555.01
+<td class="rgt">557.50
+<td class="rgt rm">10,092,636
+<tr>
+<td class="lm">Dec 13, 2013
+<td class="rgt">562.39
+<td class="rgt">562.88
+<td class="rgt">553.67
+<td class="rgt">554.43
+<td class="rgt rm">11,886,469
+<tr>
+<td class="lm">Dec 12, 2013
+<td class="rgt">562.69
+<td class="rgt">565.34
+<td class="rgt">560.03
+<td class="rgt">560.54
+<td class="rgt rm">9,367,474
+<tr>
+<td class="lm">Dec 11, 2013
+<td class="rgt">567.04
+<td class="rgt">570.97
+<td class="rgt">559.69
+<td class="rgt">561.36
+<td class="rgt rm">12,847,099
+<tr>
+<td class="lm">Dec 10, 2013
+<td class="rgt">563.64
+<td class="rgt">567.88
+<td class="rgt">561.20
+<td class="rgt">565.55
+<td class="rgt rm">9,938,230
+<tr>
+<td class="lm">Dec 9, 2013
+<td class="rgt">560.95
+<td class="rgt">569.58
+<td class="rgt">560.90
+<td class="rgt">566.43
+<td class="rgt rm">11,446,219
+<tr>
+<td class="lm">Dec 6, 2013
+<td class="rgt">565.79
+<td class="rgt">566.75
+<td class="rgt">559.57
+<td class="rgt">560.02
+<td class="rgt rm">12,298,336
+<tr>
+<td class="lm">Dec 5, 2013
+<td class="rgt">572.65
+<td class="rgt">575.14
+<td class="rgt">566.41
+<td class="rgt">567.90
+<td class="rgt rm">15,985,045
+<tr>
+<td class="lm">Dec 4, 2013
+<td class="rgt">565.50
+<td class="rgt">569.19
+<td class="rgt">560.82
+<td class="rgt">565.00
+<td class="rgt rm">13,493,238
+</table>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div></div><div id=gf-foot><div id=fjfe-edition-links class=fjfe-footer-links>Google Finance Beta available in: <a href="http://www.google.com.hk/finance?ei=G2bYUviWFaef6AHwMQ" class="fjfe-edition-link">Hong Kong</a> - <a href="http://www.google.ca/finance?ei=G2bYUviWFaef6AHwMQ" class="fjfe-edition-link">Canada</a> - <a href="http://www.google.com/finance?ei=G2bYUviWFaef6AHwMQ" class="fjfe-edition-link">U.S.</a> - <a href="http://www.google.com.hk/finance?hl=zh-CN&ei=G2bYUviWFaef6AHwMQ" class="fjfe-edition-link">China</a> - <a href="http://www.google.co.uk/finance?ei=G2bYUviWFaef6AHwMQ" class="fjfe-edition-link">U.K.</a></div><p class=fjfe-footer-disclaimer>Information is provided "as is" and solely for informational purposes, not for trading purposes or advice, and may be delayed.<br>To see all exchange delays, please <a href="http://www.google.com/intl/en/googlefinance/disclaimer/?ei=G2bYUviWFaef6AHwMQ" class="fjfe-secondary-link fjfe-no-sticky-params"> see disclaimer</a>.</p><div class=fjfe-footer-links>&copy;2014 Google - <a href="http://www.google.com?hl=en&ei=G2bYUviWFaef6AHwMQ">Google Home</a> - <a href="http://googlefinanceblog.blogspot.com?ei=G2bYUviWFaef6AHwMQ">Blog</a> - <a href="http://support.google.com/finance?hl=en&ei=G2bYUviWFaef6AHwMQ">Help</a> - <a href="http://support.google.com/finance?ctx=report&hl=en&ei=G2bYUviWFaef6AHwMQ&exch=NASDAQ&sym=AAPL">Report a Problem</a> - <a href="http://www.google.com/intl/en/policies/privacy/?ei=G2bYUviWFaef6AHwMQ">Privacy Policy</a> - <a href="http://www.google.com/intl/en/policies/terms/?ei=G2bYUviWFaef6AHwMQ">Terms of Service</a></div></div><script>var _cleardot = 'data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
+    var google = google || {};
+    google.finance = google.finance || {};
+    google.finance.gce =false;</script><script src="/finance/f/sfe-opt-3951180882.js"></script><script>
+      _regOnLoad = function(f) {
+        if (document.readyState == 'complete') {
+          f && f();
+        } else {
+          // Window.attachEvent() for IE8 and below compatability.
+          var addEventFunction = window.attachEvent ||
+              window.addEventListener || function(ignored, f) { f(); };
+          var event = window.attachEvent ? 'onload' : 'load';
+          f && addEventFunction(event, f);
+        }
+      };
+    
+      google.finance.renderRecentQuotes = function() {};
+    </script>
+<script>
+function initPage() {
+var isOpera = navigator.userAgent.toLowerCase().indexOf('opera') >= 0;
+if (!isOpera) {
+google.finance.common.addInputDatePicker("fromdate");
+google.finance.common.addInputDatePicker("todate");
+}
+google.finance.applyPagination(
+0,
+30,
+263,
+'http:\x2F\x2Fwww.google.com\x2Ffinance\x2Fhistorical?cid=22144\x26startdate=Jan+1%2C+2013\x26enddate=Jan+16%2C+2014\x26num=30\x26ei=TGLYUtjxFqGK6gHj5QE',
+'historical_price',
+function() {
+document.getElementById('hfs').click();
+});
+google.finance.common.listenToForm('histform');
+}
+var _chartConfigObject;
+var _cleardot;
+var _companyName;
+var _eventid = 'G2bYUviWFaef6AHwMQ';
+var _expid;
+var _external_target;
+var _localDomain = 'www.google.com';
+var _minZoomDays;
+var _minZoomDaysNoIntraDay;
+var _prefs;
+var _ticker;
+var _urlSuffix;
+var google = google || {};
+google.finance = google.finance || {};
+google.finance.data = {common:{rq:{ct:""},up:"chg",down:"chr",linktargetInternal:"",hash:""},stickyUrlArgs:"\x26ei=G2bYUviWFaef6AHwMQ"};
+google.finance.data.numberFormat = [{'threshold':1000000, 'symbol':'M'}, {'threshold':1000000000,'symbol':'B'}, {'threshold':1000000000000,'symbol':'T'}] ;
+_setStickyUrlParams("ei=G2bYUviWFaef6AHwMQ");
+if (_s_Store) {
+_s_Store._allowMatchAdvancedSearch = true;
+var _fieldToDisplayNameMap = {GrossMargin:"Gross margin&nbsp;(%)",Return1Week:"1w return",Return156Week:"156w return",NextYearEPS:"Next year EPS",LTDebtToAssetsYear:"LT debt/assets (Recent&nbsp;yr)&nbsp;(%)",RevenueGrowthRate5Years:"5y revenue growth rate",EarningsAfterTaxes:"Earnings after taxes",DividendPerShare:"Div per share",MarketCap:"Market cap",NetProfitMarginPercent:"Net profit margin&nbsp;(%)",Float:"Float",EarningsBeforeTaxes:"Earnings before taxes",QuotePercChange:"Quote change&nbsp;(%)",TotalDebtToEquityYear:"Total debt/equity (Recent&nbsp;yr)&nbsp;(%)",TotalDebtToCapitalQuarter:"Total debt/capital (Recent&nbsp;qtr)&nbsp;(%)",LTDebtToCapitalQuarter:"LT debt/capital (Recent&nbsp;qtr)&nbsp;(%)",EPSGrowthRate10Years:"10y EPS growth rate",Beta:"Beta",ReturnOnAssetsPTM:"Return on assets (PTM)&nbsp;(%)",CapitalGain:"Capital gain",BetaDown:"Beta down from RAS",IncomeDividend:"Income dividend",RevenueGrowthRate10Years:"10y revenue growth rate",MarketCapShareBasis:"Market cap share basis",IAD:"Div rate indicated annual",Return4Week:"4w return",Price150DayAverage:"150d avg price",EPSGrowthRate5Years:"5y EPS growth rate",ReturnOnAssetsTTM:"Return on assets (TTM)&nbsp;(%)",TotalDebtToAssetsYear:"Total debt/assets (Recent&nbsp;yr)&nbsp;(%)",Volume:"Volume",DividendRecentQuarter:"Div recent quarter",CurrentRatioYear:"Current ratio",Low52Week:"52w low",ExpenseRatio:"Expense ratio",Price13WeekPercChange:"13w&nbsp;price change&nbsp;(%)",Price1DayPercChange:"1d&nbsp;price change&nbsp;(%)",ReturnOnEquity5Years:"Return on equity (5&nbsp;yr&nbsp;avg)&nbsp;(%)",TotalDebtToCapitalYear:"Total debt/capital (Recent&nbsp;yr)&nbsp;(%)",TotalDebtToAssetsQuarter:"Total debt/assets (Recent&nbsp;qtr)&nbsp;(%)",NavChange:"Nav change",OperatingMargin:"Operating margin&nbsp;(%)",DPSRecentYear:"Div per share (Recent&nbsp;yr)",ANI:"Earnings after taxes (Recent&nbsp;yr)",AverageVolume:"Average volume",High52Week:"52w high",Return13Week:"13w return",PriceToCashFlowPerShare:"Price to cash flow per share",ATAXRATE:"Tax rate (Recent&nbsp;yr)",Price26WeekPercChange:"26w&nbsp;price change&nbsp;(%)",QuoteChange:"Quote change",NetIncomeChangePerc:"Net income change&nbsp;(%)",ReturnOnInvestment5Years:"Return on investment (5&nbsp;yr&nbsp;avg)&nbsp;(%)",PE:"P/E ratio",ReturnOnInvestmentYear:"Return on investment (Recent&nbsp;yr)&nbsp;(%)",Price200DayAverage:"200d avg price",DividendNextQuarter:"Div next quarter",EBITD:"EBITDA",PriceYTDPercChange:"YTD&nbsp;price change&nbsp;(%)",ReturnOnInvestmentTTM:"Return on investment (TTM)&nbsp;(%)",NavChangePercent:"Nav change&nbsp;(%)",EBITDMargin:"EBITDA margin&nbsp;(%)",LTDebtToEquityQuarter:"LT debt/equity (Recent&nbsp;qtr)&nbsp;(%)",BetaRAS:"Beta from RAS",PriceSales:"Price to sales",NetAssets:"Net assets",ReturnOnEquityTTM:"Return on equity (TTM)&nbsp;(%)",CashPerShareYear:"Cash/share",ReturnOnAssets5Years:"Return on assets (5&nbsp;yr&nbsp;avg)&nbsp;(%)",ReturnDay:"1d return",Return52Week:"52w return",ForwardPE1Year:"1y fwd P/E",NetIncomeGrowthRate5Years:"5y net income growth rate",DividendYield:"Div yield&nbsp;(%)",Dividend:"Div from cash flow",BetaUp:"Beta up from RAS",LTDebtToCapitalYear:"LT debt/capital (Recent&nbsp;yr)&nbsp;(%)",nprice:"Price from RAS",Return260Week:"260w return",ReturnOnEquityQuarter:"Return on equity (Recent&nbsp;qtr)&nbsp;(%)",ACOGS:"Cost of goods sold",LTDebtToAssetsQuarter:"LT debt/assets (Recent&nbsp;qtr)&nbsp;(%)",PriceToBook:"Price to book",LTDebtToEquityYear:"LT debt/equity (Recent&nbsp;yr)&nbsp;(%)",ReturnYTD:"Return YTD",ReturnOnEquityYear:"Return on equity (Recent&nbsp;yr)&nbsp;(%)",ReturnOnAssetsQuarter:"Return on assets (Recent&nbsp;qtr)&nbsp;(%)",TotalDebtToEquityQuarter:"Total debt/equity (Recent&nbsp;qtr)&nbsp;(%)",NavPrior:"Nav prior",AINTCOV:"Interest coverage",EPS:"EPS",ReturnOnInvestmentQuarter:"Return on investment (Recent&nbsp;qtr)&nbsp;(%)",QuoteLast:"Last price",Price50DayAverage:"50d avg price",Price4WeekPercChange:"4w&nbsp;price change&nbsp;(%)",ReturnOnAssetsYear:"Return on assets (Recent&nbsp;yr)&nbsp;(%)",MarketCapRAS:"Mkt cap from RAS",Price52WeekPercChange:"52w&nbsp;price change&nbsp;(%)",ShortInterestRatioPercent:"Short interest ratio&nbsp;(%)",InstitutionalPercentHeld:"Institutional percent held",BookValuePerShareYear:"Book value/share",ReturnOnEquityPTM:"Return on equity (PTM)&nbsp;(%)"};
+_s_Store._asStore._addStrings(_fieldToDisplayNameMap);
+}
+if (_s_Store) {
+_s_Store._allowMultipleInBox = true;
+}
+_regOnLoad(initPage);
+</script>
+</div></div><script>var googlefinance = {i: ["f.b.id","",null,0,"",0,null,["f.b.cf","XHF7AWf57OA.en_US.",0],[],0,[],"G2bYUviWFaef6AHwMQ","www.google.com","S_OetUMZ-38SnKngd1v2IKpSTSQ:1389913627368"]}; GF_domReady = 1;</script></body></html>
