@@ -22,7 +22,7 @@ class Robot:
         ### Print all the robots in your team
         for loc, robot in game.robots.items():
             if robot.player_id == self.player_id:
-                print loc
+                print "Robot # ", " X ", " is at ", loc
 
         ### Guard if you are in the middle
         if self.location == rg.CENTER_POINT:
@@ -32,7 +32,7 @@ class Robot:
         for loc, bot in game.robots.iteritems():
             if bot.player_id != self.player_id: # Check if enemy robot
                 if rg.dist(loc, self.location) <= 1: # Within attacking distance
-                    if (self.hp<20):
+                    if (self.hp<11):
                         return ['suicide']
                     return ['attack', loc]
         
