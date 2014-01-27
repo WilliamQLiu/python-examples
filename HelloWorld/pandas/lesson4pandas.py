@@ -31,6 +31,7 @@ del df['NewCol']
 df['test'] = 3
 df['col'] = df['Rev']
 #print df
+#print list(df.columns.values) # Prints list of column names #['Rev', 'test', 'col']
 
 # Modifying Index names
 myindex = ['a','b','c','d','e','f','g','h','i','j']
