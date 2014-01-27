@@ -33,6 +33,7 @@ def merge_on_key():
     #    pandas.merge(df1, df2, left_on='leftkey', right_on='rightkey'), "\n"
     # Merges can also be: how='inner' (default), 'outer', left', 'right'
 
+
 def merge_on_index():
     ### Setup DataFrame examples for Merge on Index
     print "\nMerge on Index \n"
@@ -51,6 +52,7 @@ def merge_on_index():
     print "Merging df1 and df2 with outer join \n", \
             pandas.merge(df1, df2, left_on='key', \
             right_index=True, how='outer'), "\n"
+
 
 def concat_on_axis_series():
     print "\nConcatenating on Axis \n"
@@ -94,6 +96,7 @@ def concat_on_axis_series():
         keys=['one', 'two', 'three'])
     print "Hierarchical index using keys argument (axis=1) \n", result, "\n"
 
+
 def concat_on_axis_dataframe():
     # Setup DataFrames for examples
     df1 = pandas.DataFrame(numpy.arange(6).reshape(3, 2), \
@@ -130,8 +133,10 @@ def concat_on_axis_dataframe():
 
     ### Can also ignore_index=True if the row/index is not meaningful
 
-def combine_first_data_with_overlap():
-    # Two datasets where indexes overlap in full or part
+
+def numpy_where_data_with_overlap():
+    # How to handle two datasets where indexes overlap in full or part
+    # Method 1: NumPy's Where Function
     a = pandas.Series([numpy.nan, 2.5, numpy.nan, 3.5, 4.5, numpy.nan],
         index=['f', 'e', 'd', 'c', 'b', 'a'])
     b = pandas.Series(numpy.arange(len(a), dtype=numpy.float64),
@@ -140,8 +145,28 @@ def combine_first_data_with_overlap():
 
     print "Series A \n", a, "\n"
     print "Series B \n", b, "\n"
+    print "NumPy Where Function \n", numpy.where(pandas.isnull(a), b, a), "\n"
 
-    # Using NumPy's where function
+
+def combine_first_data_with_overlap():
+    # How to handle two datasets where indexes overlap in full or part
+    # Method 2: Pandas' combine_first method
+    df1 = pandas.DataFrame({
+        'a': [1., numpy.nan, 5., numpy.nan],
+        'b': [numpy.nan, 2., numpy.nan, 6.],
+        'c': range(2, 18,4)})
+    df2 = pandas.DataFrame({
+        'a': [5., 4., numpy.nan, 3., 7.],
+        'b': [numpy.nan, 3., 4., 6., 8.]})
+
+    print "DF1 is \n", df1, "\n"
+    print "DF2 is \n", df2, "\n"
+    # Combine_First patches in the missing data in the calling object with data
+    # from the object you pass
+    print "Combine_First Method with DF1 on left, DF2 on right \n", \
+        df1.combine_first(df2), "\n"
+    print "Combine_First Method with DF2 on left, DF1 on right \n", \
+        df2.combine_first(df1), "\n"
 
 if __name__ == '__main__':
     
@@ -153,5 +178,7 @@ if __name__ == '__main__':
     #concat_on_axis_series()
     #concat_on_axis_dataframe()
 
-    ### Combine_First Examples
+    ### How to handle two datasets where indexes overlap in full or part
+    ### Can solve with NumPy's Where Method or Panda's Combine_First Method
+    #numpy_where_data_with_overlap()
     combine_first_data_with_overlap()
