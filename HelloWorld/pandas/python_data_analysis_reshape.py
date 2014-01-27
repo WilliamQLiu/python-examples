@@ -12,8 +12,21 @@ def stack_basic():
         index=pandas.Index(['Ohio', 'Colorado'],
         name='state'),
         columns=pandas.Index(['one', 'two', 'three'], name='number'))
-    print "Basic DataFrame: \n", data, "\n"
+    print "Basic DataFrame \n", data, "\n"
 
+    # Stack method pivots the columns into the rows
+    result = data.stack()
+    print "Dataframe after calling stack method \n", result, "\n"
+
+    # Unstack method rearranges the data from a hierarchically-indexed
+    # Series into a DataFrame
+    result = result.unstack()
+    print "Dataframe after calling unstack method \n", result, "\n"
+
+def pivot_basic():
+    pass
 
 if __name__ == '__main__':
-    stack_basic()
+    
+    stack_basic() # Stack/Unstack rearranges the data's hierarchical index
+    pivot_basic() # Pivot from 'long' to 'wide' data format
