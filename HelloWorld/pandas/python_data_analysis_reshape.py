@@ -79,8 +79,31 @@ def remove_dups():
     # Notice that it keeps only the first observed value combination
     # Can specify to take the last_value as well
 
+def replace_values():
+    # replace replaces values while something like fillna fills missing data
+    mydata = pandas.Series([1., -999., 2., -999., -1000., 3.])
+    print "Data in Series \n", mydata, "\n"
+
+    # replace x with y using .replace()
+    print "Data after replacing -999 with NaN \n", \
+        mydata.replace(-999, numpy.nan), "\n"
+
+    # replace list of x with y using .replace()
+    print "Data after replacing -999, -1000 with NaN \n", \
+        mydata.replace([-999, -1000], numpy.nan), "\n"
+
+    # replace list of x with list of y using .replace()
+    print "Data after replacing -999, -1000 with NaN and 0 \n", \
+        mydata.replace([-999, -1000], [numpy.nan, 0]), "\n"    
+
+    # replace dict of x with dict of y using .replace()
+    print "Data after replacing -999, -1000 with NaN and 0 (using dict) \n", \
+        mydata.replace({-999:numpy.NaN, -1000:0}), "\n"   
+
 if __name__ == '__main__':
     
     #stack_basic() # Stack/Unstack rearranges the data's hierarchical index
     #pivot_basic() # Pivot from 'long' to 'wide' data format
-    remove_dups() # How to remove duplicate rows in a DataFrame
+    #remove_dups() # How to remove duplicate rows in a DataFrame
+    replace_values() # How to replace values in a Series
+
