@@ -1,6 +1,7 @@
 ### Beautiful Soup Example
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup # For using BeautifulSoup
+from bs4 import UnicodeDammit # For using Unicode Converter 
 import re # For Regular Expressions example
 
 ### HTML data that we'll parse (can be string or an actual .html file)
@@ -193,6 +194,29 @@ def find_all_example(mysoup):
     # See Documentation
 
 
+def unicode_dammit_example():
+    # Install the 'chardet' or 'cchardet' Python libraries for better guesses
+
+    ### Take a string with unknown encoding and make the string Unicode
+    weirdass_string = "Sacr\xc3\xa9 bleu!"
+    dammit = UnicodeDammit(weirdass_string)
+    print "Original Word with weird encoding:", weirdass_string
+    print "Dammit Print:", (dammit.unicode_markup)
+    print "Dammit Type:", (dammit.original_encoding)
+
+    ### Take a doc with mostly UTF-8 encoding (and misc encodings due to mult
+    # data sources) and convert to UTF-8 Unicode with .Dammit.detwingle()
+    snowmen = (u"\N{SNOWMAN}" * 3)
+    quote = (u"\N{LEFT DOUBLE QUOTATION MARK}I like snowmen!\N{RIGHT DOUBLE QUOTATION MARK}")
+    doc = snowmen.encode("utf8") + quote.encode("windows-1252")
+    # So now we have one doc with two encodings in it, printing is a mess
+    #print "Weird Decoding doc with utf8:", doc # messed up, won't print
+    #print (doc.decode("windows-1252")) # So messed up it doesn't even print
+
+    # Decode using UnicodeDammit.detwingle() converts the string to pure UTF-8
+    new_doc = UnicodeDammit.detwingle(doc)
+    print new_doc.decode("utf8")
+
 if __name__ == '__main__':
     
     ### Setup soup with string of HTML structure and defining a parser
@@ -209,19 +233,23 @@ if __name__ == '__main__':
     ### 1.) BeautifulSoup, 2.) Tag, 3.) NavigableString, 4.) Comment
     
     ### 1.) BeautifulSoup and 2.) Tag Example
-    tag_example()
+    #tag_example()
 
     ### 3.) Navigable String and 4.) Comment Example
-    navigablestring_example(soup)
+    #navigablestring_example(soup)
 
     ### How to select HTML tags
-    select_data_structure(soup) # Examples of how to select HTML structure
+    #select_data_structure(soup) # Examples of how to select HTML structure
     
     ### Navigate the data structure as a tree (go up, down, sideways)
-    navigate_data_structure_as_tree(soup)
+    #navigate_data_structure_as_tree(soup)
 
     ### Find all and filter by a string, a regular expression, list or function
-    find_all_example(soup)
+    #find_all_example(soup)
 
     ### Commonly used tasks (for extracting data)
-    common_tasks(soup) # Commons tasks like extracting all URLS and text
+    #common_tasks(soup) # Commons tasks like extracting all URLS and text
+
+    ### Unicode, Dammit is used whenever you want to convert unknown encoding
+    # to straight Unicode
+    unicode_dammit_example()
