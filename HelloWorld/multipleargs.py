@@ -37,12 +37,15 @@ def cheeseshop(kind, *arguments, **keywords):
     for kw in keys:
         print kw, ":", keywords[kw] # print through all keyword arguments
 
-
 def parrot(voltage, state='a stiff', action='voom'):
     """Unpacking a *kwargs example"""
     print "This parrot wouldn't", action,
     print "if you put", voltage, "volts through it.",
     print "He's now", state, "!"
+
+def use_lambda(n):
+    """ lambdas are funcs that reference variables from the containing scope"""
+    return lambda x: x + n
 
 if __name__ == '__main__':
     #How to use *args
@@ -69,3 +72,8 @@ if __name__ == '__main__':
     # How to unpack a dict with **kwargs
     mydict = {"voltage":"lots and lots", "state":"DEAD", "action":"talk"}
     parrot(**mydict) # This parrot wouldn't talk if you put lots and ...
+
+    # Using a lambda
+    f = use_lambda(10)
+    print "Setting value to 10 with a lambda function", f(0)
+    print "Setting value +5 with a lambda function", f(5)
