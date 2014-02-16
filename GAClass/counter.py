@@ -19,14 +19,12 @@ lines = sys.stdin.readlines()
 lines.pop(0)
 
 # Use regular expression to match if numeric, comma, or line return
-mypattern = re.compile(r'[0-9]')
+#mypattern = re.compile(r'[0-9,\n\r]')
+mypattern = re.compile(r'[a-zA-Z]')
 
 #"Age","Gender","Impressions","Clicks","Signed_In"
 # For each line, find the sum of index 2 in the list.
 for line in lines:
-    
-    result = mypattern.findall(line)
-    print result
 
     cur_age = int(line.strip().split(',')[0]) #Age
     age = age + cur_age
