@@ -10,6 +10,20 @@ import mock
 # You can configure them, specify return values or limit what attributes are
 # available and then make assertions about how they have been used
 
+# Creating a Mock() object then assigning attributes
+myMock = mock.Mock(
+    greeting = "hey there"
+    )
+myMock.greeting = "hello world!"
+print "myMock's attributes for greeting: ", myMock.greeting
+
+class MyStuff(object):
+    def __init__(self):
+        self.tangerine = "And now a thousand years between"
+
+    def apple(self):
+        print "I AM CLASSY APPLES!"
+
 # Mocking a Class
 class ProductionClass(object):
     def method(self):
@@ -23,11 +37,3 @@ thing.method(1, 2, 3, key='value')
 
 thing.method.assert_called_with(1, 2, 3, key='value')
 
-# Creating a Mock() object then assigning attributes
-myMock = mock.Mock(
-    greeting = "hey there"
-    )
-myMock.greeting = "hello world!"
-
-print myMock.greeting
-print type(myMock.greeting)
