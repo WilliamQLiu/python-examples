@@ -65,9 +65,8 @@ if __name__ == '__main__':
     tree = ET.ElementTree(root)
     tree.write("fakedata.xml")
 
-
-    """
-    <?xml version="1.0" encoding="utf-8"?>
+"""
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <Calls>
     <Call ID="15784825">
