@@ -31,7 +31,7 @@ def range_example():
         print k
 
 def vector_example():
-    """ How to use vector and matrix """
+    """ How to create vectors and matrix """
     vector = [1, 2, 3]
     print "Vector:", vector #[1, 2, 3]
 
@@ -39,8 +39,9 @@ def vector_example():
         [5, 6, 7, 8],
         [9, 10, 11, 12] ]
     print "Matrix:", matrix #[[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]
-    print "Matrix[0]:", matrix[0] #[1, 2, 3, 4]
-    print "Matrix[0][2]:", matrix[0][2] #3
+    print "Matrix[0]:", matrix[0] #[1, 2, 3, 4] # Select by row
+    print "Matrix[0][2]:", matrix[0][2] #3 # Select by row and column
+    #print "Matrix[][1]:", matrix[][1] # Error with matrix[]
 
 def list_comprehension_example():
     """ How to use list comprehension, long way and short 
@@ -64,18 +65,53 @@ def list_comprehension_example():
         l[i] = l[i] * 3
     print l #[3, 6, 9]
 
+    print "\nWill's examples"
+    print "Original vector is", vector
+    print "Power of 2: ", [x**2 for x in vector] # [1, 4, 9]
+
+    mymatrix = [[1,2,3], [4,5,6], [7,8,9]]
+    print "Matrix is:", mymatrix
+    #print [num for elem in mymatrix for num in elem] # Flatten a list
+    print [num for elem in mymatrix for num in elem]
+
 def vector_multiply(vector, val):
     """ Take a vector and multiply by val across entire vector"""
     return [x*val for x in vector]
 
 def matrix_transpose(matrix):
     """ Take a matrix and transpose it (flip it onto its side) """
+    #rows become columns
+    
+    # Same as:
+    #transposed = []
+    #for i in range(len(matrix[0])):
+    #    transposed.append([row[i] for row in matrix])
+    #print transposed
+
+    # Same as:
+    #transposed = []
+    #for i in range(len(matrix[0])):
+    #    transposed_row = []
+    #    for row in matrix:
+    #        transposed_row.append(row[i])
+    #    transposed.append(transposed_row)
+    #print transposed
+
     return [[row[i] for row in matrix] for i in range(len(matrix[0]))]
-    # rows become columns
-    # Example:
-    # [2 1 0 ]           [2 0]
-    # [0 3 0 ]  becomes  [1 3] 
-    #                    [0 0]
+
+    #mymatrix =
+    #[
+    #    [1, 2, 3, 4],
+    #    [5, 6, 7, 8],
+    #    [9, 10, 11, 12],
+    #]
+    #mymatrix is now
+    #[
+    #    [1, 5, 9],
+    #    [2, 6, 10],
+    #    [3, 7, 11],
+    #    [4, 8, 12]
+    #]
 
 if __name__ =='__main__':
     #if_else_example()
@@ -83,6 +119,7 @@ if __name__ =='__main__':
     #range_example()
     #vector_example()
     #list_comprehension_example()
-    print vector_multiply(vector, 5) #[10, 15, 30, 25]
+    #print vector_multiply(vector, 5) #[10, 15, 30, 25]
     print matrix_transpose(matrix)
+
 
