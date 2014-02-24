@@ -26,36 +26,26 @@ if __name__ == '__main__':
     
     # Get File from CSV on Dropbox
     df = pandas.DataFrame.from_csv(
-        r"""/Users/williamliu/Dropbox/NYC-DAT-08/Homework_0/william_liu/output/nytimes.csv""",
+        r"""C:\Users\wliu\Dropbox\NYC-DAT-08\Homework_0\william_liu\output\nytimes.csv""",
         index_col = False, header = 0, sep = ',')
-    #
-    #"""C:\Users\wliu\Dropbox\NYC-DAT-08\Homework_0\william_liu\output\nytimes.csv"""
-
+    #"""/Users/williamliu/Dropbox/NYC-DAT-08/Homework_0/william_liu/output/nytimes.csv"""
+ 
     #print df.describe() # Get summary description
     #"Age","Gender","Impressions","Clicks","Signed_In"
 
     print "Dataframe Head \n", df.head()
+    #   Age  Gender  Impressions  Clicks  Signed_In
+    #0   36       0            3       0          1
+    #1   73       1            3       0          1
+    #2   30       0            3       0          1
+    #3   49       1            3       0          1
+    #4   47       1           11       0          1
+   
+    # Clean up Data
+    df.Gender[df.Gender == 0] = 'Female' #Replace 0's with 'Female'
+    df.Gender[df.Gender == 1] = 'Male' #Replace 1's with 'Male'
+    #print df.head()
     
-
-    
-    #print df['Age'].median() # Getting a single column as a Series (same as df.Age)
-
-    # Sum through grouping by Age and Gender
-    #print df.groupby(['Age', 'Gender']).sum()
-
-    #unique = df.Age + df.Gender
-    #print unique
-
-    # Looking at data by one category
-    #grouped_gender = df.groupby(['Gender']).sum()
-    #print grouped_gender
-    
-
-    #print grouped_male['Age'].describe()
-
-    
-    # Plot
-    #plt.figure()
-    #grouped_age.plot(title='NY Times', kind='bar')
-    #plt.show()
-
+    print df.groupby(['Age', 'Gender']).sum()
+    df.plot(title='Test', x='Age', kind='bar')
+    plt.show()
