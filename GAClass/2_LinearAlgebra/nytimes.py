@@ -26,22 +26,36 @@ if __name__ == '__main__':
     
     # Get File from CSV on Dropbox
     df = pandas.DataFrame.from_csv(
-        r"""C:\Users\wliu\Dropbox\NYC-DAT-08\Homework_0\william_liu\output\nytimes.csv""",
+        r"""/Users/williamliu/Dropbox/NYC-DAT-08/Homework_0/william_liu/output/nytimes.csv""",
         index_col = False, header = 0, sep = ',')
-    #"""/Users/williamliu/Dropbox/NYC-DAT-08/Homework_0/william_liu/output/nytimes.csv"""
+    #
+    #"""C:\Users\wliu\Dropbox\NYC-DAT-08\Homework_0\william_liu\output\nytimes.csv"""
+
+    #print df.describe() # Get summary description
+    #"Age","Gender","Impressions","Clicks","Signed_In"
 
     print "Dataframe Head \n", df.head()
     
-    #print df.describe() # Get summary description
-    #"Age","Gender","Impressions","Clicks","Signed_In"
+
     
-    print df['Age'].median() # Getting a single column as a Series (same as df.Age)
+    #print df['Age'].median() # Getting a single column as a Series (same as df.Age)
 
     # Sum through grouping by Age and Gender
     #print df.groupby(['Age', 'Gender']).sum()
+
+    #unique = df.Age + df.Gender
+    #print unique
+
+    # Looking at data by one category
+    #grouped_gender = df.groupby(['Gender']).sum()
+    #print grouped_gender
+    
+
+    #print grouped_male['Age'].describe()
+
     
     # Plot
     #plt.figure()
-    #df.plot(title='NY Times', x='Age')
+    #grouped_age.plot(title='NY Times', kind='bar')
     #plt.show()
 
