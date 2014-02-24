@@ -37,6 +37,7 @@ if __name__ == '__main__':
     callerphonenumber = ET.SubElement(caller, "CallerPhoneNumber")
     callnotes = ET.SubElement(call, "CallNotes")
 
+
     # Put in Fake values
     call.set("ID", str(faker.random_number(digits=9)))
     reportversion.set("ID", str(faker.random_number(digits=4))) 
