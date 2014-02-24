@@ -26,9 +26,10 @@ if __name__ == '__main__':
     
     # Get File from CSV on Dropbox
     df = pandas.DataFrame.from_csv(
-        r"""C:\Users\wliu\Dropbox\NYC-DAT-08\Homework_0\william_liu\output\nytimes.csv""",
+        r"""/Users/williamliu/Dropbox/NYC-DAT-08/Homework_0/william_liu/output/nytimes.csv""",
         index_col = False, header = 0, sep = ',')
-    #"""/Users/williamliu/Dropbox/NYC-DAT-08/Homework_0/william_liu/output/nytimes.csv"""
+    #
+    #"""C:\Users\wliu\Dropbox\NYC-DAT-08\Homework_0\william_liu\output\nytimes.csv"""
  
     #print df.describe() # Get summary description
     #"Age","Gender","Impressions","Clicks","Signed_In"
@@ -42,10 +43,13 @@ if __name__ == '__main__':
     #4   47       1           11       0          1
    
     # Clean up Data
+    
     df.Gender[df.Gender == 0] = 'Female' #Replace 0's with 'Female'
     df.Gender[df.Gender == 1] = 'Male' #Replace 1's with 'Male'
+    df.Signed_In[df.Signed_In == 0] = 'Not Signed In' #Replace 0's with No Sign
+    df.Signed_In[df.Signed_In == 1] = 'Signed In' #Replace 0's with No Sign
     #print df.head()
     
-    print df.groupby(['Age', 'Gender']).sum()
-    df.plot(title='Test', x='Age', kind='bar')
-    plt.show()
+    print df.groupby(['Age', 'Gender', 'Signed_In']).sum()
+    #df.plot(title='Test', x='Age', kind='bar')
+    #plt.show()
