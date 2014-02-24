@@ -20,29 +20,28 @@ if __name__ == '__main__':
     
     # Get File Online
     #df = pandas.read_csv(\
-    #    filepath_or_buffer='http://stat.columbia.edu/~rachel/datasets/nyt1.csv',
+    #    filepath_or_buffer=\
+    #        'http://stat.columbia.edu/~rachel/datasets/nyt1.csv',
     #    sep = ',', header=0)
     
     # Get File from CSV on Dropbox
     df = pandas.DataFrame.from_csv(
-        """/Users/williamliu/Dropbox/NYC-DAT-08/Homework_0/william_liu/output/nytimes.csv""",
+        r"""C:\Users\wliu\Dropbox\NYC-DAT-08\Homework_0\william_liu\output\nytimes.csv""",
         index_col = False, header = 0, sep = ',')
-    
-    #print "Dataframe Head \n", df.head()
+    #"""/Users/williamliu/Dropbox/NYC-DAT-08/Homework_0/william_liu/output/nytimes.csv"""
+
+    print "Dataframe Head \n", df.head()
     
     #print df.describe() # Get summary description
     #"Age","Gender","Impressions","Clicks","Signed_In"
     
-    #df.Gender
-
+    print df['Age'].median() # Getting a single column as a Series (same as df.Age)
 
     # Sum through grouping by Age and Gender
     #print df.groupby(['Age', 'Gender']).sum()
-
-    pandas.concat(df['Age'], df['Gender'])
-
+    
     # Plot
     #plt.figure()
-    #df.plot(title='NY Times', x='Age', y='Impressions', kind='line')
+    #df.plot(title='NY Times', x='Age')
     #plt.show()
 
