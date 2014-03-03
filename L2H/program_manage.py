@@ -14,35 +14,6 @@ ORIGINAL_DIRECTORY = str(r'C:\Users\wliu\Desktop\Spiceworks\Original')
 os.chdir(ORIGINAL_DIRECTORY) #Change Local directory (where files go to)
 FILENAME = 'Export2014-2-19.csv'
 
-""" # Use only if data is messy, not needed unless need to clean unknown chars
-cleandirectory = str('C:\Users\wliu\Desktop\Spiceworks\Modified') 
-def write_files(myfilename):
-    ''' This function is not needed/used unless data is corrupt with unknown 
-    inputs, then call this to replace unknown characters'''
-    myinputfilelocation = os.path.join(ORIGINAL_DIRECTORY, myfilename)
-    #print myinputfilelocation
-    #C:\Users\wliu\Desktop\Spiceworks\Original\Export2013-11-18.csv
-    
-    myoutputfilelocation = os.path.join(cleandirectory, myfilename)
-    #print myinputfilelocation
-    #C:\Users\wliu\Desktop\Spiceworks\Modified\Export2013-11-18.csv
-    
-    myinputfile = open(myinputfilelocation, 'rb')
-    myoutputfile = open(myoutputfilelocation, 'wb')
-
-    # Take inputfile, read through all lines, clean out quotes
-    # (since some of the raw data has quotes inside), then write to output file
-    for line in myinputfile:
-        try:
-            newline = unicode(line, errors='replace')
-        except UnicodeDecodeError:
-            print("Decode Error")
-        newline = newline.encode('utf-8', errors='replace')
-        myoutputfile.write(newline)
-    myinputfile.close()
-    myoutputfile.close()
-"""
-
 def modify_files(mydataframe):
     """ Exclude specific columns from the data source """
 
