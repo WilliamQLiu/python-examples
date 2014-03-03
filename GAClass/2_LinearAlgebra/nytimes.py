@@ -7,9 +7,9 @@
 
 import pandas
 import matplotlib
+import numpy
 #matplotlib.use('Agg')
-import matplotlib.pyplot as plt
-
+#import matplotlib.pyplot as plt
 #plt.switch_backend('agg')
 
 pandas.set_option('expand_frame_repr', False) # expand text on build
@@ -26,7 +26,7 @@ if __name__ == '__main__':
     
     # Get File from CSV on Dropbox
     df = pandas.DataFrame.from_csv(
-        r"""/Users/williamliu/Dropbox/NYC-DAT-08/Homework_0/william_liu/output/nytimes.csv""",
+        r"""/Users/williamliu/Dropbox/NYC-DAT-08/Homework_2/william_liu/test.csv""",
         index_col = False, header = 0, sep = ',')
     #
     #"""C:\Users\wliu\Dropbox\NYC-DAT-08\Homework_0\william_liu\output\nytimes.csv"""
@@ -43,13 +43,27 @@ if __name__ == '__main__':
     #4   47       1           11       0          1
    
     # Clean up Data
-    
-    df.Gender[df.Gender == 0] = 'Female' #Replace 0's with 'Female'
-    df.Gender[df.Gender == 1] = 'Male' #Replace 1's with 'Male'
-    df.Signed_In[df.Signed_In == 0] = 'Not Signed In' #Replace 0's with No Sign
-    df.Signed_In[df.Signed_In == 1] = 'Signed In' #Replace 0's with No Sign
+    #df.Gender[df.Gender == 0] = 'Female' #Replace 0's with 'Female'
+    #df.Gender[df.Gender == 1] = 'Male' #Replace 1's with 'Male'
+    #df.Signed_In[df.Signed_In == 0] = 'Not Signed In' #Replace 0's with No Sign
+    #df.Signed_In[df.Signed_In == 1] = 'Signed In' #Replace 0's with No Sign
     #print df.head()
     
-    print df.groupby(['Age', 'Gender', 'Signed_In']).sum()
+    #print df.groupby(['Age', 'Gender', 'Signed_In']).sum()
     #df.plot(title='Test', x='Age', kind='bar')
     #plt.show()
+
+    #### Create column for Click through Rate (CTR)
+    #df['Clicks'] = df.Clicks.astype(float)
+    #df['Impressions'] = df.Impressions.astype(float)
+    #df['ctr'] = df['Clicks'] / df['Impressions']
+    
+    print df.columns
+    #Index([u'Age', u'Gender', u'Impressions', u'Clicks', u'Signed_In', u'ctr'], dtype='object')
+
+    dfg = df[ ['Age', 'Gender', 'Signed_In', 'Clicks', 'Impressions'] ].groupby(['Age']).agg([numpy.sum])
+    print dfg
+    #dfg['Clicks'] = dfg.Clicks.astype(float)
+    #dfg['Impressions'] = dfg.Impressions.astype(float)
+    dfg['ctr'] = dfg['Clicks'] / dfg['Impressions']
+    print dfg
