@@ -12,7 +12,7 @@ from pandas.tseries.offsets import * # For Bday (Business Days) utility
 #Specify directories
 ORIGINAL_DIRECTORY = str(r'C:\Users\wliu\Desktop\Spiceworks\Original')
 os.chdir(ORIGINAL_DIRECTORY) #Change Local directory (where files go to)
-FILENAME = 'Export2014-2-19.csv'
+FILENAME = 'myexport.csv'
 
 def modify_files(mydataframe):
     """ Exclude specific columns from the data source """
