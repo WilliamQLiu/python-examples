@@ -92,11 +92,17 @@ if __name__ == "__main__":
     ridge_regression_example()
     ridge_regression_crossvalidate_example()
 
-    # Regularization refers to the method of preventing overfitting by
+    ### Regularization refers to the method of preventing overfitting by
     # explicitly controlling model complexity.  We have two techniques
     # to ensure low variance, low bias
     # L1, Lasso regularization and L2, Ridge regularization
     lasso_example() # L1, LaPlace Prior: Biased, low Variance
     # L2, Gaussian Prior: Unbiased, high Variance
-
     
+    ### Evaluation Metrics
+    # Statistical accuracy metrics evaluate the accuracy of a system by
+    # comparing the numerical recommendation scores against the actual user
+    # ratings for the user-item pairs in the test dataset
+    # Mean Absolute Error (MAE) between ratings and predictions is a 
+    # widely used metric; the lower the MAE the more accurate the recommendation
+    # engine predicts user ratings
