@@ -11,7 +11,7 @@ def ordinary_least_squares_example():
     """ Fits a linear classifier/model with coefficients to minimize the 
     residual sum of squares between the observed responses and the predicted
     responses by the linear approximation """
-    print "Linear Regression Example"
+    print "Ordinary Least Squares"
     classifier = linear_model.LinearRegression()
     X = [[0,0], [1,1], [2,2]]
     y = [0, 1, 2]
