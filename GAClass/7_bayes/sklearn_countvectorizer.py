@@ -19,7 +19,9 @@ from sklearn.feature_extraction.text import CountVectorizer
 
 # Vectorize and Tokenize the text
 vectorizer = CountVectorizer()
+print vectorizer
 corpus = ['Bursting the Big Data bubble starts with appreciating certain nuances about its products and patterns","the real solutions that are useful in dealing with Big Data will be needed and in demand even if the notion of Big Data falls from the height of its hype into the trough of disappointment']
+print type(corpus)
 X = vectorizer.fit_transform(corpus)
 print "Vectorizer is ", vectorizer
 print type(vectorizer)

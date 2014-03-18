@@ -34,7 +34,7 @@ df.rename(columns={0:'Text'}, inplace=True)
 #    '/Users/williamliu/Dropbox/NYC-DAT-08/Homework_7/william_liu/output/badwords.csv',
 #    header=0, index_col=False)
 
-corpus = [{
+badwords = [{
     "4r5e":1,
     "5h1t":1,
     "5hit":1,
@@ -60,20 +60,28 @@ corpus = [{
 if __name__ == "__main__":
 
     # Unidecode to remove ascii errors
-    [uni.unidecode(m) for m in df.Text]
+    df.Text = [uni.unidecode(line) for line in df.Text]
 
-    print df.columns
-    print df.head()
+    #print df.columns
+    #print df.head()
+    #print type(df)
 
     vectorizer = CountVectorizer()
-    X = vectorizer.fit_transform(df)
+    #mylist = df.values.tolist()
+
+    X = vectorizer.fit_transform(df['Text'].values)
+    print vectorizer
     print "Vectorizer is ", X
     print "Vectorizer Feature Names are ", vectorizer.get_feature_names()
+    print "Vectorizer Vocab is ", vectorizer.vocabulary_
 
+    y = badwords
 
-    #print "Vectorizer Vocab is ", vectorizer.vocabulary_
+    vectorizer = TfidfTransformer() # n_estimators means we're going to use n different trees
+    X_train = vectorizer.fit_transform(badwords)
 
-    #print "Vectorizer Feature Names are ", vectorizer.get_feature_names()
+    clf = MultinomialNB() # classifier for Naive Bayes multinomial models
+    clf.fit(X, y)
 
     # sklearn can take a lot of different models at once and will go through each model object
     #text_clf = Pipeline([('vect', CountVectorizer(encoding=u'utf-8')), # Convert text to matrix of token counts

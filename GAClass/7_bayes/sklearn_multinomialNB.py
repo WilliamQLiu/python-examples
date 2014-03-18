@@ -1,3 +1,0 @@
-""" sklearn > Naive Bayes > MultinomialNB
-    
- """
