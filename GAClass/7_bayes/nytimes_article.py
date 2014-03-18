@@ -25,8 +25,8 @@ df = pd.read_csv('/Users/williamliu/Dropbox/NYC-DAT-08/Homework_7/input/nyt_cate
 df.rename(columns={0:'Text'}, inplace=True)
 
 if __name__ == "__main__":
-    print df.head()
-    print df.columns
+    print "DF head ", df.head()
+    print "DF columns ", df.columns
     
     # sklearn can take a lot of different models at once and will go through each model object
     text_clf = Pipeline([('vect', CountVectorizer()), # http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html
@@ -36,6 +36,14 @@ if __name__ == "__main__":
 
     train, test = cross_validation.train_test_split(df[['category','article']])
     test_df = pd.DataFrame(test, columns=['category', 'article'])
+
+    print "Cross Validation - Train data is \n", train[:3] # numpy.ndarray
+    # E.g. sports The proper thing to don nights like this is...
+    #      arts Jim Farmer must have had some bizarre experiences ...
+    #      business THE utter failings of our natoin's credit rating
+    #      obituaries Leyla Gencer, an operatic soprano who was among
+
+    print "Cross Validation - Test data is \n", test[:3] # numpy.ndarray
 
     # Sometimes doesn't work for dataframes, so using numpy arrays
     categories, articles  = map(np.array, zip(*train)) # Calls function np.array on zip(*train), which passes arguments
