@@ -34,54 +34,57 @@ df.rename(columns={0:'Text'}, inplace=True)
 #    '/Users/williamliu/Dropbox/NYC-DAT-08/Homework_7/william_liu/output/badwords.csv',
 #    header=0, index_col=False)
 
-badwords = [{
-    "4r5e":1,
-    "5h1t":1,
-    "5hit":1,
-    "a55":1,
-    "anal":1,
-    "anus":1,
-    "ar5e":1,
-    "arrse":1,
-    "arse":1,
-    "ass":1,
-    "ass-fucker":1,
-    "asses":1,
-    "assfucker":1,
-    "assfukka":1,
-    "asshole":1,
-    "assholes":1,
-    "asswhole":1,
-    "a_s_s":1,
-    "b!tch":1,
-}]
-
+badwords = ([
+    "4r5e",
+    "5h1t",
+    "5hit",
+    "a55",
+    "anal",
+    "anus",
+    "ar5e",
+    "arrse",
+    "arse",
+    "ass",
+    "ass-fucker",
+    "asses",
+    "assfucker",
+    "assfukka",
+    "asshole",
+    "assholes",
+    "asswhole",
+    "a_s_s",
+    "b!tch",
+])
 
 if __name__ == "__main__":
 
     # Unidecode to remove ascii errors
     df.Text = [uni.unidecode(line) for line in df.Text]
+    #print type(df.Text) # <class pandas.core.series.Series>
+    #print df.Text
 
-    #print df.columns
-    #print df.head()
-    #print type(df)
-
-    vectorizer = CountVectorizer()
-    #mylist = df.values.tolist()
-
-    X = vectorizer.fit_transform(df['Text'].values)
+    vectorizer = CountVectorizer(ngram_range=(1,1))
+    #X = vectorizer.fit_transform(df['Text'].values)
+    X = vectorizer.fit_transform(badwords).toarray()
+    print X
+    print type(X) # <class 'scipy.sparse.csc.csc_matrix'>
     print vectorizer
-    print "Vectorizer is ", X
+    print "Vectorizer is \n", X
     print "Vectorizer Feature Names are ", vectorizer.get_feature_names()
     print "Vectorizer Vocab is ", vectorizer.vocabulary_
 
-    y = badwords
+    analyze = vectorizer.build_analyzer()
+    #vectorizer.vocabulary_.get('fuck')
+    #vectorizer.TfidfTransformer
+    X_2 = vectorizer.fit_transform(badwords).toarray()
 
-    vectorizer = TfidfTransformer() # n_estimators means we're going to use n different trees
-    X_train = vectorizer.fit_transform(badwords)
+    #vectorizer = TfidfTransformer() # n_estimators means we're going to use n different trees
 
-    clf = MultinomialNB() # classifier for Naive Bayes multinomial models
-    clf.fit(X, y)
+    #clf = MultinomialNB() # classifier for Naive Bayes multinomial models
+    #clf.fit(X, y)
+
+    #mydf = clf.predict(X)
+    #print mydf
 
     # sklearn can take a lot of different models at once and will go through each model object
     #text_clf = Pipeline([('vect', CountVectorizer(encoding=u'utf-8')), # Convert text to matrix of token counts
