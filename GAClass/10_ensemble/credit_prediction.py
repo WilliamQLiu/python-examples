@@ -92,10 +92,10 @@ def main():
   X_test = X[len(train_input):]
 
   ## Use any model that we might find appropriate
-  #model = RidgeClassifierCV(alphas=[ 0.1, 1., 10. ])
+  model = RidgeClassifierCV(alphas=[ 0.1, 1., 10. ])
 
   ##Create the object and set relevant parameters
-  model = LogisticRegression(C=10)
+  #model = LogisticRegression(C=10)
 
   ##Set target variable y
   y = train_input.SeriousDlqin2yrs
