@@ -31,7 +31,7 @@ def initialize_browser():
     #br.set_debug_redirects(True)
     #br.set_debug_responses(True)
 
-    # User-Agent (this is cheating, ok?)
+    # User-Agent - Pretend to be Chrome browser
     br.addheaders = [('User-agent', 'Chrome')]
 
 
@@ -39,9 +39,9 @@ def open_link(mylink):
     # Open up some site
     #br.open('http://google.com')
     br.open(mylink)
-    
+
     # Show the source
-    #print br.response().read()
+    print br.response().read()
 
     # Show the HTML title
     #print br.title() # E.g: Google
@@ -54,7 +54,7 @@ def open_link(mylink):
         print myform
 
     # Select the specific form you want
-    br.select_form(nr=0) #Form is TextControl (username), 
+    br.select_form(nr=0) #Form is TextControl (username),
 
     # User credentials, select by 'input name'
     #br.form['ctl0$Content$txtUserName'] = USERNAME
@@ -76,5 +76,5 @@ if __name__ == '__main__':
     open_link('https://www.google.com/finance/historical?cid=22144&startdate=Jan+1%2C+2013&enddate=Jan+16%2C+2014&num=30&ei=TGLYUtjxFqGK6gHj5QE')
 
     write_data("stock.csv", "https://www.google.com/finance/historical?cid=22144&startdate=Jan+1%2C+2013&enddate=Jan+16%2C+2014&num=30&ei=TGLYUtjxFqGK6gHj5QE")
-    
+
     print "Writing apple stock page"

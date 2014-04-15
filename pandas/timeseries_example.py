@@ -23,7 +23,7 @@ def read_datetime():
 
     str_value = '2014-01-11'
     date_value = datetime.strptime(str_value, '%Y-%m-%d') # 2014-01-11 00:00:00
-    print "String conversion to datetime", date_value 
+    print "String conversion to datetime", date_value
 
 def dateutil_parser():
     """ Use third party library to parse almost any type of date"""
@@ -49,7 +49,7 @@ def slicing_series():
         periods=1000))
     print "Long TimeSeries is: \n", longer_ts
     print type(longer_ts) # <class 'pandas.core.series.Series'>
-    
+
     print "Slicing by date (year): \n", longer_ts['2001']
     print "Slicing by date range: \n", longer_ts['2001-05':'2011-06']
 
@@ -73,7 +73,7 @@ def timestamp_duplicates():
 
 def timestamp_resample():
     """ How to assign a fixed frequency"""
-    dates = pd.DatetimeIndex(['1/1/2000', '1/1/2000', '1/10/2000', 
+    dates = pd.DatetimeIndex(['1/1/2000', '1/1/2000', '1/10/2000',
         '2/2/2000', '2/3/2000'])
     my_ts = pd.Series(np.arange(5), index=dates)
     my_ts = my_ts.resample('D') # Resample by Days
@@ -81,7 +81,7 @@ def timestamp_resample():
 
 def timestamp_dateoffset():
     """ How to set a date offset using Shift """
-    hour = pd.tseries.offsets.Hour() 
+    hour = pd.tseries.offsets.Hour()
     print hour # <Hour>
     four_hours = pd.tseries.offsets.Hour(4)
     print four_hours # <4 * Hours>
@@ -127,7 +127,7 @@ if __name__ == "__main__":
     #slicing_series() # how to slice data by Time Series Index
     #convert_to_datetime() # How to return a Series of Date Time Stamps
     #timestamp_duplicates() # How to handle duplicates in Time Series
-    #timestamp_resample() # How to create a fixed frequency date index
+    timestamp_resample() # How to create a fixed frequency date index
     #timestamp_dateoffset() # How to shift the data on index by a specific time
-    timestamp_rollforward_rollback() # How to roll fwd and back by date index 
-    
+    #timestamp_rollforward_rollback() # How to roll fwd and back by date index
+
