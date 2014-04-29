@@ -119,6 +119,23 @@ def timestamp_rollforward_rollback():
     ts = ts.groupby(offset.rollforward).mean()
     print "Time Series after rolling forward\n", ts
 
+def period_test():
+    """ How to use Periods to represent time spans like days, months, years"""
+    p = pd.Period('2007-1-1', freq='A-DEC') # Anchor Annual last given month 
+    print "Original Period is", p #2007
+
+    pd_rng = pd.period_range('1/1/2013', '3/30/2014', freq='M')
+    print "Period Range is", pd_rng
+
+    new_p = p.asfreq('M', how='start')
+    print "Changed frequency (with start)", new_p # 2007-01
+    new_p = p.asfreq('M', how='end')
+    print "Changed frequency (with end)", new_p # 2007-12
+
+    pi = pd.PeriodIndex(['2011-1-1', '2011-2', '2011-3', '2011-5'], freq='M')
+    print type(pi) # <class 'pandas.tseries.period.PeriodIndex'>
+
+
 if __name__ == "__main__":
     #stdlib_get_time() # how to use standard library's datetime funcs
     #read_datetime() # how to read in datetimes
@@ -129,5 +146,5 @@ if __name__ == "__main__":
     #timestamp_duplicates() # How to handle duplicates in Time Series
     #timestamp_resample() # How to create a fixed frequency date index
     #timestamp_dateoffset() # How to shift the data on index by a specific time
-    timestamp_rollforward_rollback() # How to roll fwd and back by date index 
-    
+    #timestamp_rollforward_rollback() # How to roll fwd and back by date index 
+    period_test()
