@@ -144,12 +144,8 @@ if __name__ == "__main__":
     #slicing_series() # how to slice data by Time Series Index
     #convert_to_datetime() # How to return a Series of Date Time Stamps
     #timestamp_duplicates() # How to handle duplicates in Time Series
-    #timestamp_resample() # How to create a fixed frequency date index
+    timestamp_resample() # How to create a fixed frequency date index
     #timestamp_dateoffset() # How to shift the data on index by a specific time
-<<<<<<< HEAD
     #timestamp_rollforward_rollback() # How to roll fwd and back by date index 
-    period_test()
-=======
+    #period_test()
     #timestamp_rollforward_rollback() # How to roll fwd and back by date index
-
->>>>>>> 9a3c58818f56f33ea3ce46f9f1f326744d405263
