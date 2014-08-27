@@ -15,7 +15,6 @@ RUNNING
 Run on server like so:
     $fab -H localhost,linuxbox host_type
 
-
 """
 
 #import logging # debug output Paramiko prints

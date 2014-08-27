@@ -1,0 +1,49 @@
+Learn:
+  ☐ Classes
+    ☐ What is an object?
+    ☐ https://docs.python.org/2/reference/datamodel.html#object.__repr__
+    def __init__(self[,...])
+      Called when the instance is created
+    def __str__(self)
+      rule of thumb: for customers (easy to read representation)
+      the 'informal' string, a more convenient or concise representation (must be a string object)
+    def __repr__(self)
+      rule of thumb: for developers (unique representation)
+      built-in function to compute the 'official' string representation of an object
+      should be unambiguous, the 'formal' string
+  ☐ Celery
+  ☐ Method Decorators, @
+    Basically to wrap a function with additional functionality without changing the wrapped function
+    http://www.jeffknupp.com/blog/2013/11/29/improve-your-python-decorators-explained/
+  ☐ Python's Execution Model
+    http://www.jeffknupp.com/blog/2013/02/14/drastically-improve-your-python-understanding-pythons-execution-model/
+  ✔ What is a namespace? @done (14-08-26 09:40)
+    Roughly - namespaces are just containers for mapping names to objects (e.g. mynamespace = 'hello')
+     http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/scope_resolution_legb_rule.ipynb
+  ✔ What is scope? @done (14-08-26 09:57)
+    Namespaces exist independently from each other (e.g. functions can each declare same name, but hold different values)
+    Scope means the 'hierarchy level', follows the LEGB rule (priority to Local first, etc.)
+      Local - can be inside a function or class method
+      Enclosed - Can be in its enclosing function (e.g. if a function is wrapped inside another function)
+      Global - Uppermost level of the executing script itself
+      Built-In - Special names that Python reserves for itself
+      Note: print globals() and print locals() prints out the global and local variables
+  ☐ *args and **kwargs
+      Functions can be
+  ☐ 'yield' and 'generator' keywords
+      Generator: https://wiki.python.org/moin/Generators
+  ☐ logging in python
+    Indicate that certain events occurred by a descriptive message that can contain variable data
+    Can set the 'level' or 'severity' of each message:
+      debug()  - detailed information, usually when diagnosing problems
+      info() - confirmation that things are working as expected
+      warning() - something unexpected happened, but software still working as expected
+      error() - due to some serious problem, software can't perform some function
+      critical() - serious error, software may be unable to continue running
+    E.g.
+      import logging
+      logging.warning('Watch out!')  # Will print a message to the console
+      logging.info('I told you so')  # Will not print anything
+    https://docs.python.org/2/library/logging.html
+    https://docs.python.org/2/howto/logging.html#logging-basic-tutorial
+  ☐
