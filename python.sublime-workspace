@@ -204,9 +204,11 @@
 	},
 	"file_history":
 	[
+		"/Users/williamliu/GitHub/Python/Celery/tasks.py",
+		"/Users/williamliu/GitHub/surveys/login",
+		"/Users/williamliu/Downloads/xkcd.py",
 		"/Users/williamliu/GitHub/Python/logging/sample_logging.py",
 		"/Users/williamliu/GitHub/Python/decorators/sample_decorator.py",
-		"/Users/williamliu/GitHub/Python/Celery/tasks.py",
 		"/Users/williamliu/GitHub/Python/vowpal_rabbit/tutorial_logreg.py",
 		"/Users/williamliu/GitHub/MHADjango/datasite/timesheets/calculations.py",
 		"/Users/williamliu/GitHub/MHADjango/datasite/templates/encrypt.html",
@@ -329,13 +331,11 @@
 		"/Users/williamliu/GitHub/MHADjango/datasite/static/css/cover.css",
 		"/Users/williamliu/GitHub/MHADjango/datasite/static/js/custom.js",
 		"/Users/williamliu/GitHub/WebDev/jQuery/tutsplus/jquery-1.11.1.js",
-		"/Users/williamliu/GitHub/WebDev/jQuery/tutsplus/index.html",
-		"/Users/williamliu/GitHub/WebDev/jQuery/jQueryHelloWorld/index.html",
-		"/Users/williamliu/Library/Application Support/Sublime Text 3/Packages/User/SublimeCodeIntel.sublime-settings"
+		"/Users/williamliu/GitHub/WebDev/jQuery/tutsplus/index.html"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
@@ -497,8 +497,8 @@
 						"selection":
 						[
 							[
-								1943,
-								1943
+								626,
+								626
 							]
 						],
 						"settings":
@@ -607,8 +607,12 @@
 							},
 							"codeintel_tooltips": "popup",
 							"incomplete_sync": null,
+							"remote_loading": false,
 							"sublime_auto_complete": true,
-							"syntax": "Packages/PlainTasks/PlainTasks.tmLanguage"
+							"synced": false,
+							"syntax": "Packages/PlainTasks/PlainTasks.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
