@@ -116,10 +116,10 @@
 	"buffers":
 	[
 		{
-			"file": "learn.TODO",
+			"file": "Pickle/pickle_sample.py",
 			"settings":
 			{
-				"buffer_size": 2854,
+				"buffer_size": 1447,
 				"line_ending": "Unix"
 			}
 		}
@@ -202,8 +202,14 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Users/williamliu/GitHub/Python",
+		"/Users/williamliu/GitHub/Python/Pickle"
+	],
 	"file_history":
 	[
+		"/Users/williamliu/GitHub/Python/learn.TODO",
 		"/Users/williamliu/GitHub/Python/Celery/tasks.py",
 		"/Users/williamliu/GitHub/surveys/login",
 		"/Users/williamliu/Downloads/xkcd.py",
@@ -330,8 +336,7 @@
 		"/Users/williamliu/GitHub/MHADjango/datasite/static/css/images/ui-bg_gloss-wave_35_f6a828_500x100.png",
 		"/Users/williamliu/GitHub/MHADjango/datasite/static/css/cover.css",
 		"/Users/williamliu/GitHub/MHADjango/datasite/static/js/custom.js",
-		"/Users/williamliu/GitHub/WebDev/jQuery/tutsplus/jquery-1.11.1.js",
-		"/Users/williamliu/GitHub/WebDev/jQuery/tutsplus/index.html"
+		"/Users/williamliu/GitHub/WebDev/jQuery/tutsplus/jquery-1.11.1.js"
 	],
 	"find":
 	{
@@ -486,19 +491,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "learn.TODO",
+					"file": "Pickle/pickle_sample.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2854,
+						"buffer_size": 1447,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								626,
-								626
+								825,
+								825
 							]
 						],
 						"settings":
@@ -610,9 +615,7 @@
 							"remote_loading": false,
 							"sublime_auto_complete": true,
 							"synced": false,
-							"syntax": "Packages/PlainTasks/PlainTasks.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -701,6 +704,7 @@
 		],
 		"width": 0.0
 	},
+	"selected_group": 0,
 	"settings":
 	{
 	},
