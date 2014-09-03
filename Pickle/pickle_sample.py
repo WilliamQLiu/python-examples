@@ -7,6 +7,12 @@
     Note: if you need fast pickling, use the C version (cPickle), slightly
     different, but
     Marshal is similar (more primitive), but should always prefer Pickle instead
+
+    Uses for pickling:
+      * save a program's state data to disk (persistence)
+      * send python data over a TCP connection in a multi-core or distributed system (marshal)
+      * store python objects in a database
+      * convert a python object to a string so it can be used as a dict key ()
 """
 
 import pickle
