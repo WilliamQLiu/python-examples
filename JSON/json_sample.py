@@ -132,9 +132,9 @@ def dumped_length():
 
 
 if __name__ == '__main__':
-    #encoding_basic_python_object()
+    encoding_basic_python_object()
     #compact_encoding()
     #pretty_print()
-    decoding_JSON()
+    #decoding_JSON()
     #specializing_JSON_object_decoding()
     #dumped_length()
