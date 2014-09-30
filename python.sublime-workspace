@@ -120,42 +120,50 @@
 	"buffers":
 	[
 		{
-			"file": "pymongo/using_find.py",
+			"file": "pymongo/week2/pymongo_find_find_one_and_cursors/using_find.py",
 			"settings":
 			{
-				"buffer_size": 1644,
+				"buffer_size": 801,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "pymongo/hw2-3/userDAO.py",
+			"file": "pymongo/week3/homework_3_2/hw3-2and3-3/hw3-2and3-3/blogPostDAO.py",
 			"settings":
 			{
-				"buffer_size": 3071,
+				"buffer_size": 4091,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "pymongo/week2/pymongo_inserting/insert_quiz.py",
+			"file": "pymongo/week2/hw2.py",
 			"settings":
 			{
-				"buffer_size": 608,
+				"buffer_size": 1919,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "pymongo/week2/pymongo_inserting/using_insert.py",
+			"file": "/Users/williamliu/Dropbox/mongodb_class/chapter_2_crud.3da6a46d8250/homework_2_2/grades.json",
 			"settings":
 			{
-				"buffer_size": 743,
+				"buffer_size": 113883,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "pymongo/week2/pymongo_sort_skip_and_limit/using_limit_skip_sort.py",
+			"file": "pymongo/week3/hw3.py",
 			"settings":
 			{
-				"buffer_size": 918,
+				"buffer_size": 3639,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/williamliu/Dropbox/mongodb_class/chapter_3_schema_design.7aab33c35594/homework_3_1/students.json",
+			"settings":
+			{
+				"buffer_size": 68679,
 				"line_ending": "Unix"
 			}
 		}
@@ -241,10 +249,26 @@
 	"expanded_folders":
 	[
 		"/Users/williamliu/GitHub/Python",
-		"/Users/williamliu/GitHub/Python/pymongo"
+		"/Users/williamliu/GitHub/Python/pymongo",
+		"/Users/williamliu/GitHub/Python/pymongo/week3",
+		"/Users/williamliu/GitHub/Python/pymongo/week3/homework_3_2",
+		"/Users/williamliu/GitHub/Python/pymongo/week3/homework_3_2/hw3-2and3-3",
+		"/Users/williamliu/GitHub/Python/pymongo/week3/homework_3_2/hw3-2and3-3/hw3-2and3-3"
 	],
 	"file_history":
 	[
+		"/Users/williamliu/GitHub/Python/pymongo/week3/homework_3_2/hw3-2and3-3/hw3-2and3-3/sessionDAO.py",
+		"/Users/williamliu/GitHub/Python/pymongo/week3/homework_3_2/hw3-2and3-3/hw3-2and3-3/blog.py",
+		"/Users/williamliu/GitHub/Python/pymongo/week3/homework_3_2/hw3-2and3-3/hw3-2and3-3/validate.py",
+		"/Users/williamliu/GitHub/Python/pymongo/week3/homework_3_2/hw3-2and3-3/hw3-2and3-3/userDAO.py",
+		"/Users/williamliu/GitHub/Python/pymongo/week2/pymongo_find_and_modify/using_find_and_modify.py",
+		"/private/etc/ansible/hosts",
+		"/Users/williamliu/GitHub/Python/pytesseract/pdf_example.py",
+		"/Users/williamliu/GitHub/Python/pymongo/week2/pymongo_sort_skip_and_limit/using_limit_skip_sort.py",
+		"/Users/williamliu/GitHub/Python/pymongo/week2/pymongo_inserting/using_insert.py",
+		"/Users/williamliu/GitHub/Python/pymongo/week2/pymongo_inserting/insert_quiz.py",
+		"/Users/williamliu/GitHub/Python/pymongo/using_find.py",
+		"/Users/williamliu/GitHub/Python/pymongo/hw2-3/userDAO.py",
 		"/Users/williamliu/GitHub/Python/Pickle/pickle_sample.py",
 		"/Users/williamliu/GitHub/Python/learn.TODO",
 		"/Users/williamliu/GitHub/Python/Celery/tasks.py",
@@ -360,19 +384,7 @@
 		"/Users/williamliu/GitHub/MHADjango/datasite/docs/conf.py",
 		"/Users/williamliu/GitHub/MHADjango/datasite/docs/timesheets.rst",
 		"/Users/williamliu/GitHub/MHADjango/datasite/docs/index.rst",
-		"/Users/williamliu/GitHub/MHADjango/datasite/docs/source/conf.py",
-		"/Users/williamliu/GitHub/MHADjango/datasite/docs/source/index.rst",
-		"/Users/williamliu/GitHub/MHADjango/datasite/docs/doctrees/environment.pickle",
-		"/Users/williamliu/GitHub/MHADjango/datasite/docs/doctrees/index.doctree",
-		"/Users/williamliu/GitHub/MHADjango/datasite/docs/installation.rst",
-		"/Users/williamliu/GitHub/MHADjango/datasite/docs/deployment.rst",
-		"/Users/williamliu/GitHub/MHADjango/datasite/templates/blank.html",
-		"/Users/williamliu/Library/Application Support/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
-		"/Users/williamliu/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
-		"/Users/williamliu/Desktop/test.html",
-		"/Users/williamliu/GitHub/MHADjango/datasite/static/css/images/ui-bg_gloss-wave_35_f6a828_500x100.png",
-		"/Users/williamliu/GitHub/MHADjango/datasite/static/css/cover.css",
-		"/Users/williamliu/GitHub/MHADjango/datasite/static/js/custom.js"
+		"/Users/williamliu/GitHub/MHADjango/datasite/docs/source/conf.py"
 	],
 	"find":
 	{
@@ -392,6 +404,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"XXX",
 			"mjob",
 			"program_select",
 			"date_select",
@@ -527,19 +540,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "pymongo/using_find.py",
+					"file": "pymongo/week2/pymongo_find_find_one_and_cursors/using_find.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1644,
+						"buffer_size": 801,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1573,
-								1573
+								289,
+								290
 							]
 						],
 						"settings":
@@ -552,27 +565,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 687.0,
+						"translation.y": 149.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "pymongo/hw2-3/userDAO.py",
+					"file": "pymongo/week3/homework_3_2/hw3-2and3-3/hw3-2and3-3/blogPostDAO.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3071,
+						"buffer_size": 4091,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1783,
-								1783
+								3846,
+								3846
 							]
 						],
 						"settings":
@@ -585,7 +598,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 608.0,
+						"translation.y": 1380.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -593,19 +606,19 @@
 				},
 				{
 					"buffer": 2,
-					"file": "pymongo/week2/pymongo_inserting/insert_quiz.py",
+					"file": "pymongo/week2/hw2.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 608,
+						"buffer_size": 1919,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								472,
-								482
+								1105,
+								1105
 							]
 						],
 						"settings":
@@ -618,27 +631,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 822.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "pymongo/week2/pymongo_inserting/using_insert.py",
+					"file": "/Users/williamliu/Dropbox/mongodb_class/chapter_2_crud.3da6a46d8250/homework_2_2/grades.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 743,
+						"buffer_size": 113883,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								283,
-								283
+								139,
+								139
 							]
 						],
 						"settings":
@@ -646,9 +659,7 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -659,19 +670,19 @@
 				},
 				{
 					"buffer": 4,
-					"file": "pymongo/week2/pymongo_sort_skip_and_limit/using_limit_skip_sort.py",
+					"file": "pymongo/week3/hw3.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 918,
+						"buffer_size": 3639,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								512,
-								521
+								216,
+								216
 							]
 						],
 						"settings":
@@ -684,7 +695,38 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 158.0,
+						"translation.y": 738.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/williamliu/Dropbox/mongodb_class/chapter_3_schema_design.7aab33c35594/homework_3_1/students.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 68679,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								339,
+								339
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,

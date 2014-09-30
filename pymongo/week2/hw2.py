@@ -54,6 +54,7 @@ def find_lowest_delete():
 
     query = {'type':'homework'}
 
+    # Find total items
     num_items_cursor = scores.find().count()
     print "Total number of items is: ", num_items_cursor
 
@@ -67,14 +68,15 @@ def find_lowest_delete():
     except:
         print "Unexpected error:", sys.exc_info()[0]
 
+    # Students and scores are now in ascending order
 
     student_id_list = []
-    for doc in cursor:
-        num = doc['student_id']
-        if num not in student_id_list:
-            student_id_list.append(num)
+    for doc in cursor:  # Go through every item that matched original query
+        num = doc['student_id']  # Check the student's id if in list already
+        if num not in student_id_list:  # If not in list, then...
+            student_id_list.append(num)  # Add user's number to the list
             #print doc
-            scores.remove(doc)
+            scores.remove(doc)  # Remove the lowest score from the list
         else:
             pass
 
