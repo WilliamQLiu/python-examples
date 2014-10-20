@@ -1,0 +1,1 @@
+db.zips.aggregate([ {$match: {$or: [ { state:"CA" }, { state:"NY"}]}}, {$match:{pop:{$gt:25000}}} ])

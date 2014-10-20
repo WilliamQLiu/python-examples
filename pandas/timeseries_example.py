@@ -7,6 +7,7 @@ import numpy as np
 import pandas as pd
 from pandas.tseries.offsets import Hour, Minute, Day, MonthEnd, MonthBegin, YearBegin
 
+
 def stdlib_get_time():
     """ Standard Library Date and Time Tools """
     now = datetime.now()
@@ -15,6 +16,7 @@ def stdlib_get_time():
     print "Month is", now.month # 3
     print "Day is", now.day # 31
     print "\n"
+
 
 def read_datetime():
     """ Convert a string to date """
@@ -30,6 +32,7 @@ def dateutil_parser():
     print "Date parsed is", parse('Jan 31, 1997 10:45 PM') # 1997-01-31 22:45:00
     print "\n"
 
+
 def series_date():
     """ Setting a DatetimeIndex on a Series """
     dates = [datetime(2011, 1, 2), datetime(2011, 1, 5), datetime(2011, 1, 7),
@@ -43,6 +46,7 @@ def series_date():
     # Indexing and Selecting Data
     print "Selecting a specific row index:", ts.index[2] # 2011-01-07 00:00:00
 
+
 def slicing_series():
     """ How to slice a DateTime Series """
     longer_ts = pd.Series(np.random.randn(1000), index=pd.date_range('1/1/2000',
@@ -53,10 +57,12 @@ def slicing_series():
     print "Slicing by date (year): \n", longer_ts['2001']
     print "Slicing by date range: \n", longer_ts['2001-05':'2011-06']
 
+
 def convert_to_datetime():
     """ How to convert a Series into a Time Series """
     now_ts = pd.to_datetime(pd.Series(['Jul 31, 2009', '2010-01-10', None]))
     print "Converting Series to a Time Series", now_ts
+
 
 def timestamp_duplicates():
     """ How to handle duplicates in a timestamp """
@@ -71,6 +77,7 @@ def timestamp_duplicates():
     print "Mean of grouped: \n", grouped.mean()
     print "Count of grouped: \n", grouped.count()
 
+
 def timestamp_resample():
     """ How to assign a fixed frequency"""
     dates = pd.DatetimeIndex(['1/1/2000', '1/1/2000', '1/10/2000',
@@ -78,6 +85,7 @@ def timestamp_resample():
     my_ts = pd.Series(np.arange(5), index=dates)
     my_ts = my_ts.resample('D') # Resample by Days
     print "Resampled TimeStamp \n", my_ts
+
 
 def timestamp_dateoffset():
     """ How to set a date offset using Shift """
@@ -95,6 +103,7 @@ def timestamp_dateoffset():
     print "Shifting index forward 2:\n", ts.shift(2)
     #print "Shifting index backwards 2:\n", ts.shift(-1, freq='M')
     print "Percent change in times\n", ts / ts.shift(1) - 1
+
 
 def timestamp_rollforward_rollback():
     """ How to role the date forward (end of time) or backward (beg of time) """
@@ -119,9 +128,10 @@ def timestamp_rollforward_rollback():
     ts = ts.groupby(offset.rollforward).mean()
     print "Time Series after rolling forward\n", ts
 
+
 def period_test():
     """ How to use Periods to represent time spans like days, months, years"""
-    p = pd.Period('2007-1-1', freq='A-DEC') # Anchor Annual last given month 
+    p = pd.Period('2007-1-1', freq='A-DEC') # Anchor Annual last given month
     print "Original Period is", p #2007
 
     pd_rng = pd.period_range('1/1/2013', '3/30/2014', freq='M')
@@ -146,6 +156,6 @@ if __name__ == "__main__":
     #timestamp_duplicates() # How to handle duplicates in Time Series
     timestamp_resample() # How to create a fixed frequency date index
     #timestamp_dateoffset() # How to shift the data on index by a specific time
-    #timestamp_rollforward_rollback() # How to roll fwd and back by date index 
+    #timestamp_rollforward_rollback() # How to roll fwd and back by date index
     #period_test()
     #timestamp_rollforward_rollback() # How to roll fwd and back by date index
