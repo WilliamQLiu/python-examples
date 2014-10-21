@@ -119,6 +119,15 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "ggplot/sample_ggplot.py",
+			"settings":
+			{
+				"buffer_size": 1701,
+				"line_ending": "Unix",
+				"name": "from ggplot import *"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -482,8 +491,38 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "ggplot/sample_ggplot.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1701,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1159,
+								1159
+							]
+						],
+						"settings":
+						{
+							"auto_name": "from ggplot import *",
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 248.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
