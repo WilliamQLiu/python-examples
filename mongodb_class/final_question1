@@ -1,0 +1,8 @@
+db.messages.count({
+            $and: [{
+                "headers.From": "andrew.fastow@enron.com"
+            }, {
+                "headers.To": {
+                    $in: ["jeff.skilling@enron.com"]
+                }
+            }]})
