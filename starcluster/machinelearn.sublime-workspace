@@ -1,0 +1,693 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ec2",
+				"ec2_conn	statement"
+			],
+			[
+				"bucket",
+				"bucket_and_keyvalue_example	function"
+			],
+			[
+				"set_conte",
+				"set_contents_from_string	function"
+			],
+			[
+				"Adive",
+				"AdviceDeleteView  (class)"
+			],
+			[
+				"get",
+				"get_object_or_404	function"
+			],
+			[
+				"UserProfile",
+				"UserProfileSerializer	class"
+			],
+			[
+				"Date",
+				"DateTimeField	class"
+			],
+			[
+				"Radio",
+				"RadioSelect	class"
+			],
+			[
+				"Start",
+				"start_date	statement"
+			],
+			[
+				"CostCod",
+				"CostCodeSerializer	class"
+			],
+			[
+				"Time",
+				"TimeSerializer	class"
+			],
+			[
+				"find",
+				"find_elements_by_link_text	function"
+			],
+			[
+				"Program",
+				"ProgramForm	class"
+			],
+			[
+				"Pro",
+				"ProgramResultsView	class"
+			],
+			[
+				"time_",
+				"time_to_delete	statement"
+			],
+			[
+				"time",
+				"time_to_delete	statement"
+			],
+			[
+				"te",
+				"TextField	class"
+			],
+			[
+				"auth",
+				"auth_views"
+			],
+			[
+				"password",
+				"password_reset	function"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"name",
+				"user_name"
+			],
+			[
+				"Model",
+				"ModelAdmin	import"
+			],
+			[
+				"get_",
+				"get_full_name	function"
+			],
+			[
+				"my",
+				"my_user_name	function"
+			],
+			[
+				"Enter",
+				"EnterTimeForm	class"
+			],
+			[
+				"EnterProgram",
+				"EnterProgramForm	class"
+			],
+			[
+				"render",
+				"render_to_response	function"
+			],
+			[
+				"smart",
+				"smart_unicode	statement"
+			],
+			[
+				"da",
+				"DateField	class"
+			],
+			[
+				"EMAIL",
+				"EMAIL_PORT  (variable)"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "starcluster_sample.py",
+			"settings":
+			{
+				"buffer_size": 2074,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "amazon_sample.py",
+			"settings":
+			{
+				"buffer_size": 3989,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 49.0,
+		"selected_items":
+		[
+			[
+				"Package Control: enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"Package Control: disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"Package Control: ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"tasks",
+				"Tasks: New document"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"Package Control: remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			],
+			[
+				"Package Control:disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"Package Control: rem",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 435.0
+	},
+	"console":
+	{
+		"height": 213.0,
+		"history":
+		[
+			"view.options().set('wordWrap', False)",
+			"View.options().set('wordWrap', False)",
+			"view.options().set('wordWrap', False)",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib2,os; pf='Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler( ))); open( os.path.join( ipp, pf), 'wb' ).write( urllib2.urlopen( 'http://sublime.wbond.net/' +pf.replace( ' ','%20' )).read()); print( 'Please restart Sublime Text to finish installation')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/williamliu/GitHub/WillMachineLearn"
+	],
+	"file_history":
+	[
+		"/Users/williamliu/Desktop/travelplans",
+		"/Users/williamliu/GitHub/WillMachineLearn/boto_sample.py",
+		"/Users/williamliu/GitHub/WillMachineLearn/.boto",
+		"/Users/williamliu/GitHub/WillMachineLearn/boto.cfg",
+		"/Users/williamliu/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/williamliu/Library/Application Support/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/Users/williamliu/Library/Application Support/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/Users/williamliu/GitHub/WillMachineLearn/will.boto",
+		"/Users/williamliu/GitHub/WillMachineLearn/machinelearn.sublime-project",
+		"/Users/williamliu/GitHub/westendly/static/redactor/redactor.js",
+		"/Users/williamliu/GitHub/westendly/static/js/jquery.min.js",
+		"/Users/williamliu/GitHub/westendly/westendly/templates/advice_update.html",
+		"/Users/williamliu/GitHub/westendly/westendly/templates/load_css.html",
+		"/Users/williamliu/GitHub/westendly/westendly/templates/load_js.html",
+		"/Users/williamliu/GitHub/westendly/westendly/templates/advice_create.html",
+		"/Users/williamliu/GitHub/westendly/westendly/westendly/settings.py",
+		"/Users/williamliu/GitHub/westendly/westendly/templates/advice_delete.html",
+		"/Users/williamliu/GitHub/westendly/westendly/applicant/views.py",
+		"/Users/williamliu/GitHub/westendly/project.TODO",
+		"/Users/williamliu/GitHub/westendly/westendly/advice/models.py",
+		"/Users/williamliu/GitHub/westendly/westendly/templates/resume_delete.html",
+		"/Users/williamliu/GitHub/westendly/westendly/templates/base.html",
+		"/Users/williamliu/GitHub/westendly/westendly/advice/forms.py",
+		"/Users/williamliu/GitHub/westendly/westendly/templates/advice_main.html",
+		"/Users/williamliu/GitHub/westendly/westendly/westendly/urls.py",
+		"/Users/williamliu/GitHub/westendly/westendly/templates/resume_update.html",
+		"/Users/williamliu/GitHub/westendly/westendly/templates/resume_create.html",
+		"/Users/williamliu/GitHub/westendly/westendly/applicant/forms.py",
+		"/Users/williamliu/GitHub/westendly/westendly/applicant/models.py",
+		"/Users/williamliu/GitHub/westendly/westendly/templates/job_all.html",
+		"/Users/williamliu/GitHub/westendly/westendly/advice/views.py",
+		"/Users/williamliu/GitHub/westendly/westendly/advice/sample_advice.csv",
+		"/Users/williamliu/GitHub/westendly/westendly/advice/admin.py",
+		"/Users/williamliu/GitHub/westendly/westendly/templates/socialdone.html",
+		"/Users/williamliu/GitHub/westendly/westendly/templates/home.html",
+		"/Users/williamliu/GitHub/westendly/westendly/login/views.py",
+		"/Users/williamliu/GitHub/westendly/westendly/templates/members.html",
+		"/Users/williamliu/GitHub/westendly/westendly/employer/views.py",
+		"/Users/williamliu/GitHub/westendly/westendly/templates/profile.html",
+		"/Users/williamliu/GitHub/westendly/westendly/employer/forms.py",
+		"/Users/williamliu/GitHub/westendly/westendly/templates/job_delete.html",
+		"/Users/williamliu/GitHub/westendly/westendly/templates/job_view.html",
+		"/Users/williamliu/GitHub/westendly/westendly/templates/job_update.html",
+		"/Users/williamliu/GitHub/westendly/westendly/templates/resume_view.html",
+		"/Users/williamliu/GitHub/westendly/westendly/templates/job_posting.html",
+		"/Users/williamliu/GitHub/westendly/westendly/employer/models.py",
+		"/Users/williamliu/GitHub/westendly/westendly/templates/job_create.html",
+		"/Users/williamliu/GitHub/westendly/westendly/scripts/scraping/indeed.py",
+		"/Users/williamliu/GitHub/westendly/westendly/westendly/email_info.py",
+		"/Users/williamliu/GitHub/westendly/westendly/applicant/tasks.py",
+		"/Users/williamliu/Library/Application Support/Sublime Text 3/Packages/PlainTasks/messages/Tutorial.todo",
+		"/Users/williamliu/GitHub/westendly/static/admin/css/ie.css",
+		"/Users/williamliu/.bash_profile",
+		"/Users/williamliu/GitHub/westendly/westendly/westendly/celery.py",
+		"/Library/Python/2.7/site-packages/django/__init__.py",
+		"/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/__future__.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/timesheets/calculations_numbers.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/timesheets/calculations.py",
+		"/Users/williamliu/GitHub/Python/pycrypto/sample_pycrypto.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/templates/program_list.html",
+		"/Users/williamliu/GitHub/MHADjango/datasite/timesheets/tests.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/timesheets/test_programs.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/functional_tests/test_functional.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/timesheets/admin.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/dataentry/settings.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/pytest.ini",
+		"/Users/williamliu/GitHub/MHADjango/datasite/functional_tests.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/tests/__init__.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/tests/functional_tests.py",
+		"/Users/williamliu/GitHub/Python/hashlib_and_hmac/hashing_sample.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/timesheets/models.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/userprofile/models.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/userprofile/views.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/templates/program_create.html",
+		"/Users/williamliu/GitHub/d3-book/chapter_09/23_each_combo_transition_chained.html",
+		"/Users/williamliu/GitHub/d3-book/chapter_09/17_randomized_data.html",
+		"/Users/williamliu/GitHub/MHADjango/datasite/templates/ddh.html",
+		"/Users/williamliu/GitHub/d3-book/chapter_09/21_each.html",
+		"/Users/williamliu/GitHub/d3-book/chapter_10/14_div_tooltip.html",
+		"/Users/williamliu/GitHub/d3-book/chapter_11/01_pie.html",
+		"/Users/williamliu/GitHub/d3-book/chapter_09/01_bar_chart.html",
+		"/Users/williamliu/GitHub/d3-book/chapter_09/04_updates_all_data_fixed.html",
+		"/Users/williamliu/GitHub/d3-book/chapter_09/06_duration.html",
+		"/Users/williamliu/GitHub/d3-book/chapter_09/02_bar_chart_with_scales.html",
+		"/Users/williamliu/GitHub/MHADjango/datasite/ddh/models.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/dataentry/urls.py",
+		"/Users/williamliu/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/williamliu/GitHub/MHADjango/datasite/ddh/views.py",
+		"/Users/williamliu/GitHub/d3-book/chapter_06/15_making_a_bar_chart_even.html",
+		"/Users/williamliu/GitHub/d3-book/chapter_06/21_making_a_bar_chart_aligned.html",
+		"/Users/williamliu/GitHub/d3-book/chapter_06/06_power_of_data_random.html",
+		"/Users/williamliu/GitHub/MHADjango/datasite/media/ddh_texts.csv",
+		"/Users/williamliu/GitHub/MHADjango/datasite/config/sql/load_csv.sql",
+		"/Users/williamliu/GitHub/Misc/D3 Template/d3/d3.v3.js",
+		"/Users/williamliu/GitHub/MHADjango/datasite/templates/base.html",
+		"/Users/williamliu/GitHub/MHADjango/datasite/timesheets/views.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/ddh/admin.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/dataentry/celery.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/config/long_script.conf",
+		"/Users/williamliu/GitHub/MHADjango/datasite/config/nginx.conf",
+		"/Users/williamliu/GitHub/MHADjango/datasite/config/sample_long.sh",
+		"/Users/williamliu/GitHub/MHADjango/datasite/timesheets/tasks.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/dataentry/local_settings.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/dataentry/settings/__init__.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/dataentry/email_info.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/ddh/__init__.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/timesheets/serializers.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/dataentry/settings/base.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/dataentry/settings/local.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/templates/program_update.html",
+		"/Users/williamliu/GitHub/MHADjango/datasite/timesheets/forms.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/dataentry/settings/settings.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/dataentry/__init__.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/dataentry/settings/production.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/timesheets/celery.py",
+		"/Users/williamliu/GitHub/MHADjango/datasite/templates/program_delete.html",
+		"/Users/williamliu/GitHub/MHADjango/datasite/templates/report.html",
+		"/Users/williamliu/GitHub/MHADjango/datasite/static/css/jumbotron.css",
+		"/Users/williamliu/GitHub/MHADjango/.gitignore",
+		"/Users/williamliu/GitHub/MHADjango/static/css/jumbotron.css",
+		"/Users/williamliu/GitHub/spark/core/src/main/scala/org/apache/spark/rdd/HadoopRDD.scala",
+		"/Users/williamliu/GitHub/MHAPython/iPython/MHA Timesheets.ipynb",
+		"/Users/williamliu/GitHub/spark/sql/hive/src/test/resources/ql/src/test/queries/clientpositive/mapjoin_hook.q",
+		"/Users/williamliu/GitHub/Python/docs/Makefile",
+		"/Users/williamliu/GitHub/westendly/westendly/userlogin/views.py",
+		"/Users/williamliu/GitHub/westendly/westendly/templates/job_list.html",
+		"/Users/williamliu/GitHub/westendly/westendly/userlogin/forms.py",
+		"/Users/williamliu/GitHub/westendly/westendly/templates/resume_list.html"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 95.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"conn",
+			"east",
+			"try",
+			"interpreter",
+			"folders",
+			"sites",
+			"job",
+			"Delete",
+			"delete",
+			"Advic",
+			"advice_delete",
+			"paginate",
+			"FormCreateView",
+			"forms",
+			"charArea",
+			"home",
+			"AUTHENTICATION",
+			"list",
+			"render",
+			"create",
+			"resume_list",
+			"resume-view",
+			"resume_update",
+			"resume_create",
+			"jobpost",
+			"Create",
+			"Post",
+			"=\"\">{%",
+			"update",
+			"django.conf",
+			"queryset",
+			"group",
+			"groupby",
+			"conftest.py",
+			"decode",
+			"blank",
+			"data",
+			"UserProfile",
+			"stillhere",
+			"User",
+			"i=",
+			"data_types",
+			"date_types",
+			"data",
+			"freqData",
+			"freq",
+			"settings",
+			"js",
+			"javascript",
+			"celery",
+			"group",
+			"APIlink",
+			"serializers",
+			"from",
+			"data",
+			"program",
+			"program_list",
+			"program-list",
+			"monthly",
+			"None",
+			"listview",
+			"generic",
+			"MyEncoder",
+			"calendar",
+			"df.",
+			"df.cacl",
+			"register",
+			"timesheet",
+			"timesheets",
+			"listview",
+			"decorators",
+			"APIView",
+			"ProgramViewSet",
+			"render_to_response",
+			"viewsets",
+			"program",
+			"views.",
+			"time",
+			"UserViewSet",
+			"serializer",
+			".apply",
+			"map\nmap",
+			".map",
+			"admin",
+			"coverage",
+			"wait",
+			"pause",
+			"program-list",
+			"blank",
+			"body",
+			"$",
+			"select",
+			"all",
+			"enter",
+			"all",
+			"protocol",
+			"message",
+			"user_login",
+			"block content",
+			"enter",
+			"tab",
+			"enter",
+			"tab",
+			"entertime",
+			"EnterTime",
+			"input",
+			"inherit",
+			"color: inherit",
+			"white",
+			"p",
+			"line",
+			"space",
+			"spaces",
+			"space",
+			"container",
+			"DJANGO_SETTINGS_MODULE",
+			"outfile",
+			"id",
+			"conversation",
+			"name",
+			"how did you find out",
+			"word_wrap",
+			"wrap",
+			"mydataframe",
+			"New York",
+			"new york",
+			"array",
+			"4"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"dataset",
+			"ic_svy"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "starcluster_sample.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2074,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								397,
+								397
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"open_with_edit": true,
+							"remote_loading": false,
+							"rulers":
+							[
+								80
+							],
+							"synced": false,
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 5.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "amazon_sample.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3989,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1435,
+								1435
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 930.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.anaconda_documentation":
+	{
+		"height": 194.0
+	},
+	"output.exec":
+	{
+		"height": 165.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"project": "machinelearn.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 230.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
