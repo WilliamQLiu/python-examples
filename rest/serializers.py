@@ -38,7 +38,7 @@ if __name__ == '__main__':
 
     ### SERIALIZE
     serializer = CommentSerializer(comment)  # Serialize a comment
-    print "Serializer data " + serializer.data  # Taken model and translated into Python native datatypes
+    print serializer.data  # Take model, translate into Python native datatypes
     # {'email': u'wliu@test.com', 'content': u'foo bar',
     # 'created': datetime.datetime(2014, 10, 9, 16, 20, 9, 822774)}
 
@@ -50,10 +50,10 @@ if __name__ == '__main__':
 
     ### DESERIALIZE
     stream = StringIO(json)
-    data = JSONParser().parse(stream)  # Parse a stream into Python native datatypes
+    data = JSONParser().parse(stream)  # Parse stream to Python native datatype
 
     serializer = CommentSerializer(data=data)  # Restore native datatypes into a dic of validated data
-    serializer.is_valid()  # True  # Need to call is_valid() before accessing data
+    serializer.is_valid()  # True  # Call is_valid() before accessing data
     serializer.validated_data
     # # {'content': 'foo bar', 'email': 'wliu@test.com',
     #'created': datetime.datetime(2014, 10, 9, 16, 20, 09, 822243)}
