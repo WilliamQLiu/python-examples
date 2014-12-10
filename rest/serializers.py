@@ -22,10 +22,28 @@ class Comment(object):
         self.created = created or datetime.now()
 
 
+# A simple serializer
 class CommentSerializer(serializers.Serializer):
     email = serializers.EmailField()
     content = serializers.CharField(max_length=200)
     created = serializers.DateTimeField()
+
+
+# Serializer that returns complete object instances with .create() and update()
+class InstanceCommentSerializer(serializers.Serializer):
+    email = serializers.EmailField()
+    content = serializers.CharField(max_length=200)
+    created = serializers.DateTimeField()
+
+    def create(self, validated_data):
+        return Comment(**validated_data)
+
+    def update(self, instance, validated_data):
+        instance.email = validated_data.get('email', instance.email)
+        instance.content = validated_data.get('content', instance.content)
+        instance.created = validated_data.get('created', instance.created)
+        instance.save()  # if 'Comment' was a Django Model, need to save obj
+        return instance
 
 
 if __name__ == '__main__':
@@ -58,5 +76,9 @@ if __name__ == '__main__':
     # # {'content': 'foo bar', 'email': 'wliu@test.com',
     #'created': datetime.datetime(2014, 10, 9, 16, 20, 09, 822243)}
 
+
+    ### INSTANCES
+    # If we want to return complete object instances based on validated data
+    # we need to implement .create() and update() methods
 
 
