@@ -46,4 +46,38 @@
 #from ConfigParser import ConfigParserN
 
 if __name__ == '__main__':
-    print "See notes about "
+
+    ### Starcluster Config File is here, holds AWS keys
+    print "Setup config file (AWS info, cluster setup)"
+    print "$subl ~/.starcluster/config"
+    print "\n"
+
+    ### Start a cluster that we named in config
+    print "Start a cluster that we named in config (e.g. smallcluster)"
+    print "$starcluster start smallcluster"
+    print "\n"
+
+    ### SSH into cluster
+    print "SSH into cluster"
+    print "$starcluster sshmaster smallcluster"
+    print "\n"
+
+    ### Put local file or dir to server
+    print "Put file or dir from local computer to server"
+    print "$starcluster put /path/to/local/file/or/dir /remote/path/"
+    print "\n"
+
+    ### Get get file or dir from server to local computer
+    print "Get file or dir from server to local computer"
+    print "$starcluster get /path/to/remote/file/or/dir /local/path/"
+    print "\n"
+
+    ### Terminate server (IMPORTANT - or else it'll cost a lot)
+    print "Terminate server"
+    print "$starcluster teminate smallcluster"
+    print "\n"
+
+    ### help
+    print "Get additional help"
+    print "$starcluster --help"
+    print "\n"
