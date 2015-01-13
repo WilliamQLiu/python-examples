@@ -1,0 +1,14 @@
+0.861145206256 - Alex's Model (no modifications)
+0.861139752062 - Alex's Model with added Binning (did not remove original parameters)
+0.832177383711 - Alex's Model with Binning (in df before numpy array conversion) and no Scaling
+0.831830867693 - Alex's Model with Binning (in df before numpy array conversion) and no Scaling (Replace NaNs with Median instead of Mean)
+
+0.854986835265 - AdaBoostClassifier (no modifications)
+0.86011546422 - GradientBoostClassifier (no modifications)
+
+Attempts:
+Instead of replacing NaN with Mean, replace with some value that is correlated
+maxdepth = 4
+limit number of nodes
+Learning Rate
+Max Estimators

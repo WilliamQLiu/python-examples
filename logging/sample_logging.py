@@ -1,3 +1,10 @@
+"""
+    logging defines functions and classes that implement a flexible logging
+    system.  logging is important for debugging and running (e.g. what happened
+    when a system crashed)
+
+"""
+
 import logging
 
 
@@ -10,8 +17,10 @@ def log_console_basic():
     print "End logging to console"
 
 
-def log_to_file():
-    """ Log to file """
+def log_to_file_simple():
+    """ Log to file; can be different levels (Critical, Error, Warning, Info,
+        Debug, Notset) """
+
     print "Start Logging to file"
     logging.basicConfig(filename='mytest.log', level=logging.DEBUG)
     logging.debug('This message should go to the log info')
@@ -20,6 +29,23 @@ def log_to_file():
     logging.warning('%s before you %s', 'Look', 'leap!')  # log variables
     print "File should now have four lines of logs"
     print "End logging to file"
+
+
+def log_to_file_realworld():
+    """ Log to file; this example is reading db, updating db, finishing """
+    logging.basicConfig(filename='mytest.log', level=logging.INFO)
+    logger = logging.getLogger(__name__)
+
+    logger.info('Start reading database')
+    # Read database
+
+    records = {'john': 55, 'tom': 66}
+    logger.debug('Records: %s', records)
+    logger.info('Updating records ... ')
+    # Update records
+
+    logger.info('Finishing Updating records')
+
 
 
 def log_time():
@@ -33,8 +59,10 @@ def log_time():
     logging.basicConfig(format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
     logging.warning('is the start of when this event was logged.')
 
+
 if __name__ == '__main__':
 
     #log_console_basic()
-    #log_to_file()
+    #log_to_file_simple()
+    #log_to_file_realworld()
     log_time()

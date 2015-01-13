@@ -23,15 +23,10 @@ class CreditScoreFeaturizer():
 
     ###First step, select some fields we care about, all of these are numeric, so we can just pick them out
     data = np.array(dataset[[ 'age', 
-     'NumberOfDependents' #, 'NumberOfOpenCreditLinesAndLoans', 'RevolvingUtilizationOfUnsecuredLines'
+     'NumberOfDependents'
      ]]) # Can add in additional features here
 
-    #dataset['age_to_linescredit'] = dataset['age'] / dataset['RevolvingUtilizationOfUnsecuredLines']
- 
-    #dataset['debt_to_monthlyincome'] = dataset['DebtRatio'] / dataset['MonthlyIncome']
-    
-
-    # debt ratio to monthly income relationship
+    #dataset['dollar_per_year'] = dataset['MonthlyIncome'] /  (1 + dataset['NumberOfDependents'])
 
     # ## You want to perform some more interesting transformations of the data
     # ## For example, ratios
@@ -101,23 +96,23 @@ def main():
   X_test = X[len(train_input):]
 
   ## Use any model that we might find appropriate
-  model = RidgeClassifierCV(alphas=[ 0.1, 1., 10. ])
+  #model = RidgeClassifierCV(alphas=[ 0.1, 1., 10. ])
 
   ##Create the object and set relevant parameters
-  #model = LogisticRegression(C=10) # Can also switch different models (e.g. Ridge)
+  model = LogisticRegression(C=10) # Can also switch different models (e.g. Ridge)
 
   ##Set target variable y
   y = train_input.SeriousDlqin2yrs
 
   print "Cross validating..."
-  print np.mean(cross_val_score(model, X_train, y, scoring='roc_auc')) # Scoring metric is now AUC
+  print np.mean(cross_val_score(model, X_train, y, scoring='roc_auc', cv=10)) # Scoring metric is now AUC
 
   print "Training final model..."
   model = model.fit(X_train, y)
 
 
-  #print "Create predictions on submission set..."
-  #create_submission(model, X_test, test_input)
+  print "Create predictions on submission set..."
+  create_submission(model, X_test, test_input)
 
 
 if __name__ == '__main__':

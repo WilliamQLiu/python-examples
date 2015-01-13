@@ -1,11 +1,30 @@
 import pandas as pd
 import numpy as np
 from sklearn.linear_model import LogisticRegression, RidgeClassifierCV
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
-from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier, AdaBoostRegressor
+from sklearn.tree import DecisionTreeClassifier, DecisionTreeRegressor
 from sklearn.cross_validation import cross_val_score
 from sklearn.preprocessing import Imputer
 from sklearn import preprocessing
+from sklearn.base import BaseEstimator
+import random
+
+class Bagging(BaseEstimator):
+    
+    def __init__(self, models, bag_size):
+        assert bag_size > 0.0 and bag_size < 1.0
+        self.models = models
+        self.bag_size = bag_size
+        
+    def fit(self, X, y):
+        N = X.shape[0]
+        for model in self.models:
+            bag_indices = np.random.randint(0, N, int(N*self.bag_size))
+            model.fit(X[bag_indices], y[bag_indices])
+        return self
+            
+    def predict_proba(self, X):
+        return np.mean([m.predict_proba(X) for m in self.models], axis=0)
 
 class CreditScoreFeaturizer():
   def __init__(self):
@@ -22,16 +41,7 @@ class CreditScoreFeaturizer():
     """
 
     ###First step, select some fields we care about, all of these are numeric, so we can just pick them out
-    data = np.array(dataset[[ 'age', 
-     'NumberOfDependents' #, 'NumberOfOpenCreditLinesAndLoans', 'RevolvingUtilizationOfUnsecuredLines'
-     ]]) # Can add in additional features here
-
-    #dataset['age_to_linescredit'] = dataset['age'] / dataset['RevolvingUtilizationOfUnsecuredLines']
- 
-    #dataset['debt_to_monthlyincome'] = dataset['DebtRatio'] / dataset['MonthlyIncome']
-    
-
-    # debt ratio to monthly income relationship
+    data = np.array(dataset[[ 'age', 'NumberOfDependents']])
 
     # ## You want to perform some more interesting transformations of the data
     # ## For example, ratios
@@ -47,18 +57,20 @@ class CreditScoreFeaturizer():
     scaler = preprocessing.StandardScaler()
     scaled_income = scaler.fit_transform(data[:,1])
 
-    # Added by Will
-    #scaled_debtratio = scaler.fit_transform(data[:,1])
-
-    data =  np.column_stack([data, scaled_income])
+    # data =  np.column_stack([data, scaled_income])
 
     # ## Turning features into discrete features is important if you are using linear classifier, but the underlying 
     # ## data does not have a linear relationship
 
     ## NOTE: the binarizer, turns everything > 0 to 1 and and everything less than 0 to 0, so use the StandardScaler first
+    # binarizer = preprocessing.Binarizer()
+    # binned_income = binarizer.fit_transform(scaled_income)
+
+    # data =  np.column_stack( [data,binned_income ] )
+
+    data =  np.column_stack([data, scaled_income])
     binarizer = preprocessing.Binarizer()
-    #binned_income = binarizer.fit_transform(scaled_income)
-    
+
     binned_numberoftimes90dayslate = binarizer.fit_transform(dataset['NumberOfTimes90DaysLate'])
     binned_numberoftime3059dayspastduenotworse = binarizer.fit_transform(dataset['NumberOfTime30-59DaysPastDueNotWorse'])
     binned_numberoftime6089dayspastduenotworse = binarizer.fit_transform(dataset['NumberOfTime60-89DaysPastDueNotWorse'])
@@ -66,16 +78,13 @@ class CreditScoreFeaturizer():
     binned_revolvingutilizationofunsecuredlines = binarizer.fit_transform(dataset['RevolvingUtilizationOfUnsecuredLines'])
     binned_debtratio = binarizer.fit_transform((.5 - dataset['DebtRatio']))
 
-    # Default
-    #data =  np.column_stack( [data,binned_income ] ) # column_stack is pretty much an append
-    #data =  np.column_stack( [data,binned_income ] ) # column_stack is pretty much an append
-
     data =  np.column_stack( [data, binned_numberoftimes90dayslate] )
     data =  np.column_stack( [data, binned_numberoftime3059dayspastduenotworse] )
     data =  np.column_stack( [data, binned_numberoftime6089dayspastduenotworse] )
     data =  np.column_stack( [data, binned_numberofopencreditlinesandloans] )
     data =  np.column_stack( [data, binned_revolvingutilizationofunsecuredlines])
     data =  np.column_stack( [data, binned_debtratio])
+
     return data
 
 
@@ -90,9 +99,8 @@ def main():
   train_input = pd.read_csv('../input/train.csv')
   test_input = pd.read_csv('../input/test.csv') 
   data = pd.concat([train_input, test_input])
-  # We don't have data on whether person is delinquint
 
-  featurizer = CreditScoreFeaturizer() # Create our own features
+  featurizer = CreditScoreFeaturizer()
   
   print "Transforming dataset into features..."
   ##Create matrix of features from raw dataset
@@ -101,24 +109,36 @@ def main():
   X_test = X[len(train_input):]
 
   ## Use any model that we might find appropriate
-  model = RidgeClassifierCV(alphas=[ 0.1, 1., 10. ])
+  #model = RidgeClassifierCV(alphas=[ 0.1, 1., 10. ])
 
   ##Create the object and set relevant parameters
-  #model = LogisticRegression(C=10) # Can also switch different models (e.g. Ridge)
+  model = LogisticRegression(C=10)
+
+  #model = DecisionTreeRegressor(random_state=123)
+  #model = AdaBoostRegressor(DecisionTreeRegressor(max_depth=4), n_estimators=400, random_state=123)
 
   ##Set target variable y
   y = train_input.SeriousDlqin2yrs
 
   print "Cross validating..."
-  print np.mean(cross_val_score(model, X_train, y, scoring='roc_auc')) # Scoring metric is now AUC
+  print np.mean(cross_val_score(model, X_train, y, scoring='roc_auc', cv=10))
 
-  print "Training final model..."
-  model = model.fit(X_train, y)
+  #print "Training final model..."
+  #model = model.fit(X_train, y)
 
+
+  #n_models=5
+  #bag_size=0.70
+
+  #models = [LogisticRegression(C=10) for _ in xrange(n_models)]
+  #models = GradientBoostingClassifier(random_state=123) #for _ in xrange(n_models)]
+  #model = Bagging(models, bag_size)
+
+  #Fit Final Model
+  #model.fit(X_train, y)
 
   #print "Create predictions on submission set..."
   #create_submission(model, X_test, test_input)
-
 
 if __name__ == '__main__':
   main()
