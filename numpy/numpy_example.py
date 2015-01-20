@@ -57,7 +57,10 @@ def numpy_overview():
 
 
 def create_arrays():
-    """ Can create an array using a Python list with the array function """
+    """ Can create an array similar to a Python list using the array function
+        NumPy arrays are different than Python lists in that the data type must
+        be the same (can't have str, ints in the same array.  
+        Good for math operations"""
     print "CREATE ARRAYS"
     a = np.array([2,3,4])  # 1 Dimensional
     b = np.array([[1.5, 2., 3.],  # 2 Dimensional
@@ -113,7 +116,11 @@ def print_arrays():
 
 
 def basic_operations():
-    """ Arithmetic operators on arrays apply elementwise """
+    """ Arithmetic operators on arrays apply elementwise.
+        Say you have array [1,2,3]*2.
+        NumPy result would be [2,4,6]
+        Python list would be [1,2,3,1,2,3]
+     """
     print "BASIC OPERATIONS"
 
     ### Elementwise Example
@@ -151,6 +158,31 @@ def basic_operations():
     print i
     #  [[ 3.69092703,  3.8324276 ,  3.0114541 ],
     #   [ 3.18679111,  3.3039349 ,  3.37600289]]
+
+
+def copy_arrays():
+    """ NumPy is so efficient that it doesn't copy an array (it works off 
+        a reference) unless you explicitly say to copy """
+
+    a = np.array([0, 1, 2, 3, 4, 5])  # [0, 1, 2, 3, 4, 5]
+    b = a.reshape((3,2))
+    print b
+    # [[0,1],
+    #  [2,3],
+    #  [4,5]]
+    b[1][0] = 77
+    print b
+    # [[0,1],
+    #  [77,3],
+    #  [4,5]]
+    print a # [0, 1, 77, 3, 4, 5]  # Change in b is immediately reflected in a
+    c = a.reshape((3,2)).copy()  # Explicitly copy object to not reference
+    c[0][0] = -99
+    print c
+    # [[-99,1],
+    #  [77,3],
+    #  [4,5]]
+    print a  # [0, 1, 77, 3, 4, 5]
 
 
 def describe_array():
@@ -332,10 +364,11 @@ def linear_algebra():
 if __name__ == '__main__':
     #numpy_overview()  # basics of getting array dim, shape, size, items 
     #create_arrays()  # how to create an array, specify type and dimensions
+    copy_arrays()
     #print_arrays()  # show different print options for numbers in array
     #basic_operations()  # doing math on numpy arrays
     #describe_array()  # describe array: min, max, sum, cumsum
     #index_slice_iterate()  # how to index, slice, iterate over arrays
     #shape_manipulation()  # how to change shape of arrays
     #stack_unstack()  # stack or unstack arrays together along different axes
-    linear_algebra()  # numpy.linalg for Linear Algebra calculations
+    #linear_algebra()  # numpy.linalg for Linear Algebra calculations
