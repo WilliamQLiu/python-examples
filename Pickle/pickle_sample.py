@@ -5,16 +5,18 @@
     reverse.  Also known as 'serialization', 'marshalling', or 'flattening'
 
     Note: if you need fast pickling, use the C version (cPickle), slightly
-    different, but
-    Marshal is similar (more primitive), but should always prefer Pickle instead
+    different, but can't subclass (we won't really need this)
+    Marshal is similar (more primitive), but use Pickle instead
 
     Uses for pickling:
       * save a program's state data to disk (persistence)
-      * send python data over a TCP connection in a multi-core or distributed system (marshal)
+      * send python data over a TCP connection in a multi-core
+        or distributed system (marshal)
       * store python objects in a database
       * convert a python object to a string so it can be used as a dict key ()
 """
 
+#import cPickle as pickle  # Can be 1000 times faster!
 import pickle
 
 def pickle_dump_example(data_to_pickle, filename):
