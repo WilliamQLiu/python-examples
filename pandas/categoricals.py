@@ -1,8 +1,6 @@
 import pandas
 
 
-
-
 if __name__ == '__main__':
     # Setup
     df = pandas.DataFrame({'id':[1,2,3,4,5,6], 'raw_grade':['a', 'b', 'b', 'a', 'a', 'e']})
