@@ -1,5 +1,6 @@
 """ How to do loops in Python """
 
+
 def for_loop():
     """ How to use a simple for-loop to go over a list"""
     print "For Loop Example"
@@ -7,6 +8,7 @@ def for_loop():
     for x in mylist:
         print x
     print "\n"
+
 
 def in_xrange(start_num, end_num=10):
     """ How to use xrange (can pass in up to two arguments) """
@@ -16,6 +18,7 @@ def in_xrange(start_num, end_num=10):
         print x
     print "\n"
 
+
 def while_loop(number):
     """ How to use while loops """
     print "While Loop example from 0 to", number
@@ -24,6 +27,7 @@ def while_loop(number):
         print count
         count += 1
     print "\n"
+
 
 def break_example():
     """ How to use break to exit code """
@@ -36,6 +40,7 @@ def break_example():
             break
     print "\n"
 
+
 def continue_example():
     """ How to use continue to ignore specific cases """
     print "Continue Example"
@@ -45,11 +50,13 @@ def continue_example():
             continue
         print x
 
+
 def enumerate_example():
     """ How to enumerate across a list to get index and value """
     print "Enumerate Example"
     for index, value in enumerate(['tic', 'tac', 'toe']):
         print index, value
+
 
 def zip_example():
     """ Go through two lists of equal size with zip """
@@ -57,6 +64,17 @@ def zip_example():
     answers = ['lancelot', 'the holy grail', 'blue']
     for qst, ans in zip(questions, answers):
         print "What is your {0}? It is {1}.".format(qst, ans)
+
+
+def list_comprehension():
+    """ A list comprehension is a quick way to generate a list and has the
+    following format: result = transform, iteration, filter.
+     """
+    simple_range = [i for i in range(5)]  # no transform or filter, only iteration
+    complex_range = [i * i for i in range(5) if i % 2 == 0]  #transform, iteration, filter
+
+    print simple_range # [0, 1, 2, 3, 4]
+    print complex_range  # [0, 4, 16]
 
 
 if __name__ == '__main__':
@@ -88,3 +106,5 @@ if __name__ == '__main__':
     for index, values in knights.iteritems():
         print index, values # gallahad the pure
                             # robin the brave
+
+    list_comprehension()  # how to do list comprehensions

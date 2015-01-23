@@ -10,26 +10,26 @@ from sklearn.base import BaseEstimator
 import random
 
 class Bagging(BaseEstimator):
-    
+
     def __init__(self, models, bag_size):
         assert bag_size > 0.0 and bag_size < 1.0
         self.models = models
         self.bag_size = bag_size
-        
+
     def fit(self, X, y):
         N = X.shape[0]
         for model in self.models:
             bag_indices = np.random.randint(0, N, int(N*self.bag_size))
             model.fit(X[bag_indices], y[bag_indices])
         return self
-            
+
     def predict_proba(self, X):
         return np.mean([m.predict_proba(X) for m in self.models], axis=0)
 
 class CreditScoreFeaturizer():
   def __init__(self):
     pass
-  
+
   def fit_transform(self, dataset):
     """
       Transform a datframe <dataset> into a feature matrix
@@ -59,7 +59,7 @@ class CreditScoreFeaturizer():
 
     # data =  np.column_stack([data, scaled_income])
 
-    # ## Turning features into discrete features is important if you are using linear classifier, but the underlying 
+    # ## Turning features into discrete features is important if you are using linear classifier, but the underlying
     # ## data does not have a linear relationship
 
     ## NOTE: the binarizer, turns everything > 0 to 1 and and everything less than 0 to 0, so use the StandardScaler first
@@ -72,7 +72,7 @@ class CreditScoreFeaturizer():
 
 
 def create_submission(model, X_test, test_df):
-  predictions = pd.Series(x[1] for x in model.predict_proba(X_test))
+  predictions = pd.Series(x[1] for x in model.predict(X_test))
 
   submission = pd.DataFrame({'Id': test_df['Unnamed: 0'], 'Probability': predictions})
   submission.sort_index(axis=1, inplace=True)
@@ -80,11 +80,11 @@ def create_submission(model, X_test, test_df):
 
 def main():
   train_input = pd.read_csv('train.csv')
-  test_input = pd.read_csv('test.csv') 
+  test_input = pd.read_csv('test.csv')
   data = pd.concat([train_input, test_input])
 
   featurizer = CreditScoreFeaturizer()
-  
+
   print "Transforming dataset into features..."
   ##Create matrix of features from raw dataset
   X = featurizer.fit_transform(data)
