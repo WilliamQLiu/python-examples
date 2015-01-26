@@ -72,7 +72,7 @@ class CreditScoreFeaturizer():
 
 
 def create_submission(model, X_test, test_df):
-  predictions = pd.Series(x[1] for x in model.predict(X_test))
+  predictions = pd.Series(x[1] for x in model.predict_proba(X_test))
 
   submission = pd.DataFrame({'Id': test_df['Unnamed: 0'], 'Probability': predictions})
   submission.sort_index(axis=1, inplace=True)
