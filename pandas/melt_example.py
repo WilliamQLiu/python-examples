@@ -1,8 +1,7 @@
 """
-    pandas' melt() function is useful to massage data from wide to long.
-    One or more identifier variables are considered measured variables, are
-    'unpivoted' to the row axis, leaving just two non-identifer columns
-    'variable' (var_name) and 'value' (value_name) parameters.
+    pandas' melt() function is useful to munge data from wide to long.
+    1+ variables are identifers (id_vars) and remaining fields fall into
+    two variables: variable and value.
 """
 
 
@@ -10,7 +9,7 @@ import pandas as pd
 
 
 if __name__ == '__main__':
-    
+
     # Setup data
     cheese = pd.DataFrame({'first_name': ['Will', 'Laura', 'Mike', 'Mandy'],
                            'last_name': ['Liu', 'Summers', 'Liu', 'Summers'],
