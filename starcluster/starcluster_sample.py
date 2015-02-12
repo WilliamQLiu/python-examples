@@ -64,12 +64,12 @@ if __name__ == '__main__':
 
     ### Put local file or dir to server
     print "Put file or dir from local computer to server"
-    print "$starcluster put /path/to/local/file/or/dir /remote/path/"
+    print "$starcluster put smallcluster /path/to/local/file/or/dir /remote/path/"
     print "\n"
 
     ### Get get file or dir from server to local computer
     print "Get file or dir from server to local computer"
-    print "$starcluster get /path/to/remote/file/or/dir /local/path/"
+    print "$starcluster get smallcluster /path/to/remote/file/or/dir /local/path/"
     print "\n"
 
     ### Terminate server (IMPORTANT - or else it'll cost a lot)

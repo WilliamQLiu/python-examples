@@ -16,6 +16,15 @@
 
     Docs: https://docs.python.org/2/tutorial/classes.html
 
+    When a new class is created, it uses a few 'magic' methods.
+    * __new__(cls, [...]) takes the class and any args to pass to __new__
+    * __init__(self, [...]) is the initializer for class/forms the object
+    * __del__(self) is the destructor for the object (still remember to
+        do things like close a connection or file)
+
+
+
+
     To Do, learn about:
         inheritance
         class attributes
@@ -27,6 +36,9 @@
         classmethods and staticmethods
 
 """
+
+from os.path import join
+import csv
 
 
 class CarClass():
@@ -52,6 +64,39 @@ class Greeting(object):
         print self.message + " " + name
 
 
+class Song(object):
+
+    def __init__(self, lyrics):
+        self.lyrics = lyrics
+
+    def sing_me_a_song(self):
+        for line in self.lyrics:
+            print line
+
+
+class FileObject:
+    """ Wrapper for file objects to make sure file gets closed on deletion"""
+    def __init__(self, filepath='/Users/williamliu/GitHub/python-examples/std_lib', filename='list_chats.csv'):
+        # open a file filename in filepath in read and write mode
+        self.file = open(join(filepath, filename), 'r+')
+        self.lines = 0
+
+    def print_lines(self):
+        #print type(self.file)  #<type 'file'>
+        try:
+            for line in self.file:
+                self.lines += 1
+                print line
+        except:
+            print "Error"
+        self.file.close()  # close file
+        print "Total lines is: ", self.lines
+
+    def __del__(self):
+        self.file.close()
+        del self.file
+
+
 if __name__ == '__main__':
 
     # Create first object, then assign attributes
@@ -73,3 +118,20 @@ if __name__ == '__main__':
     a.my_method("William!")  # Only pass a single argument # 'Hello William!'
     # In our 'my_method', there's actually two arguments passed;
     # 1st arg is always 'self' (from __init__) and 2nd arg is 'William'
+
+    happy_bday = Song(["Happy birthday to you,",
+                       "I don't want to get sued",
+                       "So I'll stop right there"])
+    bulls_on_parade = Song(["They rally around tha family",
+                            "With pockets full of shells"])
+    happy_bday.sing_me_a_song()
+    #Happy birthday to you,
+    #I don't want to get sued
+    #So I'll stop right there
+    bulls_on_parade.sing_me_a_song()
+    #They rally around tha family
+    #With pockets full of shells
+
+    myfile = FileObject()
+    print myfile.file  # <open file '/Users/williamliu/GitHub/python-examples/std_lib/list_chats.csv', mode 'r+' at 0x10eac7810>
+    myfile.print_lines()  # 22447378,22547145,22273506,...
