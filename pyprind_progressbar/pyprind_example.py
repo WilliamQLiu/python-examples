@@ -9,6 +9,13 @@ import time
 #import psutil
 
 
+def setup_progress_bar(self, filename):
+    with open(filename, 'rU') as data:
+        self._total_lines = sum(1 for row in data)
+    data.close()
+    print "Total lines in file is: ", self._total_lines
+
+
 def simple_example(items):
     """ Simple use of Progress bar in a for loop """
     pbar = pp.ProgBar(len(items), title='My Progress Bar 1')
