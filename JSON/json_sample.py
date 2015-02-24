@@ -1,12 +1,26 @@
 """ JSON (Javascript Object Notation) is a lightweight data-interchange format
-    JSON is built on two structures:
-      * A collection of name/value pairs (e.g. an object, record, dic, table, etc)
-      * An ordered list of values (e.g. an array, vector, list, or sequence)
+    *  JSON data is written in name/value pairs
+    *  JSON values can be a number, string, boolean, null array, object
 
-      An object is an unordered set of name/value pairs.  An object begins with
-      { left brace and ends with right brace }.  Each name is followed by : (color)
-      and the name/value pairs are separated by , (comma)
+    JSON is built mainly on two structures (objects {} and arrays [])
+      1.) A collection of name/value pairs (e.g. an object, record, dic, hash
+        table, keyed list or associative array)
+        *  An object is an unordered set of name/value pairs.
+        *  An object begins with { left brace and ends with right brace }
+        *  Each name is followed by a colon (:) and the name/value pairs
+          are separated by a comma (,)
+        *  e.g. {"firstName": "Will", "lastName": "Liu"}
 
+      2.) An ordered list of values (e.g. an array, vector, list, or sequence)
+        *  An array is an ordered collection of values.
+        *  An array begins with [ left bracket and ends with right bracket ]
+        *  Values are separated by a comma (,)
+        *  e.g. "employees": [
+                    {"firstName": "Will", "lastName": "Liu"},
+                    {"firstName": "Laura", "lastName": "Summers"}
+                ]
+
+      Tools :
       json.tool can be used to validate json from the shell
       $echo '{"json":"obj"}' | python -mjson.tool
       {
@@ -78,12 +92,12 @@ def pretty_print():
     #  Original object is  {'4': 5, '6': 7}
     d = json.dumps(myobject, sort_keys=True,
                    indent=2, separators=(',', ':'))
-    print type(d)  #<type 'str'>
+    print type(d)  # <type 'str'>
     print d
-    #{
+    # {
     #  "4":5,
     #  "6":7,
-    #}
+    # }
 
 
 def decoding_JSON():
@@ -99,7 +113,7 @@ def decoding_JSON():
     #  Returned object is:  ["foo", {"bar":["baz", null, 1.0, 2]}]
 
 
-#For specializing_JSON_object_decoding() example
+# For specializing_JSON_object_decoding() example
 def as_complex(dct):
     if '__complex__' in dct:
         return complex(dct['real'], dct['imag'])
@@ -113,8 +127,7 @@ def specializing_JSON_object_decoding():
     print_original_object(myobject)
     #  Original object is type:  <type 'str'>
     #  Original object is  {"__complex__": true, "real": 1, "imag": 2}
-    f = json.loads(myobject,
-                 object_hook=as_complex)  #(1+2j)
+    f = json.loads(myobject, object_hook=as_complex)  # (1+2j)
     print_returned_object(myobject)
     #  Returned object is type:  <type 'str'>
     #  Returned object is:  {"__complex__": true, "real": 1, "imag": 2}
@@ -123,7 +136,7 @@ def specializing_JSON_object_decoding():
 def dumped_length():
     """ Shows different file sizes of each """
     print "DUMPED LENGTH"
-    data = [ { 'a':'A', 'b':(2, 4), 'c':3.0 } ]
+    data = [{ 'a':'A', 'b':(2, 4), 'c':3.0 }]
     print 'DATA:', repr(data)  # DATA: [{'a': 'A', 'c': 3.0, 'b': (2, 4)}]
     print 'repr(data)             :', len(repr(data))  # 35
     print 'dumps(data)            :', len(json.dumps(data))  # 35
