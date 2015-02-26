@@ -10,23 +10,23 @@ from faker import Factory
 
 if __name__ == '__main__':
 
-    faker = Factory.create() # Create and instantiate a Faker generator
+    faker = Factory.create()  # Create and instantiate a Faker generator
 
     # Setup Element Tree
-    root = ET.Element("root") # root
-    calls = ET.SubElement(root, "Calls") # Calls
-    call = ET.SubElement(calls, "Call") # Call
+    root = ET.Element("root")  # root
+    calls = ET.SubElement(root, "Calls")  # Calls
+    call = ET.SubElement(calls, "Call")  # Call
     reportversion = ET.SubElement(call, "ReportVersion")
     calldateandtimestart = ET.SubElement(call, "CallDateAndTimeStart")
     calldateandtimeend = ET.SubElement(call, "CallDateAndTimeEnd")
     phoneworker = ET.SubElement(call, "PhoneWorker")
-    pfirstname = ET.SubElement(phoneworker, "FirstName") # Phone Work First Name
-    plastname = ET.SubElement(phoneworker, "LastName") # Phone Work Last Name
+    pfirstname = ET.SubElement(phoneworker, "FirstName")  # Phone Work First Name
+    plastname = ET.SubElement(phoneworker, "LastName")  # Phone Work Last Name
     caller = ET.SubElement(call, "Caller")
     callername = ET.SubElement(caller, "CallerName")
-    cfirstname = ET.SubElement(callername, "FirstName") # Caller First Name
-    cmiddlename = ET.SubElement(callername, "MiddleName") # Caller Middle Name
-    clastname = ET.SubElement(callername, "LastName") # Caller Last Name
+    cfirstname = ET.SubElement(callername, "FirstName")  # Caller First Name
+    cmiddlename = ET.SubElement(callername, "MiddleName")  # Caller Middle Name
+    clastname = ET.SubElement(callername, "LastName")  # Caller Last Name
     callerlocation = ET.SubElement(caller, "CallerLocation")
     ccountry = ET.SubElement(callerlocation, "Country")
     cstateprovince = ET.SubElement(callerlocation, "StateProvince")
@@ -40,7 +40,7 @@ if __name__ == '__main__':
 
     # Put in Fake values
     call.set("ID", str(faker.random_number(digits=9)))
-    reportversion.set("ID", str(faker.random_number(digits=4))) 
+    reportversion.set("ID", str(faker.random_number(digits=4)))
     reportversion.text = str(faker.random_element(\
         array=('H2H', 'DDH', 'OASAS')))
     calldateandtimestart.set("TimeZone", str(faker.timezone()))
@@ -48,15 +48,15 @@ if __name__ == '__main__':
     calldateandtimeend.set("TimeZone", str(faker.timezone()))
     calldateandtimeend.text = str(faker.date_time_this_year())
     phoneworker.set("ID", str(faker.random_number(digits=5)))
-    pfirstname.text = str(faker.first_name()) # Phone Worker First Name
-    plastname.text = str(faker.last_name()) # Phone Worker Last Name
+    pfirstname.text = str(faker.first_name())  # Phone Worker First Name
+    plastname.text = str(faker.last_name())  # Phone Worker Last Name
     caller.set("ID", str(faker.random_number(digits=6)))
-    cfirstname.text = str(faker.first_name()) # Caller  First Name
-    cmiddlename.text = str(faker.first_name()) # Caller Last Name
-    clastname.text = str(faker.last_name()) # Caller Last Name    
+    cfirstname.text = str(faker.first_name())  # Caller  First Name
+    cmiddlename.text = str(faker.first_name())  # Caller Last Name
+    clastname.text = str(faker.last_name())  # Caller Last Name
     ccountry.text = str(faker.country())
     cstateprovince.text = str(faker.state_abbr())
-    ccounty.text = str(faker.city()) # Nothing for counties
+    ccounty.text = str(faker.city())  # Nothing for counties
     cpostalcode.text = str(faker.postcode())
     caddress.text = str(faker.street_address())
     callerphonenumber.text = str(faker.phone_number())
