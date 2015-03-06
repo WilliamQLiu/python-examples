@@ -14,8 +14,9 @@
 
     Running ES
     1.) Make sure Elasticsearch is installed, then start ES:
-        Unix:  $bin/elasticsearch
+        Unix: $bin/elasticsearch
         Windows: $bin/elasticsearch.bat  (Note: may have to set JAVA_HOME var)
+        Mac: $elasticsearch --config=/usr/local/opt/elasticsearch/config/elasticsearch.yml
     2.) Verify ES is working with $curl -X GET http://localhost:9200
           Can also verify by visitin page on: http://localhost:9200/
         Should get back the following message:
@@ -46,6 +47,7 @@ from elasticsearch import Elasticsearch
 import requests  # to check ES is up and running
 import json  # to get json responses from API
 import time  # for sleep so we don't slam some person's servers
+#import certifi  # use certifi for CA certificates and http auth
 
 
 def simplest_es_example(es):
@@ -58,6 +60,34 @@ def simplest_es_example(es):
     print es.get(index='my-index', doc_type='test-type', id=42)['_source']
     # {u'timestamp': u'2015-02-20T11:26:49.484000', u'any': u'data'}
 
+
+def tutorial_elasticsearchpy(es):
+    """
+        http://elasticsearch-py.readthedocs.org/en/master/
+    """
+
+    # Make some fake data
+    doc = {
+        'author': 'kimchy',
+        'text': 'Elasticsearch: cool. bonsai cool.',
+        'timestamp': datetime(2010, 10, 10, 10, 10, 10)
+    }
+
+    res = es.index(index="test-index", doc_type='tweet', id=1, body=doc)
+    print res['created']  # False
+
+    res = es.get(index="test-index", doc_type="tweet", id=1)
+    print res['_source']
+    # {u'text': u'Elasticsearch: cool. bonsai cool.', u'author': u'kimchy', u'timestamp': u'2010-10-10T10:10:10'}
+
+    es.indices.refresh(index="test-index")
+
+    res = es.search(index="test-index", body={"query": {"match_all": {}}})
+    print "Got %d Hits:" % res['hits']['total']  # Got 1 Hits
+
+    for hit in res['hits']['hits']:
+        print ("%(timestamp)s %(author)s: %(text)s" % hit["_source"])
+    #2010-10-10T10:10:10 kimchy: Elasticsearch: cool. bonsai cool.
 
 def starwars_example(es, r, i):
     """
@@ -74,15 +104,33 @@ def starwars_example(es, r, i):
 
     return es
 
+
 if __name__ == '__main__':
 
     r = requests.get('http://localhost:9200')  # Verify ES is running
-    print(r.content)  # Should return the verification msg in step 2
+    #print(r.content)  # Should return the verification msg in step 2
 
     # Connect to ES; default connection is: localhost:9200
     es = Elasticsearch([{'host': 'localhost', 'port': 9200}])
 
+    # Can also connect using SSL for secure connections
+    """
+    es = Elasticsearch(
+        ['localhost', 'otherhost'],
+        http_auth=('user', 'secret'),
+        port=443,
+        use_ssl=True,
+        verify_certs=True,
+        ca_certs=certifi.where(),)
+    """
+
     #simplest_es_example(es)
+
+    tutorial_elasticsearchpy(es)
+
+    """
+
+    # Star Wars Example
 
     # Run ES with first node, get first few indexes
     r = requests.get('http://localhost:9200')  # use node one
@@ -109,3 +157,5 @@ if __name__ == '__main__':
     ### Doing search (fuzzy) with ES
     print node2.search(index='sw', body={'query': {'fuzzy_like_this_field': {'name': {'like_text': 'jaba', 'max_query_terms': 5}}}})
     # Jabba appears even though we spelled it incorrectly
+
+    """

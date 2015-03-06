@@ -1,6 +1,35 @@
-""" JSON (Javascript Object Notation) is a lightweight data-interchange format
+"""
+    ABOUT
+    JSON (Javascript Object Notation) is a lightweight data-interchange format
     *  JSON data is written in name/value pairs
     *  JSON values can be a number, string, boolean, null array, object
+
+    This python library does a couple main things:
+    *  json.dumps() - encodes a python object and turns into a json object
+    *  json.loads() - decodes a json object and turns into a python object
+
+    DECODER, aka json.loads()
+    The decoder takes a JSON object and turns into a python object; by default:
+        (JSON)              (Python)
+        object              dict
+        array               list
+        string              unicode
+        number (int)        int, long
+        number (real)       float
+        true                True
+        false               False
+        null                None
+
+    ENCODER, aka json.dumps()
+    The encoder takes a Python object and turns into a JSON object; by default:
+        (Python)            (JSON)
+        dict                object
+        list, tuple         array
+        str, unicode        string
+        int, long, float    number
+        True                true
+        False               false
+        None                null
 
     JSON is built mainly on two structures (objects {} and arrays [])
       1.) A collection of name/value pairs (e.g. an object, record, dic, hash
@@ -48,7 +77,7 @@ def print_returned_object(myobject):
 
 
 def encoding_basic_python_object():
-    print "ENCODING BASIC PYTHON OBJECT"
+    print "Encoding a python object into a json object with json.dumps()"
     print "Example 1:"
     myobject = ['foo', {'bar': ('baz', None, 1.0, 2)}]
     print_original_object(myobject)
@@ -71,12 +100,16 @@ def encoding_basic_python_object():
 
 
 def compact_encoding():
+    """
+        Encoding a python object into a json object with json.dumps()"
+        except with no spacing/indentation (i.e. compact)
+    """
     print "COMPACT ENCODING"
     print "Example 1:"
     myobject = [1,2,3,{'4': 5, '6': 7}]
     print_original_object(myobject)
     #  Original object is type:  <type 'list'>
-    #  Original object is  [1, 2, 3, {'4': 5, '6': 7}]
+    #  Original object is:  [1, 2, 3, {'4': 5, '6': 7}]
     c = json.dumps(myobject, separators=(',', ':'))
     print_returned_object(myobject)
     #  Returned object is type:  <type 'list'>
@@ -84,6 +117,10 @@ def compact_encoding():
 
 
 def pretty_print():
+    """
+        Encoding a python object into a json object with json.dumps()"
+        except has plenty of spacing/indentation (i.e. pretty_print)
+    """
     print "PRETTY PRINTING (tldr; use indent to make it look nice"
     print "Example 1:"
     myobject = {'4': 5, '6': 7}
@@ -101,6 +138,9 @@ def pretty_print():
 
 
 def decoding_JSON():
+    """
+        The decoder takes a JSON object and turns into a python object
+    """
     print "DECODING JSON"
     print "Example 1:"
     myobject = '["foo", {"bar":["baz", null, 1.0, 2]}]'
@@ -145,9 +185,9 @@ def dumped_length():
 
 
 if __name__ == '__main__':
-    encoding_basic_python_object()
+    #encoding_basic_python_object()
     #compact_encoding()
-    #pretty_print()
+    pretty_print()
     #decoding_JSON()
     #specializing_JSON_object_decoding()
     #dumped_length()
