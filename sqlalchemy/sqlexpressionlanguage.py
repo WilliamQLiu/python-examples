@@ -11,6 +11,8 @@ import sqlalchemy
 #from sqlalchemy import Table, Column, Integer, String, MetaData, Engine
 
 engine = sqlalchemy.create_engine('sqlite:///:memory:', echo=True)
+# You can specify different engine dialect and driver, e.g.
+#engine = create_engine("postgresql+psycopg2:////username:password@localhost/test")
 
 # A Database MetaData is a collection of Table objects and their
 # associated child 'Column' objects
@@ -19,7 +21,7 @@ metadata = sqlalchemy.MetaData()
 users = sqlalchemy.Table('users', metadata,
     sqlalchemy.Column('id', sqlalchemy.Integer, primary_key=True),
     sqlalchemy.Column('name', sqlalchemy.String(50)),
-    sqlalchemy.Column('fullname', sqlalchemy.String(50)),
+    sqlalchemy.Column('fullname', sqlalchemy.String(50))
 )
 
 addresses = sqlalchemy.Table('addresses', metadata,
@@ -76,8 +78,7 @@ def selecting_data():
     
     myselect = sqlalchemy.select([users])
     result = conn.execute(myselect)
-    # Returns a ResultProxy object, which acts like a DBAPI
-    # cursor, including methods fetchone() and fetchall()
+    # Returns a ResultProxy object, which acts like a DBAPI cursor, including methods fetchone() and fetchall()
 
     # iterate through all the rows in a simple tuple-like result
     for row in result:
