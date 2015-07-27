@@ -33,7 +33,6 @@ def merge_on_key():
     #    pandas.merge(df1, df2, left_on='leftkey', right_on='rightkey'), "\n"
     # Merges can also be: how='inner' (default), 'outer', left', 'right'
 
-
 def merge_on_index():
     ### Setup DataFrame examples for Merge on Index
     print "\nMerge on Index \n"
@@ -68,8 +67,8 @@ def concat_on_axis_series():
     # indexes (default is axis=0)
     print "Concat series 1-3 into a Series (axis=0) \n", \
             pandas.concat([series1, series2, series3]), "\n"
-    
-    # Calling concat along axis=1 (instead of default, axis=0) produces 
+
+    # Calling concat along axis=1 (instead of default, axis=0) produces
     # a DataFrame (instead of Series)
     # axis=0 was the index/rows, whereas axis=1 is the columns
     print "Concat series 1-3 into a DataFrame (axis=1) \n", \
@@ -82,7 +81,7 @@ def concat_on_axis_series():
             pandas.concat([series1, series4], axis=1), "\n"
     print "Concat series 1, 4 with inner join into a DataFrame (axis=1) \n", \
             pandas.concat([series1, series4], axis=1, join='inner'), "\n"
-    
+
     # Specify join_axes (i.e. concat using these axis)
     print "Concat series 1, 4 with join_axes into a DataFrame (axis=1) \n", \
             pandas.concat([series1, series4], axis=1, \
@@ -169,14 +168,14 @@ def combine_first_data_with_overlap():
         df2.combine_first(df1), "\n"
 
 if __name__ == '__main__':
-    
+
     ### Merge Examples
     #merge_on_key()
-    #merge_on_index()
+    merge_on_index()
 
     ### Concat Examples
     #concat_on_axis_series()
-    concat_on_axis_dataframe()
+    #concat_on_axis_dataframe()
 
     ### How to handle two datasets where indexes overlap in full or part
     ### Can solve with NumPy's Where Method or Panda's Combine_First Method

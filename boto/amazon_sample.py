@@ -18,9 +18,11 @@ from .secret import AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY
 
 
 def s3_bucket_and_keyvalue_example(s3_conn):
-    """ Create a new S3 bucket (each bucket must have its own unique name
+    """
+        Create a new S3 bucket (each bucket must have its own unique name
         (worldwide), enter a key/value pair, then delete key/value pair
-        and destroy bucket """
+        and destroy bucket
+    """
 
     # Create bucket
     bucket = s3_conn.create_bucket('boto-demo-willliu-%s' % int(time.time()))
@@ -107,6 +109,7 @@ if __name__ == '__main__':
     #s3_bucket_and_keyvalue_example(s3_conn)
     #ec2_launch_and_terminate_instance(ec2_conn)
     #check_what_instances_running(ec2_conn)  # Can also be ec2_conn
-    ebs_basics(ec2_conn)  # Must run EBS in same as EC2 instance
+
+    ebs_basics(ec2_conn)  # Must run EBS in same availability as EC2 instance
 
 

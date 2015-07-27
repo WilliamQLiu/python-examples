@@ -57,10 +57,12 @@ def numpy_overview():
 
 
 def create_arrays():
-    """ Can create an array similar to a Python list using the array function
+    """
+        Can create an array similar to a Python list using the array function
         NumPy arrays are different than Python lists in that the data type must
-        be the same (can't have str, ints in the same array.  
-        Good for math operations"""
+        be the same (can't have str, ints in the same array)
+        Good for math operations
+    """
     print "CREATE ARRAYS"
     a = np.array([2,3,4])  # 1 Dimensional
     b = np.array([[1.5, 2., 3.],  # 2 Dimensional
@@ -109,7 +111,6 @@ def print_arrays():
     # [[[ 0  1  2  3]
     # [ 4  5  6  7]
     # [ 8  9 10 11]]
-
     # [[12 13 14 15]
     # [16 17 18 19]
     # [20 21 22 23]]]
@@ -139,7 +140,7 @@ def basic_operations():
     f = d * e  # Elementwise (Note: * operator is elementwise, not Matrix)
     print f
     # [[2 0]   # 1*2, 1*0
-    #  [0 4]]  # 0*3, 1*4 
+    #  [0 4]]  # 0*3, 1*4
 
     g = np.dot(d,e)  # Matrix-Matrix product (col of d must equal row of e)
     print g
@@ -161,7 +162,7 @@ def basic_operations():
 
 
 def copy_arrays():
-    """ NumPy is so efficient that it doesn't copy an array (it works off 
+    """ NumPy is so efficient that it doesn't copy an array (it works off
         a reference) unless you explicitly say to copy """
 
     a = np.array([0, 1, 2, 3, 4, 5])  # [0, 1, 2, 3, 4, 5]
@@ -202,7 +203,7 @@ def describe_array():
 
 
 def index_slice_iterate():
-    """ Index, Slice, and Iterate over one-dimensional and multidimensional 
+    """ Index, Slice, and Iterate over one-dimensional and multidimensional
     arrays """
 
     ### One-dimensional Arrays
@@ -304,7 +305,7 @@ def stack_unstack():
 
 
 def linear_algebra():
-    """ Use the `numpy.linalg` library to do Linear Algebra 
+    """ Use the `numpy.linalg` library to do Linear Algebra
         For a reference on math, see 'Linear Algebra explained in four pages'
         http://minireference.com/static/tutorials/linear_algebra_in_4_pages.pdf
     """
@@ -334,8 +335,8 @@ def linear_algebra():
 
 
     ### Inverse of a matrix undoes the effects of the Matrix
-    # The matrix multipled by the inverse matrix returns the 
-    # 'identity matrix' (ones on the diagonal and zeroes everywhere else); 
+    # The matrix multipled by the inverse matrix returns the
+    # 'identity matrix' (ones on the diagonal and zeroes everywhere else);
     # identity matrix is useful for getting rid of the matrix in some equation
     print LA.inv(a)  # return inverse of the matrix
     print "\n"
@@ -362,7 +363,7 @@ def linear_algebra():
 
 
 if __name__ == '__main__':
-    #numpy_overview()  # basics of getting array dim, shape, size, items 
+    #numpy_overview()  # basics of getting array dim, shape, size, items
     #create_arrays()  # how to create an array, specify type and dimensions
     copy_arrays()
     #print_arrays()  # show different print options for numbers in array
