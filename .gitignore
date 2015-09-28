@@ -219,3 +219,7 @@ ProjectEuler/problem4.py
 
 ProjectEuler/problem4.py
 otsirlmq.ve0.txt
+
+*.sublime-workspace
+
+python.sublime-workspace
