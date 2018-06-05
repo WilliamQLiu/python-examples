@@ -18,7 +18,7 @@ Run on server like so:
 """
 
 #import logging # debug output Paramiko prints
-from fabric.api import run
+from fabric.api import run, cd
 
 #For debugging, prints Paramiko's debug statements to
 #standard error stream
