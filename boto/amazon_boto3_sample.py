@@ -59,11 +59,23 @@ def create_bucket(bucket_name):
     return response
 
 
-def get_files_from_bucket(bucket_name):
+def get_all_files_from_bucket(bucket_name):
     s3_resource = boto3.resource('s3')
     my_bucket = s3_resource.Bucket(bucket_name)
     for s3_file in my_bucket.objects.all():
         print(s3_file.key)
+
+
+def get_file_from_bucket(bucket_name, filename):
+    s3_resource = boto3.resource('s3')
+    response = s3_resource.Bucket('my_bucket_name').download_file('my_remote_file.txt', '/home/will/my_local_file.txt')
+    print(response)
+
+
+def put_file_into_bucket(bucket_name, filename):
+    s3_resource = boto3.resource('s3')
+    response = s3_resource.Bucket('my_bucket_name').upload_file('/home/will/my_local_file.txt', 'my_remote_file.txt')
+    print(response)
 
 
 if __name__ == '__main__':
