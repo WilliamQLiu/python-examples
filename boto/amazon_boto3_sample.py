@@ -40,6 +40,13 @@ def list_buckets():
     """ List all buckets in a S3 """
     s3_client = boto3.client('s3')
     response = s3_client.list_buckets()
+    buckets = [bucket['Name'] for bucket in response['Buckets']]
+    print(buckets)
+
+    response = s3_client.get_bucket_location('my_bucket')
+    print(response)
+    #{'LocationConstraint': 'us-west-1', 'ResponseMetadata': {'HTTPStatusCode': 200, 'RetryAttempts': 0, 'HostId': '', ...
+
     return response['Buckets']
 
 
@@ -48,6 +55,7 @@ def create_bucket(bucket_name):
     s3_client = boto3.client('s3')
     response = s3_client.create_bucket(Bucket=bucket_name,
                                        CreateBucketConfiguration={'LocationConstraint': AWS_DEFAULT_REGION})
+    # Make sure to check that your ~/.aws/config default region is pointed to the same region as this call
     return response
 
 
