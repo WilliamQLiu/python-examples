@@ -1,4 +1,5 @@
-""" Quick Sort """
+""" Quick Sort in Python3 """
+import pdb
 
 
 def quickSort(mylist):
@@ -12,6 +13,7 @@ def quickSortHelper(mylist, first, last):
         quickSortHelper(mylist, splitpoint+1, last)
 
 def partition(mylist, first, last):
+    #import pdb; pdb.set_trace()
     pivotvalue = mylist[first]
 
     leftmark = first+1
@@ -29,17 +31,15 @@ def partition(mylist, first, last):
         if rightmark < leftmark:
             done = True
         else:
-            # swap
             mylist[leftmark], mylist[rightmark] = mylist[rightmark], mylist[leftmark]
 
-    # swap
-    mylist[leftmark], mylist[rightmark] = mylist[rightmark], mylist[leftmark]
+    mylist[first], mylist[rightmark] = mylist[rightmark], mylist[first]
 
-
+    return rightmark
 
 
 if __name__ == '__main__':
-    mylist = [54,26,93,17,77,31,44,55,20]
-    print "Original: ", mylist
+    mylist = [54, 26, 93, 17, 77, 31, 44, 55, 20]
+    print("Original: ", mylist)
     quickSort(mylist)
-    print "Quick Sorted: ", mylist
+    print("Quick Sorted: ", mylist)
