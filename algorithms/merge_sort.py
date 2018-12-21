@@ -2,14 +2,14 @@
 
 
 def mergeSort(mylist):
-    print "Splitting", mylist
+    print("Splitting", mylist)
 
     if len(mylist) > 1:
         mid = len(mylist) // 2
         lefthalf = mylist[:mid]
-        print "Left half ", lefthalf
+        print("Left half ", lefthalf)
         righthalf = mylist[mid:]
-        print "Right half ", righthalf
+        print("Right half ", righthalf)
 
         mergeSort(lefthalf)
         mergeSort(righthalf)
@@ -42,11 +42,11 @@ def mergeSort(mylist):
             j += 1
             k += 1
 
-    print "Merging", mylist
+    print("Merging", mylist)
 
 
 if __name__ == '__main__':
-    mylist = [54,26,93,17,77,31,44,55,20]
-    print "Original: ", mylist
+    mylist = [54, 26, 93, 17, 77, 31, 44, 55, 20]
+    print("Original: ", mylist)
     mergeSort(mylist)
-    print "Merge Sorted: ", mylist
+    print("Merge Sorted: ", mylist)
