@@ -2,7 +2,7 @@
 
 def insertionSort(mylist):
     for index in range(1, len(mylist)):
-        print "Index is ", index  # 1, 2, 3, 4, 5, 6, 7, 8; this is the outer loop
+        print("Index is ", index)  # 1, 2, 3, 4, 5, 6, 7, 8; this is the outer loop
 
         # setup first case (only one item)
         currentvalue = mylist[index]
@@ -17,6 +17,6 @@ def insertionSort(mylist):
 
 if __name__ == '__main__':
     mylist = [54,26,93,17,77,31,44,55,20]
-    print "Original: ", mylist
+    print("Original: ", mylist)
     insertionSort(mylist)
-    print "Insertion Sorted: ", mylist
+    print("Insertion Sorted: ", mylist)
