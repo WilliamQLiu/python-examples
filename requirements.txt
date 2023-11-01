@@ -23,7 +23,7 @@ pyparsing==2.0.1
 pytest==2.5.1
 python-dateutil==1.5
 pytz==2013b
-requests==2.2.0
+requests==2.20.0
 scipy==0.13.2
 scipy-umfpack==0.13.2
 selenium==2.39.0
